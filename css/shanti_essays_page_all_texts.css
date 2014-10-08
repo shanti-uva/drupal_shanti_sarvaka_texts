@@ -1,5 +1,11 @@
-/* May want to change this name */
+/* May want to change this name */  
 /* shanti_essays_page_all_texts */
+
+.view-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 
 .views-row {
   float:left;
@@ -19,7 +25,7 @@
 }
 
 .book-view-card-title {
-
+      
 }
 
 .views-field-field-dc-creator-author-1 {
@@ -32,13 +38,89 @@
   font-size: 14pt;
 }
 
-ul#view-all-text-switcher {
+
+.view-result-count-info {
+  font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
+  font-size: 16px;
+}
+
+#view-all-texts-switcher {
+  display: inline-block;
   margin: 0; 
   padding: 0; 
   list-style-type: none; 
   text-align: center;
 }
 
-ul#view-all-text-switcher li { 
+#view-all-texts-switcher li { 
   display: inline; 
+  list-style: none;
+  font-size: 18pt;
+  padding: .25em .5em .1em;
+  margin: 0 3px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px gray;
+  background-color: white;
+}
+
+#view-all-texts-switcher li.on {
+  background-color: #EEE5EE;
+}
+
+#view-all-texts-switcher span.icon:hover {
+  cursor: pointer;
+}
+
+.view-all-texts-control-box {
+  display:table;
+  width: 100%;
+  border-top:0;
+  margin: 10px 0;
+  border-color:none;
+}
+
+.view-all-texts-control-box-row  {
+  display: table-row;
+}
+
+.view-all-texts-control-box-cell  {
+   display: table-cell;
+   vertical-align: middle;
+}
+
+.view-all-texts-control-box-cell.a  {
+  width:25%;
+}
+
+.view-all-texts-control-box-cell.b  {
+  width:30%;
+}
+
+.view-all-texts-control-box-cell.c  {
+  width:15%;
+}
+
+.view-all-texts-control-box-cell.d  {
+  width:30%;
+}
+
+ul.pager {
+  width: 100%;
+}
+
+.views-widget-filter-title label {
+  padding-top: 3px;
+  font-size: 14pt;
+}
+
+.views-widget-filter-title input {
+  height: 24px;
+}
+
+.shanti-text .content-section {
+  padding-top: 0;
+}
+
+#edit-title-wrapper label {
+  font-size: 18px;
 }

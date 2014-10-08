@@ -3,6 +3,7 @@ description = A subtheme of SHANTI's Savarka theme customized for Texts.
 core = 7.x
 base theme = shanti_sarvaka
 
+;Add a dependency for shanti_essays module ...
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
