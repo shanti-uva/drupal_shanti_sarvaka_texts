@@ -1,0 +1,9 @@
+/* custom theme colors */
+.titlearea { background: #764B8D; } 
+.basebg { background-color: #764B8D; } 
+.basecolor { color: #764B8D; }   
+ul.ss-full-tabs>li.active>a:after { border-color: #764B8D; border-top-color: #764B8D; } 
+.breadwrap ol li .icon{ background:#764B8D; }
+.ss-full-tabs.nav-tabs>li.active,
+.ss-full-tabs.nav-tabs>li.active:hover{ background:#764B8D; }
+.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#764B8D; }

@@ -2,8 +2,10 @@ name = SHANTI Savarka for Texts
 description = A subtheme of SHANTI's Savarka theme customized for Texts.
 core = 7.x
 base theme = shanti_sarvaka
+version = 7.x-1.x
 
-;Add a dependency for shanti_essays module ...
+dependencies[] = jquery_update ; requires jquery v 1.10+
+dependencies[] = shanti_essays
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
@@ -34,53 +36,14 @@ settings[shanti_sarvaka_shanti_site] = 1
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
+stylesheets[all][] =  css/shanti-main-shanti_sarvaka_texts.css
+stylesheets[all][] =  css/shanti-search-shanti_sarvaka_texts.css
 stylesheets[all][] =  css/shanti-texts.css
-;stylesheets[all][] =  css/bootstrap.min.css
-;stylesheets[all][] =  css/bootstrap-theme.min.css
-;stylesheets[all][] =  css/utils.css
-;stylesheets[all][] =  css/vjs.zencdn.nt-5.4-video-js.css
-;stylesheets[all][] =  fonts/shanticon/css/style.css
-;stylesheets[all][] =  css/search-bibliography.css
-;stylesheets[all][] =  css/shanti-search.css
-;stylesheets[all][] =  css/shanti-main.css
-;stylesheets[all][] =  css/shanti-search-mb.css
-;stylesheets[all][] =  css/shanti-main-mb.css
 
 ;;;;;;;;;;;;;;;;;;;;;;
 ;;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;;
 
-;scripts[] = 'js/vendor/jquery-1.10.1.min.js' ; Added through jquery update module.
-;scripts[] = 'js/vendor/jquery-ui.min.js'
-;scripts[] = 'js/vendor/jquery-migrate-1.2.1.js'
-;scripts[] = 'js/vendor/bootstrap.min.js'
-;scripts[] = 'js/menus/jquery.multilevelpushmenu.min.js'
-;scripts[] = 'js/extruder/jquery.hoverIntent.min.js'
-;scripts[] = 'js/extruder/jquery.mb.flipText.js'
-;scripts[] = 'js/extruder/mbExtruder.js'
-;scripts[] = 'src/jquery.fancytree.js'
-;scripts[] = 'src/jquery.fancytree.glyph.js'
-;scripts[] = 'src/jquery.fancytree.filter.js'
-;scripts[] = 'src/jquery.fancytree.edit.js'
-;scripts[] = 'js/menus/metisMenu.js'
-;scripts[] = 'js/forms/check/icheck.min.js'
-;scripts[] = 'js/forms/select/bootstrap-select.min.js'
-;scripts[] = 'src/jquery.highlight.js'
-;scripts[] = 'js/vendor/jquery.tablesorter.min.js'
-;scripts[] = 'src/jquery.dataTables.min.js'
-;scripts[] = 'src/dataTables.bootstrap.js'
-;scripts[] = 'src/trunk8.min.js'
-;scripts[] = 'js/vendor/jquery.ba-hashchange.min.js'
-;scripts[] = 'js/vendor/bootstrap-paginator.min.js'
-;scripts[] = 'js/vendor/vjs.zencdn.net-4.5-video.js'
-;scripts[] = 'js/equalHeights.js'
-;scripts[] = 'js/jquery.imagesloaded.js'
-;scripts[] = 'js/jquery.wookmark.min.js'	
-;scripts[] = 'js/vendor/modernizr-2.6.2.min.js'
-;scripts[] = 'js/vendor/jssor.slider.mini.js'
-;scripts[] = 'js/hammer.min.js'
-;scripts[] = 'js/shanti-main.js'
-;scripts[] = 'js/shanti-search.js'
-;scripts[] = 'js/shanti-main-mb.js'
-;scripts[] = 'js/shanti-search-mb.js'
+scripts[] = js/shanti-main-shanti_sarvaka_texts.js
+scripts[] = js/shanti-search-shanti_sarvaka_texts.js
 
