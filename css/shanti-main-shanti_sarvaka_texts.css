@@ -7,3 +7,20 @@ ul.ss-full-tabs>li.active>a:after { border-color: #764B8D; border-top-color: #76
 .ss-full-tabs.nav-tabs>li.active,
 .ss-full-tabs.nav-tabs>li.active:hover{ background:#764B8D; }
 .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#764B8D; }
+
+/* For Sidebar */
+.titlearea,
+.breadcrumb .icon,
+.nav-justified>li.active a,
+.nav-justified>li.active a:hover,
+.nav-justified>li.active a:focus{ background:#764B8D;}
+.nav-justified>li.active:before{ color:#764B8D;}
+
+/*
+.nav-justified > li.active a,
+.nav-justified > li.active a:hover,
+.nav-justified > li.active a:focus
+{ 
+  background:#764B8D;
+}
+*/

@@ -1,8 +1,10 @@
 /* SHANTI Texts Styles */
 
+/*
 body.shanti-text nav.breadwrap ol li i.icon.shanticon-arrow3-right {
   background-color: #764B8D!important;
 }
+*/
 
 .pagerer-pager {
   font-size: 130%;
@@ -28,6 +30,7 @@ body.shanti-text nav.breadwrap ol li i.icon.shanticon-arrow3-right {
 
 
 /* This is here just because the base theme has scoped things to .field-item */
+/*
 .field-item .popover-link{ 
   background: #5a65d1;
   border: none;
@@ -65,8 +68,9 @@ body.shanti-text nav.breadwrap ol li i.icon.shanticon-arrow3-right {
 .field-item .popover-link .shanticon-menu3{ color:white; font-size:1.06em; position:relative; top:0.32em; left:-1px;}
 
 .field-item .popover{ border:none;padding:0;}
-
+*/
 /*---- popover content area ----*/
+/*
 .field-item .popover-content h5{ font-size:1.06em; text-transform:capitalize; font-weight:bold; margin:0; padding:0; line-height:2.5em; border-bottom:1px solid #ccc;}
 .field-item .popover-content p{ font-size: 0.88em; margin-top: 10px; color: #333;}
 
@@ -82,10 +86,14 @@ body.shanti-text nav.breadwrap ol li i.icon.shanticon-arrow3-right {
 .field-item .popover-content .popover-footer ul{ list-style-type:none; margin:10px 0 0; padding:0;}
 .field-item .popover-content .popover-footer ul li{  background:#505050; border-bottom:1px solid #404040; font-size:0.88em; line-height:3.32em; height:3.25em; padding:0 0 0 15px; margin:0; font-family:'museo-sans-700',Helvetica,Arial,sans-serif;}
 .field-item .popover-content .popover-footer ul li a{ color:#ddd; border-bottom:none;display:inline-block;}
-/*.field-item .popover-content .popover-footer ul li a:hover{ color:#eee;}
+*/
+
+/* KEEP DEL
+.field-item .popover-content .popover-footer ul li a:hover{ color:#eee;}
 .field-item .popover-content .popover-footer ul li a:active{ color:#fff;}
 */
 
+/*
 .field-item .popover-content .popover-footer ul li .icon{ color:#eee;margin-right:5px;}
 .field-item .popover-content .popover-footer ul li:hover .icon{ color:#fff;}
 .field-item .popover-content .popover-footer ul li:last-child{ border-radius:0 0 4px 4px; border-bottom:none;}
@@ -103,4 +111,5 @@ body.shanti-text nav.breadwrap ol li i.icon.shanticon-arrow3-right {
 .field-item {
   display:inline;
 }
+*/
 
