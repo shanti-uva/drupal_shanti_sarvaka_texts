@@ -2,14 +2,14 @@
 
 (function($){
 
-var state       = 'fat-list';
-var stateTypes  = ['fat-list','thin-list','grid']; // Note: these are used in the states object and in classes in the template
+var state       = 'fat-list'; // Initial state
 var stateCookie = 'view_state';
 
 Drupal.behaviors.shantiTextsAllTexts = {
 
   attach: function (context, settings) {
 
+    // Keeps track of current state
     if ($.cookie(stateCookie)) {
       state = $.cookie(stateCookie);
     } else {
@@ -93,7 +93,7 @@ Drupal.behaviors.shantiTextsAllTexts = {
           '.views-field-title h3': {
             'font-size': '20px',
             'margin-bottom': '5px',
-            'margin-top': '10px'  
+            'margin-top': '10px',
           },
           '.views-field-field-general-featured-image img': {
              'height': '220px',    
@@ -110,20 +110,24 @@ Drupal.behaviors.shantiTextsAllTexts = {
       },
     };
     
-    //$('#block-system-main').hide();
-    changeState(state); // Executed with this behavior is attached
-    //$('#block-system-main').show();
+    changeState(state); // Executed when this behavior is attached
     
     function changeState(mystate,speed) {
+      /*
       speed = typeof speed !== 'undefined' ? speed : 'fast';
       for (var sel in states[mystate]) {
-        $(sel).transition(states[mystate][sel],speed);
-      }    
-      for (var i in stateTypes) {
-        if (stateTypes[i] == mystate) {
-          $('#view-all-texts-switcher li.'+stateTypes[i]).addClass('on');
+        //$(sel).transition(states[mystate][sel],speed);
+        $(sel).animate(states[mystate][sel]);
+      } 
+      */
+      for (var key in states) {
+        var viewClass = 'view-all-texts-' + key;
+        if (key == mystate) {
+          $('div.view-all-texts').addClass(viewClass);
+          $('#view-all-texts-switcher li.'+key).addClass('on');
         } else {
-          $('#view-all-texts-switcher li.'+stateTypes[i]).removeClass('on');        
+          $('div.view-all-texts').removeClass(viewClass);
+          $('#view-all-texts-switcher li.'+key).removeClass('on');        
         }
       }
       $.cookie(stateCookie,mystate);
@@ -132,18 +136,17 @@ Drupal.behaviors.shantiTextsAllTexts = {
 
     // Event handlers for view switch buttons
     
-    $('li .shanticon-list').click(function(){
+    $('#view-all-texts-fat-list').click(function(){
       changeState('fat-list');
     });
 
-    $('li .shanticon-list4').click(function(){
+    $('#view-all-texts-thin-list').click(function(){
       changeState('thin-list');
     });
 
-    $('li .shanticon-grid').click(function(){
+    $('#view-all-texts-grid').click(function(){
       changeState('grid');  
     });
-    
     
   },
 
