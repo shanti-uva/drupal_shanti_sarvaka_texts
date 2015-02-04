@@ -2,10 +2,12 @@
 
 define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts'));
 
+// function shanti_sarvaka_texts_preprocess_node(&$vars) {}
+
 function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
 
   if (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
-
+  
     // Grab the pieces you want and then remove them from the array    
     $header   = $vars['header'];    $vars['header']   = '';
     $filters  = $vars['exposed'];   $vars['exposed']  = '';
@@ -38,10 +40,11 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
     $vars['attachment_after'] = $pager;
     
     // Add JS and CSS files that will take over behavior
-    drupal_add_js(SHANTI_ESSAYS_PATH . '/js/jquery.transit.min.js', 'file');
+    // Expects that shanti_texts module is loaded -- IS THIS IS THE .info FILE?
+    drupal_add_js(SHANTI_TEXTS_PATH . '/js/jquery.transit.min.js', 'file');
     drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/jquery.cookie.js', 'file');
-    drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/shanti_essays_page_all_texts.js', $type = 'file', $media = 'all', $preprocess = FALSE);
-    drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_essays_page_all_texts.css', $type = 'file', $media = 'all', $preprocess = FALSE);
+    drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/shanti_texts_page_all_texts.js', $type = 'file', $media = 'all', $preprocess = FALSE);
+    drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts_page_all_texts.css', $type = 'file', $media = 'all', $preprocess = FALSE);
   
   }
 

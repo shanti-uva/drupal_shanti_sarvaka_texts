@@ -24,3 +24,64 @@ ul.ss-full-tabs>li.active>a:after { border-color: #764B8D; border-top-color: #76
   background:#764B8D;
 }
 */
+
+/*
+.view-mega-search h3 {
+  display:none;
+  font-size: 100%;
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+.view-mega-search ul {
+  list-style-type: none;
+}
+*/
+
+.mega-search-title.depth-1 {
+  margin-left:.5em;
+  font-size:110%;
+  border-top:1px solid gray;
+  margin-top:.25em;
+  padding-top:.25em;
+}
+.mega-search-title.depth-2 {
+  margin-left:1.5em;
+}
+.mega-search-title.depth-3 {
+  margin-left:2em;
+}
+.mega-search-title.depth-4 {
+  margin-left:2.5em;
+}
+.mega-search-title.depth-5 {
+  margin-left:3em;
+}
+.mega-search-title.depth-6  {
+  margin-left:3.5em;
+}
+.mega-search-title.depth-7  {
+  margin-left:3.5em;
+}
+.mega-search-title.depth-1.weight-0 {
+  display:none;
+}
+.view-text-search h3 {
+  font-weight:bold;
+  font-size:100%;
+  margin: .5em 0 0 1em;
+  border-top:1px solid lightgray;
+  padding-top:.5em;
+}
+
+.view-all-texts-control-box .views-submit-button {
+  display:none;
+}
+
+#autocomplete {
+  background-color:lightgray;
+  font-family:'museo-sans-500',helvetica,arial,sans-serif;
+  padding:4px;
+}
+
+input.form-autocomplete {}
