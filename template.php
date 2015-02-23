@@ -50,7 +50,7 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
           ),
         'pager' => array(
           '#markup' => $pager,
-          '#prefix'  => "<span class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell'>",
+          '#prefix' => "<span class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell'>",
           '#suffix' => "</span>",
         ),
       ),
