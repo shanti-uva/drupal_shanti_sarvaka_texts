@@ -132,21 +132,15 @@ ul.pager {
   width: 60px;
 }
 
-/* THIS IS NEW STUFF PREVIOUSLY IN JS */
-
 /* FAT LIST */
 
 .view-all-texts-fat-list .views-row {  
   float: left;
   width: 100%;
-  /* height: 220px; */
   background: white;
-  /* padding-bottom: 20px; */
-  /* padding-right: 20px; */
   margin: 0 0 20px;
 }
 .view-all-texts-fat-list .views-field-title h3 {            
-  /* font-size: 24px; */
   font-size: 1.63em;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -155,8 +149,8 @@ ul.pager {
 .view-all-texts-fat-list .views-field-field-general-featured-image img {            
   float: left;
   margin-right: 20px;
-  height: 220px;
-  width: 220px;
+  height: 110px;
+  width: 110px;
 }
 .view-all-texts-fat-list .views-field-field-dc-creator-author-1,
 .view-all-texts-fat-list .views-field-field-book-author
@@ -177,8 +171,9 @@ ul.pager {
   width: 100%;,
   height: 110px;
   background: white;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   padding-right: 20px;
+  padding-left:10px;
   margin: 0 0 10px;
 }
 .view-all-texts-thin-list .views-field-title h3 {            
@@ -188,10 +183,13 @@ ul.pager {
   margin-top: 10px;
 }
 .view-all-texts-thin-list .views-field-field-general-featured-image img {            
+  /*
   float: left;
   margin-right: 10px;
   height: 110px;
   width: 110px; 
+  */
+  display:none;
 }
 .view-all-texts-thin-list .views-field-field-dc-creator-author-1,
 .view-all-texts-thin-list .views-field-field-book-author
@@ -209,7 +207,7 @@ ul.pager {
 
 .view-all-texts-grid .views-row {            
   width: 48%;
-  height: 220px;
+  height: 110px;
   float: left;
   overflow: hidden;
   margin: 10px;
@@ -220,8 +218,8 @@ ul.pager {
   margin-top: 10px;
 }
 .view-all-texts-grid .views-field-field-general-featured-image img {             
-  height: 220px;    
-  width: 220px;
+  height: 110px;    
+  width: 110px;
   margin-right: 10px;
 }
 .view-all-texts-grid .views-field-field-dc-creator-author-1,
