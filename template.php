@@ -19,17 +19,17 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
         '#attributes' => array('class' => array('view-all-texts-control-row')),
         'header' => array(
           '#markup' => $header,
-          '#prefix'  => "<span class='view-all-texts-control-box-cell-header view-all-texts-control-box-cell'>",
-          '#suffix' => "</span>",        
+          '#prefix'  => "<div class='view-all-texts-control-box-cell-header view-all-texts-control-box-cell'>",
+          '#suffix' => "</div>",        
         ),
         'filters' => array(
           '#markup' => $filters,
-          '#prefix'  => "<span class='view-all-texts-control-box-cell-filters view-all-texts-control-box-cell'>",
-          '#suffix' => "</span>",        
+          '#prefix'  => "<div class='view-all-texts-control-box-cell-filters view-all-texts-control-box-cell'>",
+          '#suffix' => "</div>",        
         ),
         'switch_list' => array(
-            '#prefix'  => "<span class='view-all-texts-control-box-cell-switch view-all-texts-control-box-cell'>",
-            '#suffix' => "</span>",        
+            '#prefix'  => "<div class='view-all-texts-control-box-cell-switch view-all-texts-control-box-cell'>",
+            '#suffix' => "</div>",        
             '#theme' => 'item_list',
             '#type'  => 'ul',
             '#attributes' => array('id' => 'view-all-texts-switcher'),
@@ -50,8 +50,8 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
           ),
         'pager' => array(
           '#markup' => $pager,
-          '#prefix' => "<span class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell'>",
-          '#suffix' => "</span>",
+          '#prefix' => "<div class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell'>",
+          '#suffix' => "</div>",
         ),
       ),
     );
@@ -68,7 +68,7 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
 
     // Attach the new element to the array
     $vars['attachment_before'] = drupal_render($control_box);
-    $vars['attachment_after'] = $pager;
+    $vars['attachment_after']  = $pager;
         
   }
 

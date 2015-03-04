@@ -181,6 +181,7 @@ ul.pager {
   margin-right: 10px;
   margin-bottom: 5px;
   margin-top: 10px;
+  float:left;
 }
 .view-all-texts-thin-list .views-field-field-general-featured-image img {            
   /*
@@ -196,11 +197,20 @@ ul.pager {
 {            
   font-size: 16px;
   font-style: italic;
-  color: gray;        
+  color: gray;     
+  float:left;
+  margin-top:10px;
+}
+.view-all-texts-thin-list .views-field-field-dc-date-original-year,
+.view-all-texts-thin-list .views-field-field-dc-date-publication-year
+{            
+  float:left;
+  margin-top:13px;
 }
 .view-all-texts-thin-list .views-field-field-dc-description {            
   font-size: 12px;
   overflow: scroll;
+  display:none;
 }
 
 /* GRID */
