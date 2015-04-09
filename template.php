@@ -13,22 +13,22 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
     
     $control_box = array(
       '#type' => 'container',
-      '#attributes' => array('class' => array('view-all-texts-control-box')),
+      '#attributes' => array('class' => array('view-all-texts-control-box container-fluid')),
       'control_box_row' => array(
         '#type' => 'container',
-        '#attributes' => array('class' => array('view-all-texts-control-row')),
+        '#attributes' => array('class' => array('view-all-texts-control-box-row row')),
         'header' => array(
           '#markup' => $header,
-          '#prefix'  => "<div class='view-all-texts-control-box-cell-header view-all-texts-control-box-cell'>",
+          '#prefix'  => "<div class='view-all-texts-control-box-cell-header view-all-texts-control-box-cell col-lg-3 col-md-4 col-sm-6'>",
           '#suffix' => "</div>",        
         ),
         'filters' => array(
           '#markup' => $filters,
-          '#prefix'  => "<div class='view-all-texts-control-box-cell-filters view-all-texts-control-box-cell'>",
+          '#prefix'  => "<div class='view-all-texts-control-box-cell-filters view-all-texts-control-box-cell col-lg-4 col-md-4 col-sm-6'>",
           '#suffix' => "</div>",        
         ),
         'switch_list' => array(
-            '#prefix'  => "<div class='view-all-texts-control-box-cell-switch view-all-texts-control-box-cell'>",
+            '#prefix'  => "<div class='view-all-texts-control-box-cell-switch view-all-texts-control-box-cell col-lg-2 col-md-4'>",
             '#suffix' => "</div>",        
             '#theme' => 'item_list',
             '#type'  => 'ul',
@@ -50,7 +50,7 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
           ),
         'pager' => array(
           '#markup' => $pager,
-          '#prefix' => "<div class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell'>",
+          '#prefix' => "<div class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell col-lg-3'>",
           '#suffix' => "</div>",
         ),
       ),
