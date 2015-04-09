@@ -13,7 +13,7 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
     
     $control_box = array(
       '#type' => 'container',
-      '#attributes' => array('class' => array('view-all-texts-control-box container-fluid')),
+      '#attributes' => array('class' => array('view-all-texts-control-box')),
       'control_box_row' => array(
         '#type' => 'container',
         '#attributes' => array('class' => array('view-all-texts-control-box-row row')),
