@@ -78,13 +78,9 @@
   border-color:none;
 }
 
-.view-all-texts-control-box-row  {
+.view-all-texts-control-box-row  {}
 
-}
-
-.view-all-texts-control-box-cell  {
-
-}
+.view-all-texts-control-box-cell  {}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -93,28 +89,23 @@
 	width: 75%;
 	margin:0 auto;
 	padding-top:1em;
-	text-align:center;
 }
 
 .view-all-texts-control-box-cell-filters  {
 	width: 75%;
 	margin:0 auto;
-	padding-top:1em;
-	text-align:center;
 }
 
 .view-all-texts-control-box-cell-switch  {
 	width: 75%;
 	margin:0 auto;
 	padding-top:1em;
-	text-align:center;
+	display:none;
 }
 
 .view-all-texts-control-box-cell-pager  {
 	width: 75%;
 	margin:0 auto;
-	padding-top:1em;
-	text-align:center;
 }
 
 
@@ -136,6 +127,7 @@
 		margin: 0;
 		padding: 2em 0;
 		width: 100%;
+		display:block;
 	}
 
 	.view-all-texts-control-box-cell-pager  {
@@ -143,6 +135,7 @@
 		padding: 0;
 		width: 100%;
 	}
+	
 }
 
 /* Medium devices (desktops, 992px and up) */

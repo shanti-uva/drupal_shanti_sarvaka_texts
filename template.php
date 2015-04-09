@@ -71,5 +71,23 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
     $vars['attachment_after']  = $pager;
         
   }
+  
+  /*
+  function shanti_sarvaka_texts_whole_node_html($vars) {
+		$depth    = $vars['node']->book['depth'];
+		$title    = check_plain($vars['node']->title);
+		$content  = $vars['node']->rendered; // THIS IS CREATED IN *_whole_node()
+		$nid			= $vars['node']->nid;
+		$output = '';
+		$output .= "<div id=\"book-node-$nid\" class=\"book-section section-$depth\">\n";
+		$output .= "<h2 class=\"book-heading\">BOO: $title</h2>\n";  
+		$output .= drupal_render($vars['editmenu']) . "\n";
+		$output .= $content . "\n";
+		$output .= $vars['children'] . "\n";
+		$output .= "</div>\n";	
+		return $output;
+	}
+	*/
+	
 
 }
