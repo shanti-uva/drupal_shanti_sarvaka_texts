@@ -4,7 +4,7 @@
 .view-content {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 100%; 
 }
 
 .views-row {
@@ -24,9 +24,7 @@
   margin-right: 25px;
 }
 
-.book-view-card-title {
-      
-}
+.book-view-card-title {}
 
 .views-field-field-dc-creator-author-1,
 .views-field-field-book-author
@@ -40,6 +38,8 @@
   font-size: 14px;
 }
 
+
+/* VIEWS FILTER BAR */
 
 .view-result-count-info {
   font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
@@ -74,48 +74,39 @@
 }
 
 .view-all-texts-control-box {
-  display:table;
-  width: 100%;
   border-top:0;
-  /* margin: 10px 0; */
   border-color:none;
 }
 
 .view-all-texts-control-box-row  {
-  display: table-row;
+
 }
 
 .view-all-texts-control-box-cell  {
-   display: table-cell;
-   vertical-align: middle;
+
 }
 
-.view-all-texts-control-box-cell-header {
-  width:25%;
-}
+@media screen and (min-width:750px) {
+	.view-all-texts-control-box-cell-header {
+		 padding: 2em 0;
+	}
 
-.view-all-texts-control-box-cell-filters  {
-  width:30%;
-}
+	.view-all-texts-control-box-cell-filters  {
+		 padding: 1em 0;
+	}
 
-.view-all-texts-control-box-cell-switch  {
-  width:15%;
-}
+	.view-all-texts-control-box-cell-switch  {
+		 padding: 2em 0;
+	}
 
-.view-all-texts-control-box-cell-pager  {
-  width:30%;
+	.view-all-texts-control-box-cell-pager  {
+
+	}
 }
 
 ul.pager {
   width: 100%;
 }
-
-/*
-.views-widget-filter-title label {
-  padding-top: 3px;
-  font-size: 14px;
-}
-*/
 
 .views-widget-filter-title input {
   height: 24px;
@@ -171,7 +162,6 @@ ul.pager {
   width: 100%;,
   height: 110px;
   background: white;
-  /* padding-bottom: 10px; */
   padding-right: 20px;
   padding-left:10px;
   margin: 0 0 10px;
@@ -184,12 +174,6 @@ ul.pager {
   float:left;
 }
 .view-all-texts-thin-list .views-field-field-general-featured-image img {            
-  /*
-  float: left;
-  margin-right: 10px;
-  height: 110px;
-  width: 110px; 
-  */
   display:none;
 }
 .view-all-texts-thin-list .views-field-field-dc-creator-author-1,
