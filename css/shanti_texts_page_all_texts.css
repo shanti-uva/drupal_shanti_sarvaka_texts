@@ -86,20 +86,22 @@
 
 }
 
-.view-all-texts-control-box-cell-header {
-   padding: 2em 0;
-}
+@media screen and (min-width:750px) {
+	.view-all-texts-control-box-cell-header {
+		 padding: 2em 0;
+	}
 
-.view-all-texts-control-box-cell-filters  {
-   padding: 1em 0;
-}
+	.view-all-texts-control-box-cell-filters  {
+		 padding: 1em 0;
+	}
 
-.view-all-texts-control-box-cell-switch  {
-   padding: 2em 0;
-}
+	.view-all-texts-control-box-cell-switch  {
+		 padding: 2em 0;
+	}
 
-.view-all-texts-control-box-cell-pager  {
+	.view-all-texts-control-box-cell-pager  {
 
+	}
 }
 
 ul.pager {
