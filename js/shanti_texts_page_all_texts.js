@@ -142,7 +142,7 @@ Drupal.behaviors.shantiTextsAllTexts = {
     });
     
 
-		// Hanlde case of small device
+		// Hanlde case of small device	
     $(window).resize(function() {
     	if ($(window).width() < 768) {
       	changeState('thin-list');    	
