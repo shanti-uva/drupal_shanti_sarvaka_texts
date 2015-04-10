@@ -2,6 +2,7 @@
 
 define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts'));
 
+/*
 function shanti_sarvaka_texts_whole_node_html(&$vars) {
 		$depth    = $vars['node']->book['depth'];
 		$title    = check_plain($vars['node']->title);
@@ -16,6 +17,7 @@ function shanti_sarvaka_texts_whole_node_html(&$vars) {
 		$output 	.= "</div>\n";	
 		return $output;
 }	
+*/
 
 function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
 
