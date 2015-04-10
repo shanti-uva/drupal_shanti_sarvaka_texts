@@ -113,13 +113,6 @@ Drupal.behaviors.shantiTextsAllTexts = {
     changeState(state); // Executed when this behavior is attached
     
     function changeState(mystate,speed) {
-      /*
-      speed = typeof speed !== 'undefined' ? speed : 'fast';
-      for (var sel in states[mystate]) {
-        //$(sel).transition(states[mystate][sel],speed);
-        $(sel).animate(states[mystate][sel]);
-      } 
-      */
       for (var key in states) {
         var viewClass = 'view-all-texts-' + key;
         if (key == mystate) {
@@ -147,6 +140,18 @@ Drupal.behaviors.shantiTextsAllTexts = {
     $('#view-all-texts-grid').click(function(){
       changeState('grid');  
     });
+    
+
+		// Hanlde case of small device	
+    $(window).resize(function() {
+    	if ($(window).width() < 768) {
+      	changeState('thin-list');    	
+    	}
+    });
+    
+		if ($(window).width() < 768) {
+			changeState('thin-list');    	
+		}
     
   },
 

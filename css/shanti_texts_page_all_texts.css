@@ -78,30 +78,75 @@
   border-color:none;
 }
 
-.view-all-texts-control-box-row  {
+.view-all-texts-control-box-row  {}
 
+.view-all-texts-control-box-cell  {}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.view-all-texts-control-box-cell-header {
+	width: 75%;
+	margin:0 auto;
+	padding-top:1em;
 }
 
-.view-all-texts-control-box-cell  {
-
+.view-all-texts-control-box-cell-filters  {
+	width: 75%;
+	margin:0 auto;
 }
 
-@media screen and (min-width:750px) {
+.view-all-texts-control-box-cell-switch  {
+	width: 75%;
+	margin:0 auto;
+	padding-top:1em;
+	display:none;
+}
+
+.view-all-texts-control-box-cell-pager  {
+	width: 75%;
+	margin:0 auto;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 	.view-all-texts-control-box-cell-header {
-		 padding: 2em 0;
+		margin: 0;
+		padding: 2em 0;
+		width: 100%;
 	}
 
 	.view-all-texts-control-box-cell-filters  {
-		 padding: 1em 0;
+		margin: 0;
+		padding: 1em 0;
+		width: 100%;
 	}
 
 	.view-all-texts-control-box-cell-switch  {
-		 padding: 2em 0;
+		margin: 0;
+		padding: 2em 0;
+		width: 100%;
+		display:block;
 	}
 
 	.view-all-texts-control-box-cell-pager  {
-
+		margin: 0;
+		padding: 0;
+		width: 100%;
 	}
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+
 }
 
 ul.pager {
