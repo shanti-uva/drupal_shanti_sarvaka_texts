@@ -109,6 +109,10 @@
 	margin:0 auto;
 }
 
+.view-all-texts-control-box-cell-pager  ul.pager {
+	font-size: 85%;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.view-all-texts-control-box-cell-header {
@@ -134,6 +138,10 @@
 		margin: 0;
 		padding: 0;
 		width: 100%;
+	}
+
+	.view-all-texts-control-box-cell-pager  ul.pager {
+		font-size: 90%;
 	}
 
 }
