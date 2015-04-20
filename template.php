@@ -41,11 +41,11 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
         ),
         'filters' => array(
           '#markup' => $filters,
-          '#prefix'  => "<div class='view-all-texts-control-box-cell-filters view-all-texts-control-box-cell col-lg-4 col-md-5 col-sm-6'>",
+          '#prefix'  => "<div class='view-all-texts-control-box-cell-filters view-all-texts-control-box-cell col-lg-4 col-md-4 col-sm-6'>",
           '#suffix' => "</div>",        
         ),
         'switch_list' => array(
-            '#prefix'  => "<div class='view-all-texts-control-box-cell-switch view-all-texts-control-box-cell col-lg-2 col-md-4'>",
+            '#prefix'  => "<div class='view-all-texts-control-box-cell-switch view-all-texts-control-box-cell col-lg-2 col-md-2'>",
             '#suffix' => "</div>",        
             '#theme' => 'item_list',
             '#type'  => 'ul',
@@ -67,7 +67,7 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
           ),
         'pager' => array(
           '#markup' => $pager,
-          '#prefix' => "<div class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell col-lg-3'>",
+          '#prefix' => "<div class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell col-lg-3 col-md-3'>",
           '#suffix' => "</div>",
         ),
       ),
