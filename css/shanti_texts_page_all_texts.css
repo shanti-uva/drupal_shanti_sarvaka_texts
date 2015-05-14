@@ -175,6 +175,27 @@ ul.pager {
   width: 60px;
 }
 
+/* Pagerer */
+
+.pagerer-pager {
+  font-size: 130%;
+}
+
+.pagerer-pager input {
+  height: 2em;
+  width: 2em!important;
+}
+
+/* Exposed Widgets */
+
+.views-exposed-widget label,
+.views-exposed-widget div
+{
+  float:left;
+  margin: 0 1em 0 0;
+  vertical-align: middle;
+}
+
 /* FAT LIST */
 
 .view-all-texts-fat-list .views-row {  
@@ -253,11 +274,10 @@ ul.pager {
 
 .view-all-texts-grid .views-row {            
   width: 48%;
-  /* height: 110px; */
+  height: 110px;
   float: left;
   overflow: hidden;
   margin: 10px;
-  padding-left:1em;
 }
 .view-all-texts-grid .views-field-title h3 {            
   font-size: 1.63em; /* 20px; */
@@ -265,12 +285,9 @@ ul.pager {
   margin-top: 10px;
 }
 .view-all-texts-grid .views-field-field-general-featured-image img {             
-  /*
- height: 110px;    
+  height: 110px;    
   width: 110px;
   margin-right: 10px;
-  */
-  display:none;
 }
 .view-all-texts-grid .views-field-field-dc-creator-author-1,
 .view-all-texts-grid .views-field-field-book-author
