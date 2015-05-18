@@ -1,7 +1,10 @@
 <?php
 // kpr(get_defined_vars());
-$items = array();
+
+/* SEE NOTE ABOVE $carousel BELOW */
 //$slides = array();
+
+$items = array();
 $sql = "SELECT n.nid FROM {book} b JOIN {node} n USING (nid) WHERE b.nid = b.bid AND n.promote = 1 AND n.status = 1 ORDER BY n.changed DESC LIMIT 0,5";
 $rs = db_query($sql);
 while ($r = $rs->fetchObject()) {
@@ -22,7 +25,8 @@ while ($r = $rs->fetchObject()) {
 		'img_url' 	=> file_create_url($this_node->field_general_featured_image[$lang][0]['uri']),
 	);
 	
-	/*
+	/* 
+	// SEE NOTE ABOVE $carousel BELOW
 	$slides[] = array(
 		'nid' 		=> $r->nid,
 		'title' 	=> $this_node->title,
@@ -56,12 +60,17 @@ $carousel = array(
 <div class="container-fluid carouseldiv">
 	<div class="row">
 		<div class="col-xs-12">
-			<div class="carousel slide carousel-fade" id="collection-carousel" data-speed="10">
+		
+			<div data-ride="carousel" class="carousel-header show-more">
+				<span>Featured Texts</span>
+				<a href="/alltexts">View All Texts</a>
+			</div>
+		
+		<div class="carousel carousel-fade slide row" id="collection-carousel" data-speed="12">
 
-				<div class="carousel-inner" style="max-width:1000px; margin: 0 auto;">
+				<div class="carousel-inner">
 				<?php foreach($items as $i => $item): ?>
 					<div class="item <?php if ($i == 0) { print 'active'; } ?>">
-					
 						<div class="carousel-main-content col-xs-12 col-sm-7 col-md-8 col-lg-9">
 							<div>
 								<h3 class="carousel-title">
@@ -82,13 +91,11 @@ $carousel = array(
 								</div>
 							</div>
 						</div>
-						
 						<div class="carousel-main-image col-xs-12 col-sm-5 col-md-4 col-lg-3">
 							<a href="<?php echo $item['node_url'] ?>">
 								<img src="<?php echo $item['img_url'] ?>" alt="" height="240" style="border:1px solid gray;">
 							</a>
 						</div>
-						
 					</div>				
 				<?php endforeach; ?>
 				</div>
