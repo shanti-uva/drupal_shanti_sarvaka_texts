@@ -1,32 +1,31 @@
 /* custom theme colors */
-.titlearea { background: #764B8D; } 
-.basebg { background-color: #764B8D; } 
-.basecolor { color: #764B8D; }   
-ul.ss-full-tabs>li.active>a:after { border-color: #764B8D; border-top-color: #764B8D; } 
-.breadwrap ol li .icon{ background:#764B8D; }
-.ss-full-tabs.nav-tabs>li.active,
-.ss-full-tabs.nav-tabs>li.active:hover{ background:#764B8D; }
-.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#764B8D; }
-
-/* For Sidebar */
-
+.basebg,
 .titlearea,
-.breadcrumb .icon,
+.carousel-control,
+.breadwrap .icon,
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
-.nav-justified>li.active a:focus { 
-	background:#764B8D;
-}
+.nav-justified>li.active a:focus,
+.nav-justified>li.active:before{ background:#764B8D; }
 
-/* Not sure why I have to force this */
+.basecolor { color: #764B8D; }   
+ul.ss-full-tabs>li.active>a:after { border-color: #764B8D; border-top-color: #764B8D; }
+.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#764B8D; }
+
+/* mark removed this for testing - on may 22nd
+.ss-full-tabs.nav-tabs>li.active,
+.ss-full-tabs.nav-tabs>li.active:hover{ background:#764B8D; }
+*/
+
+/* Not sure why I have to force this - let me try it without and see what happens - on may 22nd
 .nav-justified>li.active a:visited,
 .nav-justified>li.active a {
 	color:white!important;
 }
+*/
 
-.nav-justified>li.active:before { 
-	color:#764B8D;
-}
+
+
 
 /*
 .nav-justified > li.active a,
@@ -97,3 +96,24 @@ ul.ss-full-tabs>li.active>a:after { border-color: #764B8D; border-top-color: #76
 }
 
 input.form-autocomplete {}
+
+
+
+
+/* BEGIN carousel WIDTH - box-model layout theme properties */
+
+.carouseldiv + div{ margin:0 auto; max-width:1050px;} /* layout content below carousel */
+
+/* carousel content centering layout box-model */
+.carousel-header,
+.carousel-inner,
+.carousel-inner > .item,
+.front.shanti-text .main-col > .region-content > .block-system .content p{ max-width:1050px; margin:0 auto;}
+
+/* adding space below top text block */
+/* remove inline styles within html markup on opening paragraph for css to target elements */
+.front.shanti-text .region-content > .block-system .content p{ margin-bottom:1rem !important;}
+
+/* END carousel */
+
+
