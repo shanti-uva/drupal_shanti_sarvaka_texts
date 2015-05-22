@@ -49,7 +49,8 @@ $carousel = array(
 */
 
 ?>
-<div style="max-width: 960px; margin: 2rem auto; font-size:120%;">
+<div class="front-overview">
+	<h4>Overview</h4>
 	<p>SHANTI Texts is a published repository of texts that can be used for a variety of content types, from remediated 
 	primary sources to long-form scholarly blog posts to be shared via social media. It is designed to allow you create 
 	content on-site or to upload long texts.</p>
@@ -71,7 +72,7 @@ $carousel = array(
 				<div class="carousel-inner">
 				<?php foreach($items as $i => $item): ?>
 					<div class="item <?php if ($i == 0) { print 'active'; } ?>">
-						<div class="carousel-main-content col-xs-12 col-sm-7 col-md-8 col-lg-9">
+						<div class="carousel-main-content col-xs-12 col-sm-7 col-md-8">
 							<div>
 								<h3 class="carousel-title">
 									<a href="<?php echo $item['node_url'] ?>">
@@ -91,9 +92,9 @@ $carousel = array(
 								</div>
 							</div>
 						</div>
-						<div class="carousel-main-image col-xs-12 col-sm-5 col-md-4 col-lg-3">
+						<div class="carousel-main-image col-xs-12 col-sm-5 col-md-4">
 							<a href="<?php echo $item['node_url'] ?>">
-								<img src="<?php echo $item['img_url'] ?>" alt="" height="240" style="border:1px solid gray;">
+								<img src="<?php echo $item['img_url'] ?>" alt="">
 							</a>
 						</div>
 					</div>				
@@ -116,6 +117,6 @@ $carousel = array(
 	</div>
 </div>
 
-<div style="max-width:1060px; margin:0 auto;">
+<div>
 	<?php print views_embed_view('all_texts','page_3'); ?>
 </div>

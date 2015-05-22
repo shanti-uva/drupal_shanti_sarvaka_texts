@@ -108,11 +108,11 @@ input.form-autocomplete {}
 .carousel-header,
 .carousel-inner,
 .carousel-inner > .item,
-.front.shanti-text .main-col > .region-content > .block-system .content p{ max-width:1050px; margin:0 auto;}
+.front-overview{ max-width:1050px; margin:0 auto;}
 
 /* adding space below top text block */
 /* remove inline styles within html markup on opening paragraph for css to target elements */
-.front.shanti-text .region-content > .block-system .content p{ margin-bottom:1rem !important;}
+.front-overview{ margin-bottom:1rem !important;}
 
 /* END carousel */
 
