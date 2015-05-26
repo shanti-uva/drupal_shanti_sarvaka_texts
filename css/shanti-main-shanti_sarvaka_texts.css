@@ -103,6 +103,7 @@ input.form-autocomplete {}
 
 
 /* BEGIN carousel WIDTH - box-model layout theme properties */
+.carousel-inner{ height: 230px; overflow: hidden;}
 
 .carouseldiv + div{ margin:0 auto; max-width:1050px;} /* layout content below carousel */
 
