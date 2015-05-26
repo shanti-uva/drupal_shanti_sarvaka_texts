@@ -108,9 +108,6 @@
 	margin:0 auto;
 }
 
-.view-all-texts-control-box-cell-pager  ul.pager {
-	font-size: 85%;
-}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -176,10 +173,6 @@ ul.pager {
 }
 
 /* Pagerer */
-
-.pagerer-pager {
-  font-size: 130%;
-}
 
 .pagerer-pager input {
   height: 2em;
