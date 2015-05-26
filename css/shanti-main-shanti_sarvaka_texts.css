@@ -9,8 +9,10 @@
 
 .basecolor,
 .nav-justified > li.active::before{ color: #764B8D; }   
-ul.ss-full-tabs>li.active>a:after { border-color: #764B8D; border-top-color: #764B8D; }
-.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#764B8D; }
+.nav-justified > li.active > a:after { border-color: #764B8D; border-top-color: #764B8D; }
+
+
+/* .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#764B8D; } */
 
 /* mark removed this for testing - on may 22nd
 .ss-full-tabs.nav-tabs>li.active,
