@@ -94,7 +94,7 @@ $carousel = array(
 						</div>
 						<div class="carousel-main-image col-xs-12 col-sm-5 col-md-4">
 							<a href="<?php echo $item['node_url'] ?>">
-								<img src="<?php echo $item['img_url'] ?>" alt="">
+								<img src="<?php echo $item['img_url'] ?>" height="250" alt="">
 							</a>
 						</div>
 					</div>				
