@@ -183,7 +183,8 @@ ul.pager {
 
 /* Exposed Widgets */
 
-.view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0.3rem; margin-bottom:0; padding: 0.5em 0 0 0;}
+.view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0.3rem; margin-bottom:0;}
+views-exposed-widget views-widget-filter-field_book_author_value{ padding: .5em 0 0 0;}
 
 .views-exposed-widget label,
 .views-exposed-widget div{
@@ -234,7 +235,7 @@ ul.pager {
   padding-left:10px;
   margin: 0 0 10px;
 }
-.view-all-texts-thin-list .views-row.views-row-2.views-row-odd{ margin-right:0.5rem;}
+.view-all-texts-thin-list .views-row.views-row-odd{ margin-right:0.5rem;}
 .view-all-texts-thin-list .views-field-title h3 {            
   font-size: 1.38em; /* 18px; */
   margin-right: 10px;
@@ -320,7 +321,7 @@ ul.pager {
 .views-widget-field_book_author_value div{ margin:0;}
 
 .views-widget-filter-title .form-control.form-text, 
-.views-widget-filter-field_book_author_value .form-control.form-text{ max-width:18rem;}
+.views-widget-filter-field_book_author_value .form-control.form-text{ max-width:16rem;}
 
 
 
