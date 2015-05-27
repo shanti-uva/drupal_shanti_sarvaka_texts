@@ -184,7 +184,9 @@ ul.pager {
 /* Exposed Widgets */
 
 .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0.3rem; margin-bottom:0;}
-views-exposed-widget views-widget-filter-field_book_author_value{ padding: .5em 0 0 0;}
+.views-exposed-widget views-widget-filter-field_book_author_value{ padding: .5em 0 0 0;}
+
+.form-type-textfield.form-item-title{ margin-right:0.7rem;}
 
 .views-exposed-widget label,
 .views-exposed-widget div{
