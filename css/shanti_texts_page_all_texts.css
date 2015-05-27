@@ -56,7 +56,7 @@
 #view-all-texts-switcher li { 
   display: inline; 
   list-style: none;
-  font-size: 18px;
+  font-size: 1.12em;
   padding: .25em .5em .1em;
   margin: 0 3px;
   border-radius: 3px;
@@ -174,7 +174,7 @@ ul.pager {
 
 /* Pagerer */
 
-.pagerer{ margin-top:1rem;}
+.pagerer{ margin-top:1.2rem;}
 
 .pagerer-pager input {
   height: 2em;
@@ -191,7 +191,7 @@ ul.pager {
 .views-exposed-widget label,
 .views-exposed-widget div{
   float:left;
-  margin:  0 0 0 .5rem;
+  margin: 0;
   vertical-align: middle;
 }
 
