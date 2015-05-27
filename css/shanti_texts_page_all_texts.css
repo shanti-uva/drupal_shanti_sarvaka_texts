@@ -183,7 +183,7 @@ ul.pager {
 
 /* Exposed Widgets */
 
-view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0.5rem; margin-bottom:0;}
+.view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0.3rem; margin-bottom:0; padding: 0.5em 0 0 0;}
 
 .views-exposed-widget label,
 .views-exposed-widget div{
