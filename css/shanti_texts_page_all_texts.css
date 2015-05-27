@@ -174,12 +174,14 @@ ul.pager {
 
 /* Pagerer */
 
-.pagerer{ margin-top:1.2rem;}
-
-.pagerer-pager input {
+.view-all-texts .pagerer{ margin-top:1.2rem;}
+.view-all-texts .pagerer .ajax-progress{ display:none;}
+.view-all-texts .pagerer-pager input {
   height: 2em;
   width: 2em!important;
+  font-size:1em;
 }
+
 
 /* Exposed Widgets */
 
@@ -237,12 +239,11 @@ ul.pager {
   padding-left:10px;
   margin: 0 0 10px;
 }
-.view-all-texts-thin-list .views-row.views-row-odd{ margin-right:0.5rem;}
+.view-all-texts-thin-list .views-row.views-row-odd{ margin-right:1rem;}
 .view-all-texts-thin-list .views-field-title h3 {            
   font-size: 1.38em; /* 18px; */
-  margin-right: 10px;
-  margin-bottom: 5px;
-  margin-top: 10px;
+  margin:1rem 0 0;
+  width:100%;
   float:left;
   white-space:nowrap;
   overflow:hidden;
