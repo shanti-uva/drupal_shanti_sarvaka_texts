@@ -2,6 +2,18 @@
 
 define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts'));
 
+function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
+	if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-all-texts-page-3'
+		&& $form_state['view']->name == 'all_texts') {
+		$form['title'] += array(
+			'#attributes' => array('class' => array('placeholder')),
+		);
+		$form['field_book_author_value'] += array(
+			'#attributes' => array('class' => array('placeholder')),
+		);
+	}
+}
+
 function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
 
   if (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
@@ -69,7 +81,8 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
     // Attach the new element to the array
     $vars['attachment_before'] = drupal_render($control_box);
     $vars['attachment_after']  = $pager;
-        
+
   }
+  
 
 }
