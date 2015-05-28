@@ -6,10 +6,26 @@ function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
 	if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-all-texts-page-3'
 		&& $form_state['view']->name == 'all_texts') {
 		$form['title'] += array(
-			'#attributes' => array('class' => array('placeholder')),
+			'#attributes' => array(
+				//'class' 			=> array('form-control','form-text'), 
+				'placeholder' => 'Search by Title',
+				//'type' 				=> 'text',
+				//'id' 					=> 'edit-title',
+				//'name' 				=> 'title',
+				//'value' 			=> '',
+				//'maxlength' 	=> '128',
+			),
 		);
 		$form['field_book_author_value'] += array(
-			'#attributes' => array('class' => array('placeholder')),
+			'#attributes' => array(
+				//'class' 			=> array('form-control','form-text'), 
+				'placeholder' => 'Search by Author',
+				//'type' 				=> 'text',
+				//'id' 					=> 'edit-title-wtf',
+				//'name' 				=> 'title-wtf',
+				//'value' 			=> '',
+				//'maxlength' 	=> '128',			
+			),
 		);
 	}
 }
