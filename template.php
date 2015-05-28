@@ -3,28 +3,15 @@
 define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts'));
 
 function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
-	if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-all-texts-page-3'
-		&& $form_state['view']->name == 'all_texts') {
+	if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-all-texts-panel-pane-1') {
 		$form['title'] += array(
 			'#attributes' => array(
-				//'class' 			=> array('form-control','form-text'), 
 				'placeholder' => 'Search by Title',
-				//'type' 				=> 'text',
-				//'id' 					=> 'edit-title',
-				//'name' 				=> 'title',
-				//'value' 			=> '',
-				//'maxlength' 	=> '128',
 			),
 		);
 		$form['field_book_author_value'] += array(
 			'#attributes' => array(
-				//'class' 			=> array('form-control','form-text'), 
 				'placeholder' => 'Search by Author',
-				//'type' 				=> 'text',
-				//'id' 					=> 'edit-title-wtf',
-				//'name' 				=> 'title-wtf',
-				//'value' 			=> '',
-				//'maxlength' 	=> '128',			
 			),
 		);
 	}
@@ -32,7 +19,8 @@ function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
 
 function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
 
-  if (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
+	// Note this will fail, since I am testing a new version (see elseif below ...)
+  if (isset($vars['view']->name) && $vars['view']->name == 'all_texts_FOO') {
   
     // Grab the pieces you want and then remove them from the array    
     $header   = $vars['header'];    $vars['header']   = '';
@@ -100,5 +88,49 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
 
   }
   
+  // This is now the main thing ...
+  elseif (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
+  
+    // Grab the pieces you want and then remove them from the array    
+    $header   = $vars['header'];    $vars['header']   = '';
+    $filters  = $vars['exposed'];   $vars['exposed']  = '';
+    $pager    = $vars['pager'];     $vars['pager']    = '';
+    
+    $control_box = array(
+      '#type' => 'container',
+      '#attributes' => array('class' => array('view-all-texts-control-box')),
+      'control_box_row' => array(
+        '#type' => 'container',
+        '#attributes' => array('class' => array('view-all-texts-control-box-row row')),
+        'header' => array(
+          '#markup' => $header,
+          '#prefix'  => "<div class='view-all-texts-control-box-cell-header view-all-texts-control-box-cell col-lg-4 col-md-4 col-sm-6'>",
+          '#suffix' => "</div>",        
+        ),
+        'filters' => array(
+          '#markup' => $filters,
+          '#prefix'  => "<div class='view-all-texts-control-box-cell-filters view-all-texts-control-box-cell col-lg-4 col-md-4 col-sm-6'>",
+          '#suffix' => "</div>",        
+        ),
+        'pager' => array(
+          '#markup' => $pager,
+          '#prefix' => "<div class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell col-lg-4 col-md-4'>",
+          '#suffix' => "</div>",
+        ),
+      ),
+    );
+    
+    $control_box['#attached']['js'] = array();
+
+    $control_box['#attached']['css'] = array(
+      SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts_page_all_texts.css'    
+    );
+
+    // Attach the new element to the array
+    $vars['attachment_before'] = drupal_render($control_box);
+    $vars['attachment_after']  = $pager;
+  
+  }
+
 
 }

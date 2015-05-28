@@ -116,7 +116,6 @@ $carousel = array(
 		</div>
 	</div>
 </div>
-
 <div>
-	<?php print views_embed_view('all_texts','page_3'); ?>
+	<?php print views_embed_view('all_texts_simple_','page_3'); ?>
 </div>
