@@ -3,7 +3,10 @@
 define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts'));
 
 function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
-	if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-all-texts-panel-pane-1') {
+	//$my_form_id = 'views-exposed-form-all-texts-page-3';
+	$my_form_id = 'views-exposed-form-all-texts-panel-pane-1';
+	//$my_form_id = 'views-exposed-form-all-texts-default';
+	if ($form_id == 'views_exposed_form' && $form['#id'] == $my_form_id) {
 		$form['title'] += array(
 			'#attributes' => array(
 				'placeholder' => 'Search by Title',
@@ -19,8 +22,8 @@ function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
 
 function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
 
-	// Note this will fail, since I am testing a new version (see elseif below ...)
-  if (isset($vars['view']->name) && $vars['view']->name == 'all_texts_FOO') {
+	/*
+  if (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
   
     // Grab the pieces you want and then remove them from the array    
     $header   = $vars['header'];    $vars['header']   = '';
@@ -87,9 +90,9 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
     $vars['attachment_after']  = $pager;
 
   }
-  
-  // This is now the main thing ...
-  elseif (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
+  */
+
+  if (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
   
     // Grab the pieces you want and then remove them from the array    
     $header   = $vars['header'];    $vars['header']   = '';
