@@ -7,16 +7,16 @@
 }
 
 .views-row {
-  float:left;
-  width: 100%;
-  background:white;
-  margin-bottom: 20px;
-  padding-right: 20px;
+	float:left;
+	width: 48%;
+	height:110px;
+	margin-right:1rem;
+	background:white;
+	margin-bottom: 1rem;
+	padding: 1rem;
 }
-
-.views-field-title h3 i {
-  margin-right: 10px;
-}
+.views-field-title h3{ }
+.views-field-title h3 i { }
 
 .views-field-field-general-featured-image img {
   float:left;
@@ -186,7 +186,7 @@ ul.pager {
   vertical-align: middle;
 }
 
-/* FAT LIST */
+/* FAT LIST 
 
 .view-all-texts-fat-list .views-row {  
   float: left;
@@ -217,7 +217,9 @@ ul.pager {
   overflow: scroll;
 }
 
-/* THIN LIST */
+*/
+
+/* THIN LIST 
 
 .view-all-texts-thin-list .views-row {            
   float: left;
@@ -230,7 +232,7 @@ ul.pager {
 }
 .view-all-texts-thin-list .views-row.views-row-odd{ margin-right:1rem;}
 .view-all-texts-thin-list .views-field-title h3 {            
-  font-size: 1.38em; /* 18px; */
+  font-size: 1.38em;
   margin:1rem 0 0;
   width:100%;
   float:left;
@@ -266,8 +268,10 @@ ul.pager {
   overflow: scroll;
   display:none;
 }
+*/
 
-/* GRID */
+
+/* GRID
 
 .view-all-texts-grid .views-row {            
   width: 48%;
@@ -277,7 +281,7 @@ ul.pager {
   margin: 10px;
 }
 .view-all-texts-grid .views-field-title h3 {            
-  font-size: 1.63em; /* 20px; */
+  font-size: 1.63em;
   margin-bottom: 5px;
   margin-top: 10px;
 }
@@ -297,10 +301,70 @@ ul.pager {
   font-size: 12px;
 }
 
-/* Added to fix problem of blanks caused by changes in shanti-main.css */
+/* Added to fix problem of blanks caused by changes in shanti-main.css 
 .view-all-texts  .views-field.views-field-title {
   width:100%;
 }
+*/
+
+
+
+
+
+
+.views-row {            
+  float: left;
+  width: 48%;
+  height: 90px;
+  background: white;
+  padding-right: 20px;
+  padding-left:10px;
+  margin: 0 0 10px;
+}
+.views-row.views-row-odd{ margin-right:1rem;}
+.views-field-title h3 {            
+  font-size: 1.38em; /* 18px; */
+  margin:1rem 0 0;
+  width:100%;
+  float:left;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+}
+.views-field-field-general-featured-image img {            
+  display:none;
+}
+.views-field-field-dc-creator-author-1,
+.views-field-field-book-author{            
+  font-size: 1em;
+  margin-left:3.5rem;
+  font-style: italic;
+  color: gray;     
+  float:left;
+  margin-top:0.3rem;
+  display:block;
+	width:100%;
+}
+.views-field-field-dc-date-original-year,
+.views-field-field-dc-date-publication-year{            
+  float:left;
+  margin-top:0.3rem;
+  margin-left:3.5rem;
+  display:block;
+	width:100%;
+	color:grey;
+}
+.views-field-field-dc-description {            
+  font-size: 12px;
+  overflow: scroll;
+  display:none;
+}
+
+
+
+
+
+
 
 /* hide filter input labels */
 .views-widget-filter-title label, 
