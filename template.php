@@ -91,6 +91,7 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
   }
   */
   
+  /*
   if (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
   
     // Grab the pieces you want and then remove them from the array    
@@ -131,8 +132,9 @@ function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
     // Attach the new element to the array
     $vars['attachment_before'] = drupal_render($control_box);
     $vars['attachment_after']  = $pager;
-  
+  	
   }
+  */
 
 
 }
