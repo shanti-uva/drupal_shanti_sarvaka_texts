@@ -4,9 +4,9 @@ define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts
 
 function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
 	// Note that $form_id != $form['#id']
-	kpr($form);
-	$my_form_ids = array('views-exposed-form-all-texts-panel-pane-1','views-exposed-form-all-texts-page-1');
-	if ($form_id == 'views_exposed_form' && in_array($form['#id'], $my_form_ids)) {
+	#$my_form_ids = array('views-exposed-form-all-texts-panel-pane-1','views-exposed-form-all-texts-page-1','views-exposed-form-all-texts-page-3');
+	#if ($form_id == 'views_exposed_form' && in_array($form['#id'], $my_form_ids)) {
+	if ($form_id == 'views_exposed_form' && preg_match('/^views-exposed-form-all-texts/', $form['#id'])) {
 		$form['title'] += array(
 			'#attributes' => array(
 				'placeholder' => 'Search by Title',
