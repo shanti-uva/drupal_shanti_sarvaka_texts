@@ -50,17 +50,14 @@
 
 
 .view-all-texts-control-box-cell-header {
-	margin:0 auto;
-	padding-top:1rem;
+	margin:1rem 0 0 auto;
 }
 
 .view-all-texts-control-box-cell-filters  {
-
 	margin:0 auto;
 }
 
 .view-all-texts-control-box-cell-switch  {
-
 	margin:0 auto;
 	padding-top:1em;
 	display:none;
@@ -81,12 +78,10 @@
 @media (min-width: 768px) {
 	
 	.view-all-texts-control-box-cell-header {
-		margin: 0;
 		width: 100%;
 	}
 
 	.view-all-texts-control-box-cell-filters  {
-		margin: 0;
 		padding: 0;
 		width: 100%;
 	}
@@ -111,10 +106,6 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
-  .view-all-texts-control-box-cell-filters  {
-		margin-top:2rem;
-	}
   
   .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0;}
   
