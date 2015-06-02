@@ -1,41 +1,5 @@
 /* shanti_texts_page_all_texts */
 
-.view-content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%; 
-}
-
-.views-row {
-	float:left;
-	width: 100%;
-	height:110px;
-	margin-right:1rem;
-	background:white;
-	margin-bottom: 1rem;
-	padding: 1rem;
-}
-.views-field-title h3{ }
-.views-field-title h3 i { }
-
-.views-field-field-general-featured-image img {
-  float:left;
-  margin-right: 25px;
-}
-
-.book-view-card-title {}
-
-.views-field-field-dc-creator-author-1,
-.views-field-field-book-author
-{
-  font-size: 16px;
-  font-style: italic;
-  color: gray;
-}
-
-.views-field-field-dc-description {
-  font-size: 14px;
-}
 
 
 /* VIEWS FILTER BAR */
@@ -186,139 +150,24 @@ ul.pager {
   vertical-align: middle;
 }
 
-/* FAT LIST 
-
-.view-all-texts-fat-list .views-row {  
-  float: left;
-  width: 100%;
-  background: white;
-  margin: 0 0 20px;
-}
-.view-all-texts-fat-list .views-field-title h3 {            
-  font-size: 1.63em;
-  margin-right: 10px;
-  margin-bottom: 5px;
-  margin-top: 20px;
-}
-.view-all-texts-fat-list .views-field-field-general-featured-image img {            
-  float: left;
-  margin-right: 20px;
-  height: 110px;
-  width: 110px;
-}
-.view-all-texts-fat-list .views-field-field-dc-creator-author-1,
-.view-all-texts-fat-list .views-field-field-book-author{            
-  font-size: 16px;
-  font-style: italic;
-  color: gray;        
-}
-.view-all-texts-fat-list .views-field-field-dc-description {            
-  font-size: 14px;
-  overflow: scroll;
-}
-
-*/
-
-/* THIN LIST 
-
-.view-all-texts-thin-list .views-row {            
-  float: left;
-  width: 48%;
-  height: 90px;
-  background: white;
-  padding-right: 20px;
-  padding-left:10px;
-  margin: 0 0 10px;
-}
-.view-all-texts-thin-list .views-row.views-row-odd{ margin-right:1rem;}
-.view-all-texts-thin-list .views-field-title h3 {            
-  font-size: 1.38em;
-  margin:1rem 0 0;
-  width:100%;
-  float:left;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow: ellipsis;
-}
-.view-all-texts-thin-list .views-field-field-general-featured-image img {            
-  display:none;
-}
-.view-all-texts-thin-list .views-field-field-dc-creator-author-1,
-.view-all-texts-thin-list .views-field-field-book-author{            
-  font-size: 1em;
-  margin-left:3.5rem;
-  font-style: italic;
-  color: gray;     
-  float:left;
-  margin-top:0.3rem;
-  display:block;
-	width:100%;
-}
-.view-all-texts-thin-list .views-field-field-dc-date-original-year,
-.view-all-texts-thin-list .views-field-field-dc-date-publication-year{            
-  float:left;
-  margin-top:0.3rem;
-  margin-left:3.5rem;
-  display:block;
-	width:100%;
-	color:grey;
-}
-.view-all-texts-thin-list .views-field-field-dc-description {            
-  font-size: 12px;
-  overflow: scroll;
-  display:none;
-}
-*/
-
-
-/* GRID
-
-.view-all-texts-grid .views-row {            
-  width: 48%;
-  height: 110px;
-  float: left;
-  overflow: hidden;
-  margin: 10px;
-}
-.view-all-texts-grid .views-field-title h3 {            
-  font-size: 1.63em;
-  margin-bottom: 5px;
-  margin-top: 10px;
-}
-.view-all-texts-grid .views-field-field-general-featured-image img {             
-  height: 110px;    
-  width: 110px;
-  margin-right: 10px;
-}
-.view-all-texts-grid .views-field-field-dc-creator-author-1,
-.view-all-texts-grid .views-field-field-book-author
-{            
-  font-size: 16px;
-  font-style: italic;
-  color: gray;        
-}
-.view-all-texts-grid .views-field-field-dc-description {            
-  font-size: 12px;
-}
-
-/* Added to fix problem of blanks caused by changes in shanti-main.css 
-.view-all-texts  .views-field.views-field-title {
-  width:100%;
-}
-*/
 
 
 
 
 
 
+.view-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; 
+}
 .views-row {            
   float: left;
   width: 100%;
   height: 90px;
   background: white;
+  padding: 1rem;
   padding-right: 0;
-  padding-left:10px;
   margin: 0px 1rem 1rem;
   border-top:4px solid #a066c0;
 }
@@ -335,6 +184,8 @@ ul.pager {
   overflow:hidden;
   text-overflow: ellipsis;
 }
+.views-field-title h3 .icon.shanticon-texts { color:#a066c0;margin-right:1rem;font-size:2.5rem;}
+
 .views-field-field-general-featured-image img {            
   display:none;
 }
