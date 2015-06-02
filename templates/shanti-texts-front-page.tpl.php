@@ -53,8 +53,8 @@ while ($r = $rs->fetchObject()) {
 								</h3>
 							</div>
 							<div class="byline">
+								<?php echo $item['pub_date'] . " "; ?>
 								<?php echo $item['authors'] . " "; ?> 
-								<?php echo $item['pub_date'] . " "; ?> 
 								<?php if (preg_match("/^....$/", $item['orig_date'])) { echo '('.$item['orig_date'].')'; }?>								
 							</div>
 							<div class="carousel-description">
