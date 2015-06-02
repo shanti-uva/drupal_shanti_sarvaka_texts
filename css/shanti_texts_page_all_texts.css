@@ -391,9 +391,19 @@ ul.pager {
 @media screen and (min-width: 768px) {
 
 	.views-row {            
-	  float: left;
 	  width: 48%;
 	}
 
 }
 
+@media screen and (min-width: 993px) {
+	 .views-row {            
+	  width: 33%;
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	 .views-row {            
+	  width: 24%;
+	}
+}
