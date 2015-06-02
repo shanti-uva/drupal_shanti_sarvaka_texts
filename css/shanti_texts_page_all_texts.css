@@ -8,7 +8,7 @@
 
 .views-row {
 	float:left;
-	width: 48%;
+	width: 100%;
 	height:110px;
 	margin-right:1rem;
 	background:white;
@@ -388,7 +388,12 @@ ul.pager {
 
 
 
+@media screen and (min-width: 768px) {
 
+	.views-row {            
+	  float: left;
+	  width: 48%;
+	}
 
-
+}
 
