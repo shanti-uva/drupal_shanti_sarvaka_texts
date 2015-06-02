@@ -167,7 +167,7 @@ ul.pager {
   height: 90px;
   background: white;
   padding: 0 1rem 1rem;
-  margin: 0 1rem 1rem;
+  margin: 0 0.5rem 1rem;
   border-top:4px solid #a066c0;
 }
 /* homepage exception */
@@ -245,10 +245,10 @@ ul.pager {
 @media screen and (min-width: 768px) {
 
 	.views-row {            
-	  width: 48.5%;
+	  width: 48%;
 	}
 	.front .views-row {
-	  width: 48.5%;
+	  width: 48%;
 	}
 
 }
