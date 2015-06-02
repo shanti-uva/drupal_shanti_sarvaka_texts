@@ -77,7 +77,7 @@
 /* (tablets, 768px and up) */
 @media (min-width: 768px) {
 	
-	.view-all-texts .pagerer{ margin-top:0;}
+	.view-all-texts .pagerer{ margin-top:0; float:right;}
 
 	
 	.view-all-texts-control-box-cell-header {
@@ -113,9 +113,6 @@
   .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0;}
   
   .view-all-texts-control-box-cell-filters{ margin-top:0.5rem;}
-  
-  .view-all-texts .pagerer,
-  .view-all-texts-control-box-cell-pager.view-all-texts-control-box-cell{ float:right;}
 
 }
 
