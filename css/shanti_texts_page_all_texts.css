@@ -319,9 +319,10 @@ ul.pager {
   background: white;
   padding-right: 0;
   padding-left:10px;
-  margin: 0 0 10px;
+  margin: 0px 1rem 1rem;
+  border-top:4px solid #a066c0;
 }
-.views-row{ margin-right:1rem;}
+/* homepage exception */
 .front .views-row {
 	width: 100% !important;
 }
