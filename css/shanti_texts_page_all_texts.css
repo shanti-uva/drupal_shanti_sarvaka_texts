@@ -192,7 +192,9 @@ ul.pager {
   overflow:hidden;
   text-overflow: ellipsis;
 }
-.views-field-title h3 .icon.shanticon-texts { color:#a066c0;margin-right:0.5rem;font-size:2.5rem;position:relative;top:0.4rem;}
+
+/* icon font on h3 header */
+.views-field-title h3 .icon.shanticon-texts { color:#a066c0;margin-right:0.8rem;font-size:2.5rem;position:relative;top:0.4rem;}
 
 .views-field-field-general-featured-image img {            
   display:none;
@@ -200,7 +202,7 @@ ul.pager {
 .views-field-field-dc-creator-author-1,
 .views-field-field-book-author{            
   font-size: 1em;
-  margin-left:3.4rem;
+  margin-left:3.7rem;
   margin-top:0;
   font-style: italic;
   color: rgb(113, 113, 113);     
@@ -210,12 +212,11 @@ ul.pager {
 }
 .views-field-field-dc-date-original-year,
 .views-field-field-dc-date-publication-year{            
-  float:right;
+  float:left;
   display:block;
 	width:100%;
 	color: rgb(113, 113, 113);
-	margin:0.2rem 0 0;
-	margin-right:10%;
+	margin:1.2rem 0 0 -0.1rem;
 }
 .views-field-field-dc-description {            
   font-size: 12px;
