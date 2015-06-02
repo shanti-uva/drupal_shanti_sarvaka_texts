@@ -51,7 +51,7 @@
 
 .view-all-texts-control-box-cell-header {
 	margin:0 auto;
-	padding-top:0;
+	padding-top:1rem;
 }
 
 .view-all-texts-control-box-cell-filters  {
@@ -83,7 +83,6 @@
 	.view-all-texts-control-box-cell-header {
 		margin: 0;
 		width: 100%;
-  	padding-top:1.5rem;
 	}
 
 	.view-all-texts-control-box-cell-filters  {
