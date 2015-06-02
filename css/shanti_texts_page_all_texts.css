@@ -185,6 +185,7 @@ ul.pager {
   white-space:nowrap;
   overflow:hidden;
   text-overflow: ellipsis;
+  color: inherit;
 }
 
 /* icon font on h3 header */
