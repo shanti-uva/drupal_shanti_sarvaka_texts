@@ -14,29 +14,6 @@
 
 /* .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#764B8D; } */
 
-/* mark removed this for testing - on may 22nd
-.ss-full-tabs.nav-tabs>li.active,
-.ss-full-tabs.nav-tabs>li.active:hover{ background:#764B8D; }
-*/
-
-/* Not sure why I have to force this - let me try it without and see what happens - on may 22nd
-.nav-justified>li.active a:visited,
-.nav-justified>li.active a {
-	color:white!important;
-}
-*/
-
-
-
-
-/*
-.nav-justified > li.active a,
-.nav-justified > li.active a:hover,
-.nav-justified > li.active a:focus
-{ 
-  background:#764B8D;
-}
-*/
 
 /*
 .view-mega-search h3 {
@@ -103,8 +80,6 @@ input.form-autocomplete {}
 
 
 /* BEGIN carousel WIDTH - box-model layout theme properties */
-.carousel-inner{ height: 230px; overflow: hidden;}
-
 .carouseldiv + div{ margin:0 auto; max-width:1050px;} /* layout content below carousel */
 
 /* carousel content centering layout box-model */
