@@ -322,6 +322,9 @@ ul.pager {
   margin: 0 0 10px;
 }
 .views-row{ margin-right:1rem;}
+.front .views-row {
+	width: 100% !important;
+}
 .views-field-title h3 {            
   font-size: 1.38em; /* 18px; */
   margin:1rem 0 0;
@@ -392,6 +395,9 @@ ul.pager {
 
 	.views-row {            
 	  width: 47%;
+	}
+	.front .views-row {
+	  width: 47% !important;
 	}
 
 }
