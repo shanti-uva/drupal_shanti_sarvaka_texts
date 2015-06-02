@@ -172,7 +172,7 @@ ul.pager {
   width: 100%;
   height: 80px;
   background: white;
-  padding: 0 1rem 1rem;
+  padding: 0 1rem 1.2rem;
   margin: 0 1.5rem 1rem 0;
   border-top:4px solid #a066c0;
 }
@@ -192,7 +192,7 @@ ul.pager {
 }
 
 /* icon font on h3 header */
-.views-field-title h3 .icon.shanticon-texts { color:#a066c0;margin-right:0.8rem;font-size:2.5rem;position:relative;top:0.4rem;}
+.views-field-title h3 .icon.shanticon-texts { color:#a066c0;margin-right:1rem;font-size:2.5rem;position:relative;top:0.4rem;}
 
 .views-field-field-general-featured-image img {            
   display:none;
@@ -200,7 +200,7 @@ ul.pager {
 .views-field-field-dc-creator-author-1,
 .views-field-field-book-author{            
   font-size: 1em;
-  margin-left:3.7rem;
+  margin-left:4rem;
   margin-top:0;
   font-style: italic;
   color: rgb(113, 113, 113);     
