@@ -13,9 +13,9 @@ while ($r = $rs->fetchObject()) {
 	$items[] = array(
 		'node_url'	=> url("node/".$r->nid),
 		'title' 		=> $this_node->title,
-		'authors' 	=> implode(',', $authors),
 		'orig_date' => preg_replace("/^\s*(....)-.+/","$1", $this_node->field_dc_date_orginial_year[$lang][0]['value']),
 		'pub_date' 	=> preg_replace("/^\s*(....)-.+/","$1", $this_node->field_dc_date_publication_year[$lang][0]['value']),
+		'authors' 	=> implode(',', $authors),
 		'desc' 			=> $this_node->field_dc_description[$lang][0]['value'],
 		'img_url' 	=> file_create_url($this_node->field_general_featured_image[$lang][0]['uri']),
 	);
@@ -53,9 +53,9 @@ while ($r = $rs->fetchObject()) {
 								</h3>
 							</div>
 							<div class="byline">
-								<?php echo $item['pub_date'] . " "; ?>
-								<?php echo $item['authors'] . " "; ?> 
-								<?php if (preg_match("/^....$/", $item['orig_date'])) { echo '('.$item['orig_date'].')'; }?>								
+								<?php echo $item['pub_date'] . " "; ?> 
+								<?php if (preg_match("/^....$/", $item['orig_date'])) { echo '('.$item['orig_date'].')'; }?>
+								<?php echo $item['authors'] . " "; ?> 																
 							</div>
 							<div class="carousel-description">
 								<div class="field field-name-body field-type-text-with-summary field-label-hidden">
