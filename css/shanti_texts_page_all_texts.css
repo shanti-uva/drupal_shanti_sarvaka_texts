@@ -50,9 +50,8 @@
 
 
 .view-all-texts-control-box-cell-header {
-
 	margin:0 auto;
-	padding-top:1rem;
+	padding-top:0;
 }
 
 .view-all-texts-control-box-cell-filters  {
@@ -81,7 +80,6 @@
 	
 	.view-all-texts-control-box-cell-header {
 		margin: 0;
-		padding: 2em 0 0;
 		width: 100%;
 	}
 
@@ -118,6 +116,10 @@
   .view-all-texts-control-box-cell-filters  {
 		margin-top:2rem;
 	}
+	
+	.view-all-texts-control-box-cell-header {
+  	padding-top:1.5rem;
+  }
 
 }
 
