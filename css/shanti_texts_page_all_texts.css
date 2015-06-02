@@ -183,7 +183,7 @@ ul.pager {
   overflow:hidden;
   text-overflow: ellipsis;
 }
-.views-field-title h3 .icon.shanticon-texts { color:#a066c0;margin-right:0.2rem;font-size:2.5rem;position:relative;top:0.3rem;}
+.views-field-title h3 .icon.shanticon-texts { color:#a066c0;margin-right:0.5rem;font-size:2.5rem;position:relative;top:0.3rem;}
 
 .views-field-field-general-featured-image img {            
   display:none;
@@ -193,7 +193,7 @@ ul.pager {
   font-size: 1em;
   margin-left:3rem;
   font-style: italic;
-  color: gray;     
+  color: rgb(113, 113, 113);     
   float:left;
   margin-top:0.3rem;
   display:block;
@@ -202,11 +202,10 @@ ul.pager {
 .views-field-field-dc-date-original-year,
 .views-field-field-dc-date-publication-year{            
   float:left;
-  margin-top:0.3rem;
-  margin-left:3rem;
+  margin:0.2rem 0 0 3.5rem;
   display:block;
 	width:100%;
-	color:grey;
+	color: rgb(113, 113, 113);
 }
 .views-field-field-dc-description {            
   font-size: 12px;
@@ -232,7 +231,7 @@ ul.pager {
 .views-widget-field_book_author_value div{ margin:0;}
 
 .views-widget-filter-title .form-control.form-text, 
-.views-widget-filter-field_book_author_value .form-control.form-text{ max-width:15rem;}
+.views-widget-filter-field_book_author_value .form-control.form-text{ max-width:14rem;}
 
 .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0.3rem; margin-bottom:0;}
 .views-exposed-widget.views-widget-filter-title,
