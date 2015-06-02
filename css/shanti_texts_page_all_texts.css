@@ -146,7 +146,7 @@ ul.pager {
 .view-all-texts .pagerer .ajax-progress{ display:none;}
 .view-all-texts .pagerer-pager input {
   height: 2em;
-  width: 2em!important;
+  width: 2em !important;
   font-size:1em;
 }
 
@@ -200,7 +200,7 @@ ul.pager {
 .views-field-field-dc-creator-author-1,
 .views-field-field-book-author{            
   font-size: 1em;
-  margin-left:3rem;
+  margin-left:3.4rem;
   margin-top:0;
   font-style: italic;
   color: rgb(113, 113, 113);     
