@@ -172,7 +172,7 @@ ul.pager {
 }
 /* homepage exception */
 .front .views-row {
-	width: 100% !important;
+	width: 100%;
 }
 .views-field-title h3 {            
   font-size: 1.38em; /* 18px; */
