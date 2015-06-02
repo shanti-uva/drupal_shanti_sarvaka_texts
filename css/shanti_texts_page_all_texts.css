@@ -382,7 +382,7 @@ ul.pager {
 .views-widget-field_book_author_value div{ margin:0;}
 
 .views-widget-filter-title .form-control.form-text, 
-.views-widget-filter-field_book_author_value .form-control.form-text{ /* max-width:15rem; */}
+.views-widget-filter-field_book_author_value .form-control.form-text{ max-width:15rem;}
 
 .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0.3rem; margin-bottom:0;}
 .views-exposed-widget.views-widget-filter-title,
