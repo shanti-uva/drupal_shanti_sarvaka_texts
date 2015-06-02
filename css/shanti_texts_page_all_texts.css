@@ -214,11 +214,12 @@ ul.pager {
 }
 .views-field-field-dc-date-original-year,
 .views-field-field-dc-date-publication-year{            
-  float:left;
-  margin:0.2rem 0 0 3.5rem;
+  float:right;
   display:block;
 	width:100%;
 	color: rgb(113, 113, 113);
+	margin:0.2rem 0 0;
+	margin-right:10%;
 }
 .views-field-field-dc-description {            
   font-size: 12px;
