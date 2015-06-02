@@ -114,7 +114,8 @@
   
   .view-all-texts-control-box-cell-filters{ margin-top:0.5rem;}
   
-  .view-all-texts .pagerer{ float:right;}
+  .view-all-texts .pagerer,
+  .view-all-texts-control-box-cell-pager.view-all-texts-control-box-cell{ float:right;}
 
 }
 
