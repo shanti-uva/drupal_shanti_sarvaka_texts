@@ -146,6 +146,13 @@ ul.pager{ width: 100%;}
 /** breakpoints **/
 /*----------------*/
 
+@media (max-width: 600px) {
+	
+	.view-all-texts-control-box-cell-filters.col-xs-5,
+	.view-all-texts-control-box-cell-header.col-xs-4{ width:100% !important;}
+}	
+
+
 /* (tablets, 768px and up) */
 @media (min-width: 768px) {
 	
@@ -159,7 +166,7 @@ ul.pager{ width: 100%;}
 	.front .views-row{ width: 48% !important;}	
 	.front .views-field-title h3{ font-size:1.12em;}
 	
-	.view-all-texts-control-box-cell-filters.col-xs-12.col-sm-4{ width:38%;}
+	.view-all-texts-control-box-cell-filters.col-xs-5.col-md-4{ width:38% !important;}
 }
 
 /* Medium devices (desktops, 992px and up) */
