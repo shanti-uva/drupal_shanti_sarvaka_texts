@@ -132,7 +132,7 @@ input.form-autocomplete {}
 .view-all-texts-control-box-cell-filters{ margin:0 auto;}
 
 .view-all-texts table.pagerer{ position:relative; top:0; float:left; margin: 0 0 0 1rem;padding:0;}
-.view-all-texts-control-box-cell-pager{ margin:0 auto;}
+.view-all-texts-control-box-cell-pager{ margin:0 auto;width:100%;max-width:100%;}
 
 
 .views-widget-filter-title input{ height: 24px;}
@@ -142,7 +142,7 @@ input.form-autocomplete {}
 
 /* Pagerer */
 
-ul.pager{ width: 100%;}
+ul.pager{ width: auto;}
 .view-all-texts .pagerer .ajax-progress{ display:none;}
 .view-all-texts .pagerer-pager input{ height: 2em;width: 2em !important;font-size:1em;}
 
