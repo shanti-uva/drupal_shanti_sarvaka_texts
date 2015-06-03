@@ -134,13 +134,13 @@ ul.pager{ width: 100%;}
 .views-exposed-widget.views-widget-filter-title{ margin-top:0;}
 
 
-
+/* banner header anchor hover */
 .navbar-brand .shanticon-logo,
 .navbar-brand .site-slogan{ opacity:70;}
-.navbar-brand .shanticon-logo:hover,
-.navbar-brand .site-slogan:hover{ opacity:100}
-.navbar-brand .shanticon-logo:active,
-.navbar-brand .site-slogan:active{ opacity:70;}
+.navbar-brand:hover .shanticon-logo,
+.navbar-brand:hover .site-slogan{ opacity:100}
+.navbar-brand:active .shanticon-logo,
+.navbar-brand:active .site-slogan{ opacity:70;}
 
 /*----------------*/
 /** breakpoints **/
@@ -163,7 +163,7 @@ ul.pager{ width: 100%;}
 @media (min-width: 992px) {
 	
 	.views-row,
-	.view-all-texts-control-box-cell-pager.col-md-4{ width: 32%;}    
+	.view-all-texts-control-box-cell-pager.col-md-4{ width: 32% !important;}    
   .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0;}  
   .view-all-texts-control-box-cell-filters{ margin-top:0.5rem;}
 }
