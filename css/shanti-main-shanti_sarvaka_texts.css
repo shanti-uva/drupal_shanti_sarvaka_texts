@@ -253,8 +253,8 @@ ul.pager{ width: auto;}
 	.front .views-row{ width: 48% !important;}	
 	.front .views-field-title h3{ font-size:1.32em;}
 	
-	.view-all-texts-control-box-cell-header.col-xs-5{ width:28% !important;max-width:28% !important;}
-	.view-all-texts-control-box-cell-filters{ padding: 0; width:44%;max-width:44%;}
+	.view-all-texts-control-box-cell-header.col-xs-5{ width:28% !important;max-width:28% !important;padding-top:0.7rem;}
+	.view-all-texts-control-box-cell-filters{ padding: 0; width:42%;max-width:42%;}
 
 	.view-all-texts table.pagerer,
 	.view-all-texts-control-box-cell-pager.col-xs-5{ float:right;margin: 0;padding: 0; width:auto !important;}
