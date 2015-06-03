@@ -22,6 +22,10 @@
 .view-mega-search ul{ list-style-type: none;}
 */
 
+
+.shanti-text .content-section{ padding-top: 0;}
+
+
 .mega-search-title.depth-1 {
   margin-left:.5em;
   font-size:110%;
@@ -114,10 +118,6 @@ input.form-autocomplete {}
 /* -------------------------------------------*/
 /* begin migration from shanti-texts-page-all */
 
-
-.shanti-text .content-section{ padding-top: 0;}
-
-
 /* shanti_texts_page_all_texts */
 
 /* VIEWS FILTER BAR */
@@ -131,29 +131,19 @@ input.form-autocomplete {}
 .view-all-texts-control-box-cell-header{ margin:1rem 0 0 1.5rem;font-size:0.93em;}
 .view-all-texts-control-box-cell-filters{ margin:0 auto;}
 
-.view-all-texts table.pagerer{ position:relative; top:0; float:left; margin: 0 0 0 1rem;padding:0;}
-.view-all-texts-control-box-cell-pager{ margin:0 auto; width:auto; float:left;}
-
-
-.views-widget-filter-title input{ height: 24px;}
-
-
-
+.view-all-texts table.pagerer{ margin: 0 0 0 1.5rem;}
+.view-all-texts-control-box-cell-pager{ padding:0; margin:0 auto; width:auto; position:relative; top:0; float:left;}
 
 /* Pagerer */
-
-ul.pager{ width: auto;}
 .view-all-texts .pagerer .ajax-progress{ display:none;}
 .view-all-texts .pagerer-pager input{ height: 2em;width: 2em !important;font-size:1em;}
 
 
 /* Exposed Widgets */
-
 .views-exposed-widget label,
 .views-exposed-widget div{ float:left;margin: 0;vertical-align: middle;}
 
 .view-content{ margin-left: auto;margin-right: auto;width: 100%;}
-
 .views-row {            
   float: left;
   width: 100% !important;
@@ -163,8 +153,9 @@ ul.pager{ width: auto;}
   margin: 0 1.5rem 1rem 0;
   border-top:4px solid #a066c0;
 }
-/* homepage exception */
-.front .views-row{ width: 100%;}
+
+.front .views-row{ width: 100%;} /* homepage exception, leverage front body tag class */
+
 .views-field-title h3{            
   font-size: 1.38em; /* 18px; */
   margin:0.5rem 0 0;
