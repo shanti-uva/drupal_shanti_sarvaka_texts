@@ -157,7 +157,7 @@ ul.pager{ width: auto;}
 .views-row {            
   float: left;
   width: 100% !important;
-  height: 75px;
+  height: 70px;
   background: white;
   padding: 0 1rem 1.2rem;
   margin: 0 1.5rem 1rem 0;
@@ -183,7 +183,7 @@ ul.pager{ width: auto;}
 .views-field-field-book-author{            
   font-size: 1em;
   margin-left:4rem;
-  margin-top:1rem;
+  margin-top:0.9rem;
   font-style: italic;
   color: #c0c0c0;     
   float:left; 
@@ -199,7 +199,7 @@ ul.pager{ width: auto;}
 	color: #888;
 	margin:0 0 0 -0.1rem;
 	position:relative;
-	top:-1.9rem;
+	top:-1.8rem;
 }
 .views-field-field-dc-description {            
   font-size: 12px;
