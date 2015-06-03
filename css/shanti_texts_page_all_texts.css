@@ -158,6 +158,8 @@ ul.pager{ width: 100%;}
 	.views-row{ width: 48% !important;margin: 0 0.5rem 1rem;}
 	.front .views-row{ width: 48% !important;}	
 	.front .views-field-title h3{ font-size:1.12em;}
+	
+	.view-all-texts-control-box-cell-filters.col-xs-12.col-sm-4{ width:38%;}
 }
 
 /* Medium devices (desktops, 992px and up) */
