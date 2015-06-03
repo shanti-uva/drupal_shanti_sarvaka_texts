@@ -62,7 +62,7 @@ ul.pager{ width: 100%;}
 
 .views-row {            
   float: left;
-  width: 100%;
+  width: 100% !important;
   height: 80px;
   background: white;
   padding: 0 1rem 1.2rem;
@@ -156,7 +156,7 @@ ul.pager{ width: 100%;}
 	.view-all-texts .pagerer{ font-size: 90%; float:right;}
 		
 	.views-row{ width: 48%;margin: 0 0.5rem 1rem;}
-	.front .views-row{ width: 48%;}	
+	.front .views-row{ width: 48% !important;}	
 	.front .views-field-title h3{ font-size:1.12em;}
 }
 
@@ -164,7 +164,9 @@ ul.pager{ width: 100%;}
 @media (min-width: 992px) {
 	
 	.views-row,
-	.view-all-texts-control-box-cell-pager.col-md-4{ width: 31.5% !important;}    
+	.view-all-texts-control-box-cell-pager.col-md-4{ width: 31.5% !important;} 
+	.front .views-row{ width: 48% !important;}
+	   
   .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0;}  
   .view-all-texts-control-box-cell-filters{ margin-top:0.5rem;}
 }
@@ -172,6 +174,7 @@ ul.pager{ width: 100%;}
 @media screen and (min-width: 1150px) {
 	 
 	 .views-row{ width: 24% !important;}
+	 .front .views-row{ width: 48% !important;}
 }
 
 
