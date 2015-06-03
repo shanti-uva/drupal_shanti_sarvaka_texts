@@ -91,7 +91,7 @@ ul.pager{ width: 100%;}
   margin-left:4rem;
   margin-top:1rem;
   font-style: italic;
-  color: rgb(113, 113, 113);     
+  color: #c0c0c0;     
   float:left; 
   display:block;
 	width:100%;
@@ -102,7 +102,7 @@ ul.pager{ width: 100%;}
   float:left;
   display:block;
 	width:100%;
-	color: rgb(113, 113, 113);
+	color: #aaa;
 	margin:0 0 0 -0.1rem;
 	position:relative;
 	top:-1.7rem;
@@ -137,13 +137,7 @@ ul.pager{ width: 100%;}
 .views-exposed-widget.views-widget-filter-title{ margin-top:0;}
 
 
-/* banner header anchor hover */
-.navbar-brand .shanticon-logo,
-.navbar-brand .site-slogan{ opacity:70;}
-.navbar-brand:hover .shanticon-logo,
-.navbar-brand:hover .site-slogan{ opacity:100}
-.navbar-brand:active .shanticon-logo,
-.navbar-brand:active .site-slogan{ opacity:70;}
+
 
 /*----------------*/
 /** breakpoints **/

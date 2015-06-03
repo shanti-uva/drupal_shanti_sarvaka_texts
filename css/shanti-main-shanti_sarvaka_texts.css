@@ -90,8 +90,18 @@ input.form-autocomplete {}
 
 /* adding space below top text block */
 /* remove inline styles within html markup on opening paragraph for css to target elements */
-.front-overview{ margin-bottom:1rem !important;}
+.front-overview{ margin:2rem auto  !important;}
 
 /* END carousel */
+
+
+/* banner header anchor hover */
+.navbar-brand .shanticon-logo,
+.navbar-brand .site-slogan{ opacity:0.70;}
+.navbar-brand:hover .shanticon-logo,
+.navbar-brand:hover .site-slogan{ opacity:1.00}
+.navbar-brand:active .shanticon-logo,
+.navbar-brand:active .site-slogan{ opacity:0.70;}
+
 
 
