@@ -236,7 +236,7 @@ ul.pager{ width: auto;}
 /*----------------*/
 /** breakpoints **/
 /*----------------*/
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	
 	.view-all-texts-control-box-cell-filters.col-xs-6,
 	.view-all-texts-control-box-cell-header.col-xs-5{ width:100% !important;}
@@ -249,18 +249,19 @@ ul.pager{ width: auto;}
 /* (tablets, 768px and up) */
 @media (min-width: 768px) {
 	
-	.view-all-texts-control-box-cell-header.col-xs-5{ width:28% !important;max-width:28% !important;}
-	.view-all-texts-control-box-cell-filters{ padding: 0; width:36%;max-width:36%;}
-	.view-all-texts table.pagerer{ float:right;}
-	.view-all-texts table.pagerer,
-	.view-all-texts-control-box-cell-pager.col-xs-5{ margin: 0;padding: 0; width:28% !important;}
-		
-	.views-row{ width: 48% !important;margin: 0 0.5rem 1rem;}
+	.views-row{ width: 48% !important; margin: 0 0.5rem 1rem;}
 	.front .views-row{ width: 48% !important;}	
 	.front .views-field-title h3{ font-size:1.32em;}
 	
+	.view-all-texts-control-box-cell-header.col-xs-5{ width:28% !important;max-width:28% !important;}
+	.view-all-texts-control-box-cell-filters{ padding: 0; width:44%;max-width:44%;}
+	.view-all-texts table.pagerer{ float:right;}
+	.view-all-texts table.pagerer,
+	.view-all-texts-control-box-cell-pager.col-xs-5{ margin: 0;padding: 0; width:auto !important;}
+	
 	.nav-justified > li.active::before{ color: #764B8D;} /* give arrow color, show it when tabs are not stacked */
 }
+
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -273,6 +274,7 @@ ul.pager{ width: auto;}
   
   .view-all-texts-control-box-cell-header{ font-size:1em;}
 }
+
 
 @media screen and (min-width: 1150px) {
 	 
