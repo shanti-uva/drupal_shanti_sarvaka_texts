@@ -147,15 +147,22 @@ ul.pager{ width: 100%;}
 /*----------------*/
 /** breakpoints **/
 /*----------------*/
+@media (max-width: 500px) {
+	
+	.view-all-texts-control-box-cell-filters.col-xs-6,
+	.view-all-texts-control-box-cell-header.col-xs-5{ width:100% !important;}
+}
+
+
+
 
 /* (tablets, 768px and up) */
 @media (min-width: 768px) {
 	
-	.view-all-texts-control-box-cell-header{ max-width:28%:}
+	.view-all-texts-control-box-cell-header.col-xs-5{ max-width:28%:}
 	.view-all-texts-control-box-cell-filters{ padding: 0; max-width:36%:}
-	.view-all-texts-control-box-cell-pager{ margin: 0;padding: 0; max-width:30%:}
 	.view-all-texts table.pagerer,
-	.view-all-texts-control-box-cell-pager.col-md-4{ float:right; margin:0; }
+	.view-all-texts-control-box-cell-pager.col-xs-5{ float:right; margin: 0;padding: 0; max-width:30%:}
 		
 	.views-row{ width: 48% !important;margin: 0 0.5rem 1rem;}
 	.front .views-row{ width: 48% !important;}	
@@ -182,11 +189,7 @@ ul.pager{ width: 100%;}
 
 
 
-@media (max-width: 500px) {
-	
-	.view-all-texts-control-box-cell-filters.col-xs-6,
-	.view-all-texts-control-box-cell-header.col-xs-5{ width:100% !important;}
-}
+
 
 
 
