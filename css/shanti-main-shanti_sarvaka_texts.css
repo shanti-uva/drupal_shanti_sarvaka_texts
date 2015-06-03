@@ -168,7 +168,10 @@ input.form-autocomplete {}
 }
 
 /* shanticon font on h3 header */
-.views-field-title h3 .icon{ color:#a066c0;margin-right:1.12rem;font-size:2.5rem;position:relative;top:0.3rem;left:0.3rem;}
+.views-field-title h3 .icon{ color:#a066c0;margin-right:1.12rem;font-size:2.5rem;position:relative;top:0.3rem;left:0.3rem;opacity:0.7;}
+.views-field-title a:hover .icon{ opacity:1.0;}
+.views-field-title a:active .icon{ opacity:0.7;}
+
 .views-field-field-general-featured-image img{ display:none;}
 .views-field-field-dc-creator-author-1,
 .views-field-field-book-author{            
