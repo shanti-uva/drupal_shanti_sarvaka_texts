@@ -163,7 +163,7 @@ ul.pager{ width: 100%;}
 @media (min-width: 992px) {
 	
 	.views-row,
-	.view-all-texts-control-box-cell-pager.col-md-4{ width: 32% !important;}    
+	.view-all-texts-control-box-cell-pager.col-md-4{ width: 31.5% !important;}    
   .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0;}  
   .view-all-texts-control-box-cell-filters{ margin-top:0.5rem;}
 }
