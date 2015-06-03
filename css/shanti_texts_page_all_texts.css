@@ -155,7 +155,8 @@ ul.pager{ width: 100%;}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	
-	.views-row{ width: 32.3%;}    
+	.views-row,
+	.view-all-texts-control-box-cell-pager{ width: 32.3%;}    
   .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0;}  
   .view-all-texts-control-box-cell-filters{ margin-top:0.5rem;}
 }
