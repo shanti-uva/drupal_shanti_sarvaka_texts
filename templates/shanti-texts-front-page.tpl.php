@@ -23,7 +23,7 @@ while ($r = $rs->fetchObject()) {
 
 ?>
 <div class="front-overview">
-	<h4>Overview</h4>
+	<!-- <h4>Overview</h4> -->
 	<p>SHANTI Texts is a published repository of texts that can be used for a variety of content types, from remediated 
 	primary sources to long-form scholarly blog posts to be shared via social media. It is designed to allow you create 
 	content on-site or to upload long texts.</p>
@@ -33,10 +33,10 @@ while ($r = $rs->fetchObject()) {
 	<div class="row">
 		<div class="col-xs-12">
 		
-			<div data-ride="carousel" class="carousel-header show-more">
+			<!-- <div data-ride="carousel" class="carousel-header show-more">
 				<span>Featured Texts</span>
 				<a href="/alltexts">View All Texts</a>
-			</div>
+			</div> -->
 		
 		<div class="carousel carousel-fade slide row" id="collection-carousel" data-speed="12">
 
