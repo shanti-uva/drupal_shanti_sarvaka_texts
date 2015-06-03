@@ -90,14 +90,14 @@ input.form-autocomplete {}
 
 
 /* banner header anchor hover */
+.navbar-brand:hover .site-slogan{ color:#5f3c71;}
+
 .navbar-brand .shanticon-logo,
 .navbar-brand .site-slogan{ opacity:0.70;}
 .navbar-brand:hover .shanticon-logo,
 .navbar-brand:hover .site-slogan{ opacity:1.00}
 .navbar-brand:active .shanticon-logo,
 .navbar-brand:active .site-slogan{ opacity:0.70;}
-
-
 
 
 
