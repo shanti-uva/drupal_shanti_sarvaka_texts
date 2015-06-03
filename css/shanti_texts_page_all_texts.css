@@ -27,7 +27,7 @@
 .view-all-texts-control-box{ border-top:0;border-color:none;}
 
 .view-all-texts-control-box-row{}
-.view-all-texts-control-box-cell{ padding:0 !important;}
+.view-all-texts-control-box-cell{}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
