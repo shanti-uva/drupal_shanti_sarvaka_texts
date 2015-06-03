@@ -170,7 +170,7 @@ ul.pager{ width: 100%;}
 
 @media screen and (min-width: 1150px) {
 	 
-	 .views-row{ width: 24%;}
+	 .views-row{ width: 24% !important;}
 }
 
 
