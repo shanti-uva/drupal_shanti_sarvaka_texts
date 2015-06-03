@@ -151,24 +151,21 @@ ul.pager{ width: 100%;}
 /* (tablets, 768px and up) */
 @media (min-width: 768px) {
 	
-	.view-all-texts-control-box-cell-header{}
-	.view-all-texts-control-box-cell-filters{ padding: 0;}
-	.view-all-texts-control-box-cell-switch{ margin: 0;padding: 2em 0; display:block;}
-	.view-all-texts-control-box-cell-pager{ margin: 0;padding: 0;}
-	.view-all-texts table.pagerer{ float:right; margin:0;}
+	.view-all-texts-control-box-cell-header{ max-width:28%:}
+	.view-all-texts-control-box-cell-filters{ padding: 0; max-width:36%:}
+	.view-all-texts-control-box-cell-pager{ margin: 0;padding: 0; max-width:30%:}
+	.view-all-texts table.pagerer,
+	.view-all-texts-control-box-cell-pager.col-md-4{ float:right; margin:0; }
 		
 	.views-row{ width: 48% !important;margin: 0 0.5rem 1rem;}
 	.front .views-row{ width: 48% !important;}	
 	.front .views-field-title h3{ font-size:1.32em;}
-	
-	.view-all-texts-control-box-cell-filters.col-xs-5{ width:38% !important;}
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	
-	.views-row,
-	.view-all-texts-control-box-cell-pager.col-md-4{ width: 31.75% !important;} 
+	.views-row{ width: 31.75% !important;} 
 	.front .views-row{ width: 48% !important;}
 	   
   .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0;}  
@@ -185,7 +182,7 @@ ul.pager{ width: 100%;}
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
 	
 	.view-all-texts-control-box-cell-filters.col-xs-6,
 	.view-all-texts-control-box-cell-header.col-xs-5{ width:100% !important;}
