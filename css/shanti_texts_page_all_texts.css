@@ -161,7 +161,7 @@ ul.pager{ width: 100%;}
 	.front .views-row{ width: 48% !important;}	
 	.front .views-field-title h3{ font-size:1.32em;}
 	
-	.view-all-texts-control-box-cell-filters.col-xs-5.col-md-4{ width:38% !important;}
+	.view-all-texts-control-box-cell-filters.col-xs-5{ width:38% !important;}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -182,10 +182,13 @@ ul.pager{ width: 100%;}
 }
 
 
+
+
+
 @media (max-width: 600px) {
 	
-	.view-all-texts-control-box-cell-filters.col-xs-5,
-	.view-all-texts-control-box-cell-header.col-xs-4{ width:100% !important;}
+	.view-all-texts-control-box-cell-filters.col-xs-6,
+	.view-all-texts-control-box-cell-header.col-xs-5{ width:100% !important;}
 }
 
 
