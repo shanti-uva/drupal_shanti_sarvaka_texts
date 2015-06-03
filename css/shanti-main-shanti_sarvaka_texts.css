@@ -122,17 +122,13 @@ input.form-autocomplete {}
 
 /* VIEWS FILTER BAR */
 
-.view-result-count-info{ font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;font-size:0.93em;}
-
 .view-all-texts-control-box{ border-top:0;border-color:none;}
-.view-all-texts-control-box-row{}
-.view-all-texts-control-box-cell{}
 
-.view-all-texts-control-box-cell-header{ margin: 0.8rem 0 0 2.5rem; padding:0 0 0 2rem;font-size:0.93em;width:54%;max-width:54%;}
+.view-all-texts-control-box-cell-header{ margin: 0.8rem 0 0 0; padding:0 0 0 2.5rem;font-size:0.93em;width:54%;max-width:54%;}
+.view-result-count-info{ font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;font-size:0.93em;}
 .view-all-texts-control-box-cell-filters{ margin:0 auto;}
-
-.view-all-texts table.pagerer{ margin:0 1rem;position:relative; top: 0.2rem;}
-.view-all-texts-control-box-cell-pager{ padding:0 0 0 1rem; margin:0 auto; width:auto; position:relative; top:0; float:left;}
+.view-all-texts-control-box-cell-pager{ padding:0 2rem; margin:0; width:auto; position:relative; top:0; float:left;}
+.view-all-texts table.pagerer{ margin:0 1rem; position:relative; top: 0.2rem;}
 
 /* Pagerer */
 .view-all-texts .pagerer .ajax-progress{ display:none;}
@@ -186,6 +182,7 @@ input.form-autocomplete {}
 	height:1.38em;
 }
 .views-field-field-book-author::before{ content:'- ';}
+
 .views-field-field-dc-date-original-year,
 .views-field-field-dc-date-publication-year{            
   float:left;
