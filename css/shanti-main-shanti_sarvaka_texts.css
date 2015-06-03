@@ -128,11 +128,11 @@ input.form-autocomplete {}
 .view-all-texts-control-box-row{}
 .view-all-texts-control-box-cell{}
 
-.view-all-texts-control-box-cell-header{ margin-top:1rem; padding:0 0 0 1.5rem;font-size:0.93em;width:54%;max-width:54%;}
+.view-all-texts-control-box-cell-header{ margin-top:1rem; padding:0 0 0 2rem;font-size:0.93em;width:54%;max-width:54%;}
 .view-all-texts-control-box-cell-filters{ margin:0 auto;}
 
-.view-all-texts table.pagerer{ margin: 0 0 0 1.5rem;}
-.view-all-texts-control-box-cell-pager{ padding:0; margin:0 auto; width:auto; position:relative; top:0; float:left;}
+.view-all-texts table.pagerer{ margin:0 1rem;position:relative; top: 0.2rem;}
+.view-all-texts-control-box-cell-pager{ padding:0 0 0 1rem; margin:0 auto; width:auto; position:relative; top:0; float:left;}
 
 /* Pagerer */
 .view-all-texts .pagerer .ajax-progress{ display:none;}
