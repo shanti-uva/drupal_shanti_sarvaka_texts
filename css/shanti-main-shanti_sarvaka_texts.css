@@ -12,6 +12,15 @@
 
 .nav-justified > li.active::before{ color:transparent; } 
 
+
+/* banner header anchor hover */
+.navbar-brand:hover .shanticon-logo{ color:#5f3c71;}
+
+
+
+
+
+
 /* .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#764B8D; } */
 /* .view-mega-search h3 {
   display:none;
@@ -91,18 +100,6 @@ input.form-autocomplete {}
 .front-overview{ margin:2rem auto  !important;}
 
 /* END carousel */
-
-
-/* banner header anchor hover */
-.navbar-brand:hover .site-slogan{ color:#5f3c71;}
-
-.navbar-brand .shanticon-logo,
-.navbar-brand .site-slogan{ opacity:0.70;}
-.navbar-brand:hover .shanticon-logo,
-.navbar-brand:hover .site-slogan{ opacity:1.00}
-.navbar-brand:active .shanticon-logo,
-.navbar-brand:active .site-slogan{ opacity:0.70;}
-
 
 
 
