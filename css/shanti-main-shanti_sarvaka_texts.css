@@ -132,7 +132,7 @@ input.form-autocomplete {}
 .view-all-texts-control-box-cell-filters{ margin:0 auto;}
 
 .view-all-texts table.pagerer{ position:relative; top:0; float:left; margin: 0 0 0 1rem;padding:0;}
-.view-all-texts-control-box-cell-pager{ margin:0 auto; width:auto;}
+.view-all-texts-control-box-cell-pager{ margin:0 auto; width:auto; float:left;}
 
 
 .views-widget-filter-title input{ height: 24px;}
@@ -255,9 +255,9 @@ ul.pager{ width: auto;}
 	
 	.view-all-texts-control-box-cell-header.col-xs-5{ width:28% !important;max-width:28% !important;}
 	.view-all-texts-control-box-cell-filters{ padding: 0; width:44%;max-width:44%;}
-	.view-all-texts table.pagerer{ float:right;}
+
 	.view-all-texts table.pagerer,
-	.view-all-texts-control-box-cell-pager.col-xs-5{ margin: 0;padding: 0; width:auto !important;}
+	.view-all-texts-control-box-cell-pager.col-xs-5{ float:right;margin: 0;padding: 0; width:auto !important;}
 	
 	.nav-justified > li.active::before{ color: #764B8D;} /* give arrow color, show it when tabs are not stacked */
 }
