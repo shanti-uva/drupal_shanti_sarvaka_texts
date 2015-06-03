@@ -174,7 +174,7 @@ input.form-autocomplete {}
 .views-field-field-book-author{            
   font-size: 1em;
   margin-left:4rem;
-  margin-top:0.9rem;
+  margin-top:0.8rem;
   font-style: italic;
   color: #aaa;     
   float:left; 
@@ -187,10 +187,12 @@ input.form-autocomplete {}
   float:left;
   display:block;
 	width:100%;
-	color: #888;
+	color: #777;
 	margin:0 0 0 -0.1rem;
 	position:relative;
 	top:-1.8rem;
+	left:0.2rem;
+	font-size:1.06em;
 }
 .views-field-field-dc-description {            
   font-size: 12px;
