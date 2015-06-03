@@ -135,6 +135,13 @@ ul.pager{ width: 100%;}
 
 
 
+.navbar-brand .shanticon-logo,
+.navbar-brand .site-slogan{ opacity:70;}
+.navbar-brand .shanticon-logo:hover,
+.navbar-brand .site-slogan:hover{ opacity:100}
+.navbar-brand .shanticon-logo:active,
+.navbar-brand .site-slogan:active{ opacity:70;}
+
 /*----------------*/
 /** breakpoints **/
 /*----------------*/
