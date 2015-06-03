@@ -149,14 +149,15 @@ ul.pager{ width: 100%;}
 /* (tablets, 768px and up) */
 @media (min-width: 768px) {
 	
-	.view-all-texts .pagerer{ float:right;}
 	.view-all-texts-control-box-cell-header{ width: 100%;}
 	.view-all-texts-control-box-cell-filters{ padding: 0;width: 100%;}
 	.view-all-texts-control-box-cell-switch{ margin: 0;padding: 2em 0;width: 100%;display:block;}
 	.view-all-texts-control-box-cell-pager{ margin: 0;padding: 0;width: 100%;}
-	.view-all-texts-control-box-cell-pager ul.pager{ font-size: 90%;}
+	.view-all-texts .pagerer{ font-size: 90%; float:right;}
+		
 	.views-row{ width: 48%;margin: 0 0.5rem 1rem;}
-	.front .views-row{ width: 48%;}
+	.front .views-row{ width: 48%;}	
+	.front .views-field-title h3{ font-size:1.12em;}
 }
 
 /* Medium devices (desktops, 992px and up) */
