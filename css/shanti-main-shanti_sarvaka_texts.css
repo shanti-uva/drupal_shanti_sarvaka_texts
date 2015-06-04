@@ -107,7 +107,7 @@ input.form-autocomplete {}
 
 /* Pagerer */
 .view-all-texts .pagerer .ajax-progress{ display:none;}
-.view-all-texts .pagerer-pager input{ height: 2em;width: 2em !important;font-size:1em;}
+.view-all-texts .pagerer-pager input{ height: 1.5em;width: 2em;font-size:1em;}
 
 
 /* Exposed Widgets */
