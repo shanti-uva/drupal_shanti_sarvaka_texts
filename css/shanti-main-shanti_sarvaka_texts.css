@@ -6,20 +6,11 @@
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:focus{ background:#764B8D; }
-
 .basecolor{ color: #764B8D; }   
 .nav-justified > li.active > a:after { border-color: #764B8D; border-top-color: #764B8D; }
-
 .nav-justified > li.active::before{ color:transparent; } 
-
-
 /* banner header anchor hover */
 .navbar-brand:hover .shanticon-logo{ color:#5f3c71;}
-
-
-
-
-
 
 /* .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#764B8D; } */
 /* .view-mega-search h3 {
@@ -31,9 +22,7 @@
 .view-mega-search ul{ list-style-type: none;}
 */
 
-
 .shanti-text .content-section{ padding-top: 0;}
-
 
 .mega-search-title.depth-1 {
   margin-left:.5em;
@@ -87,8 +76,6 @@
 input.form-autocomplete {}
 
 
-
-
 /* BEGIN carousel WIDTH - box-model layout theme properties */
 .carouseldiv + div{ margin:0 auto; max-width:1050px;} /* layout content below carousel */
 
@@ -96,20 +83,9 @@ input.form-autocomplete {}
 .carousel-header,
 .carousel-inner,
 .carousel-inner > .item,
-.front-overview{ max-width:1050px; margin:0 auto;}
-
-/* adding space below top text block */
-/* remove inline styles within html markup on opening paragraph for css to target elements */
-.front-overview{ margin:2rem auto  !important;}
+.front-overview{ max-width:1050px; margin:2rem auto 1rem !important;}
 
 /* END carousel */
-
-
-
-
-
-
-
 
 
 
@@ -140,8 +116,6 @@ input.form-autocomplete {}
 .views-exposed-widget div{ float:left;margin: 0;vertical-align: middle;}
 
 .view-content{ margin-left: auto;margin-right: auto;width: 100%;}
-
-{height:3.5em;}
 
 .views-row {            
   float: left;
