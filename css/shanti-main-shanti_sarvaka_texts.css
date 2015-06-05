@@ -85,7 +85,7 @@ input.form-autocomplete {}
 .carousel-inner > .item,
 .front-overview{ max-width:1050px; margin:0 auto !important;}
 .front-overview{ margin:2rem auto 0 !important;}
-.front-overview p{ padding:0 2.5rem;}
+.front-overview p{ padding:0 2.5rem 0.4rem;}
 
 .carousel{ margin-top: 0.75em;}
 .carousel-inner{ max-width:980px; min-height: 280px; margin:0 auto !important;}
