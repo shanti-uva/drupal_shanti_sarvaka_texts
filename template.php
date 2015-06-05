@@ -1,5 +1,7 @@
 <?php
 
+# Just an extra line for testing
+
 define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts'));
 
 function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
