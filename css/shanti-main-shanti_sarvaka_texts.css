@@ -10,7 +10,7 @@
 .nav-justified > li.active > a:after { border-color: #764B8D; border-top-color: #764B8D; }
 .nav-justified > li.active::before{ color:transparent; } 
 /* banner header anchor hover */
-.navbar-brand .site-slogan{ color:#5f3c71;}
+.navbar-brand:hover .site-slogan{ color:#5f3c71;}
 
 /* .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google{ color:#764B8D; } */
 /* .view-mega-search h3 {
@@ -83,7 +83,8 @@ input.form-autocomplete {}
 .carousel-header,
 .carousel-inner,
 .carousel-inner > .item,
-.front-overview{ max-width:1050px; margin:2rem auto 1rem !important;}
+.front-overview{ max-width:1050px; margin:0 auto !important;}
+.front-overview{ margin:2rem auto 1.5rem !important;}
 .front-overview p{ padding:0 2.5rem;}
 
 /* END carousel */
