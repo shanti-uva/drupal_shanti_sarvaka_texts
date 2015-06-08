@@ -4,6 +4,12 @@
 
 define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts'));
 
+function shanti_sarvaka_texts_menu_breadcrumb_alter(&$active_trail, $item) {
+	if ($active_trail[0]['title'] == 'Home') {
+		array_shift($active_trail);
+	}
+}
+
 function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
 	// Note that $form_id != $form['#id']
 	#$my_form_ids = array('views-exposed-form-all-texts-panel-pane-1','views-exposed-form-all-texts-page-1','views-exposed-form-all-texts-page-3');
@@ -21,7 +27,6 @@ function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
 		);
 	}
 }
-
 
 function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
 
