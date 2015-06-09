@@ -9,10 +9,12 @@
 .basecolor,
 .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark{ color: #764B8D; }   
-.nav-justified > li.active > a:after { border-color: #764B8D; border-top-color: #764B8D; }
-.nav-justified > li.active::before{ color:transparent; } 
+.nav-justified > li.active > a:after { border-color: #764B8D; border-top-color: #764B8D; } 
 /* banner header anchor hover */
 .navbar-brand:hover .site-slogan{ color:#5f3c71;}
+@media screen and (min-width: 768px) {
+	.nav-justified>li.active::before{ color: #764B8D !important}
+}
 /* .view-mega-search h3 {display:none;font-size: 100%;font-weight: bold;margin-left: 1em;} 
 	.view-mega-search ul{ list-style-type: none;}
 */
