@@ -180,7 +180,7 @@
 @media (min-width: 768px) {
 	
 	.views-row{ width: 48% !important; margin: 0 0.5rem 1rem;}
-	.front .views-row{ width: 48% !important;}	
+	.front .views-row{ width: 49% !important;}	
 	.front .views-field-title h3{ font-size:1.32em;}
 	
 	.view-all-texts-control-box-cell-header.col-xs-5{ width:28% !important;max-width:28% !important;padding-top:0.7rem;}
@@ -197,7 +197,7 @@
 @media (min-width: 992px) {
 	
 	.views-row{ width: 31.75% !important;} 
-	.front .views-row{ width: 48% !important;}
+	.front .views-row{ width: 49% !important;}
 	   
   .view-all-texts-control-box-cell-filters .views-exposed-widgets{ margin-top:0;}  
   .view-all-texts-control-box-cell-filters{ margin-top:0.5rem;}
@@ -209,7 +209,7 @@
 @media screen and (min-width: 1150px) {
 	 
 	 .views-row{ width: 24% !important;}
-	 .front .views-row{ width: 48% !important;}
+	 .front .views-row{ width: 49% !important;}
 }
 
 
