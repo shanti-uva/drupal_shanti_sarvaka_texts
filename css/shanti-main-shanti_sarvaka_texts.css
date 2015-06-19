@@ -11,7 +11,7 @@
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark{ color: #764B8D !important; }   
 .nav-justified > li.active > a:after { border-color: #764B8D !important; border-top-color: #764B8D !important; } 
 /* banner header anchor hover */
-.navbar-brand:hover .site-slogan{ color:#5f3c71 !important;}
+.navbar-brand:hover .site-slogan{ color:#9961b7 !important;}
 @media screen and (min-width: 768px) {
 	.nav-justified>li.active::before{ color: #764B8D !important}
 }
