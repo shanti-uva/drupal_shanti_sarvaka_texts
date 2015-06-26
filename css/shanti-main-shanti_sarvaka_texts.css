@@ -79,7 +79,8 @@
   border-top:4px solid #a066c0;
 }
 
-.front .views-row{ width: 100%;} /* homepage exception, leverage front body tag class */
+.views-field-title h3{ font-size:1.25em;}
+.front .views-field-title h3{ font-size:1.38em;}
 
 .views-field-title h3{            
   font-size: 1.38em; /* 18px; */
