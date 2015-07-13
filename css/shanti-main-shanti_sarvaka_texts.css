@@ -167,16 +167,17 @@
 
 
 /* Search flyout list styles */
-.view-text-search h3{ font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .view-text-search a{ color:#555; display: block; font-size: 1em !important;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;line-height:1.32em;padding: 0.2em 0.5em 0 0;}
 .view-text-search a:hover{ color:#111;}
 .view-text-search a:active{ color:#555;}
 
+.view-text-search h3{ font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
 .view-text-search h3 a{ white-space:nowrap;}
 .view-text-search h3 a::before{ background: #fff;color: transparent;font-family: 'shanticon';content: '\e625';font-size: 1.06em;float: left;position: relative; top: 0.5rem;border-radius: 50%;background-clip: padding-box; width: 7px;height: 7px;display: inline-block;margin:0 9px 0 0;-webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);border-collapse: separate;} 
 .view-text-search h3 a:hover::before{ background:#888;-webkit-box-shadow:none;box-shadow:none;}
 
-.view-text-search .depth-1{ content:'- '; margin-left:4rem;}
+.view-text-search .depth-1{ margin-left:4rem;}
+.view-text-search .depth-1::before{ content:'- ';}
 
 
 
