@@ -157,9 +157,17 @@
 
 
 /* Search flyout list styles */
-.view-text-search h3 ~ div a{ color:#000;}
-.view-text-search{ }
+.view-text-search h3{ font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
+.view-text-search a{ font-size: 1em !important;font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;line-height:1.32em;padding: 0.2em 0.5em 0 0;}
+.view-text-search a:hover{ color:#111;}
+.view-text-search h3 a::before{ background: #fff;color: transparent;font-family: 'shanticon';content: '\e625';font-size: 1.06em;float: left;position: relative; top: 0.5rem;border-radius: 50%;background-clip: padding-box; width: 7px;height: 7px;display: inline-block;margin:0 9px 0 0;-webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);border-collapse: separate;} 
+.view-text-search h3 a:hover::before{ background:#888;-webkit-box-shadow:none;box-shadow:none;}
 
+.view-text-search a{ color:#555;display:block;letter-spacing:0.02rem;}
+
+.view-text-search h3 ~ div a{ content:'- ';}
+.view-text-search h3 ~ div a:hover{ color: rgb(207, 47, 30);}
+.view-text-search h3 ~ div a:active{ color:#555;}
 
 
 /*----------------*/
