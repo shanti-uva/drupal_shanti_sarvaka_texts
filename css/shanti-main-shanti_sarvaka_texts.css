@@ -156,26 +156,25 @@
 .mega-search-title.depth-7{ margin-left:3.5em;}
 */
 
-.mega-search-title.depth-1.weight-0 { display:none;}
 .view-text-search h3, 
 .view-solr-texts h3, 
-.view-full-text-local h3 { font-weight:bold;font-size:100%;margin: .5em 0 0 1em;border-top:1px solid lightgray;padding-top:.5em;}
+.view-full-text-local h3{ font-weight:bold;font-size:100%;margin: .5em 0 0 1em;border-top:1px solid lightgray;padding-top:.5em;}
 .view-text-search p, 
 .view-solr-texts p, 
-.view-full-text-local p { margin: .5em 0 0 1em;}
-.view-all-texts-control-box .views-submit-button { display:none;}
+.view-full-text-local p{ margin: .5em 0 0 1em;}
 
+.mega-search-title.depth-1.weight-0,
+.view-all-texts-control-box .views-submit-button { display:none;}
 
 /* Search flyout list styles */
 .view-text-search a{ color:#444; display:block; font-size:1em !important; line-height:1.32em; white-space:nowrap; padding: 0.2em 0.5em 0 0;}
-.view-text-search a:hover{ color:#000;}
+.view-text-search a:hover{ color: rgb(207, 47, 30);}
 .view-text-search a:active{ color:#555;}
-
 .view-text-search h3{  margin-left:0; padding-left:1rem;}
 .view-text-search h3 a{ font-family:'droidserif',palatino,'Palatino Linotype',georgia,serif;}
-.view-text-search h3 a::before{ background: #fff;color: transparent;font-family: 'shanticon';content: '\e625';font-size: 1.06em;float: left;position: relative; top: 0.5rem;border-radius: 50%;background-clip: padding-box; width: 7px;height: 7px;display: inline-block;margin:0 9px 0 0;-webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);border-collapse: separate;} 
+.view-text-search h3 a:hover{ color:#000;}
+.view-text-search h3 a::before{ -webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);background: #fff;color: transparent;font-family: 'shanticon';content: '\e625';font-size: 1.06em;float: left;position: relative; top: 0.5rem;border-radius: 50%;background-clip: padding-box; width: 7px;height: 7px;display: inline-block;margin:0 9px 0 0;-webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2500);border-collapse: separate;} 
 .view-text-search h3 a:hover::before{ background:#888;-webkit-box-shadow:none;box-shadow:none;}
-
 .view-text-search h3 ~ div{ padding-left:4rem; font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
 .view-text-search h3 ~ div::before{ content:'+ '; width: 1.3rem; position:relative;top:0.2rem;float:left;}
 .view-text-search h3 + div::before{ content:''; width:0;}
