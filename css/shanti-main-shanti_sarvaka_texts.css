@@ -20,6 +20,7 @@
 /* .view-mega-search h3 {display:none;font-size: 100%;font-weight: bold;margin-left: 1em;} .view-mega-search ul{ list-style-type: none;} */
 
 .shanti-text .content-section{ padding-top: 0;}
+.node-type-book.shanti-text .tab-pane.main-col > .region-content{ max-width:100% !important;}
 
 #autocomplete{ background-color:lightgray;font-family:'museo-sans-500',helvetica,arial,sans-serif;padding:4px;}
 
@@ -33,6 +34,8 @@
 .front-overview p{ padding:0 2.5rem 0.4rem;}
 .carousel{ margin-top: 0.75em;}
 .carousel-inner{ max-width:1030px; min-height: 280px; margin:0 auto !important;}
+
+
 /* END carousel */
 /* -------------------------------------------*/
 /* begin migration from shanti_texts_page_all_texts */
