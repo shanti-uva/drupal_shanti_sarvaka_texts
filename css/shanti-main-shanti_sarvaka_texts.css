@@ -180,6 +180,8 @@
 .view-text-search h3 ~ div{ padding-left:3rem; font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
 .view-text-search h3 ~ div::before{ content:'+ '; width:1.25rem; position:relative;top:0.25rem;float:left;}
 .view-text-search h3 + div,
+.view-text-search h3 + div a,
+.view-text-search h3 + div div,
 .view-text-search h3 + div::before{ display:none;}
 
 /* adjust searchbox position */
