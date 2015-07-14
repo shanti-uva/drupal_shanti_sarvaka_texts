@@ -182,7 +182,8 @@
 .view-text-search h3 + div::before{ content:'';width:0;float:none;}
 
 /* adjust searchbox position */
-.view-text-search .views-submit-button{ padding:0 !important;}
+.view-text-search .views-submit-button{ padding:0 !important;position:absolute;right:2rem;margin-top:.4rem;}
+.view-text-search .views-submit-button .btn.form-submit{ margin:0;}
 .view-text-search .form-type-textfield.form-item-title{ margin-right:0;}
 .view-text-search .views-widget-filter-title .form-control.form-text{ max-width:35rem;}
 .view-text-search .view-filters .description{ display:none;}
