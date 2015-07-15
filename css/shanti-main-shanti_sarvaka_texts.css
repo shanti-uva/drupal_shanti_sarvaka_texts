@@ -47,7 +47,7 @@
 .view-result-count-info{ font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;font-size:0.93em;}
 .view-all-texts-control-box-cell-filters{ margin:0 auto;}
 .view-all-texts-control-box-cell-pager{ padding:0 2rem; margin:0; width:auto; height:5rem; position:relative; top:0; float:left;}
-.view-all-texts table.pagerer{ margin:0 1rem; position:relative; top: 0.2rem;}
+.view-all-texts table.pagerer{ margin:0 1rem; position:relative; top: 0.2rem;font-size:70%;}
 
 /* Pagerer */
 .view-all-texts .pagerer .ajax-progress{ display:none;}
@@ -191,6 +191,9 @@
 .view-text-search .views-submit-button .btn.form-submit{ margin:0;}
 .view-text-search .form-type-textfield.form-item-title{ margin-right:0;}
 .view-text-search .view-filters .description{ display:none;}
+
+.view-text-search .views-submit-button{ }
+.views-widget-filter-title .form-control{ max-width:18rem;}
 
 
 #search-flyout.extruder .text{ border: 1px solid rgb(238, 238, 238); padding: 5px;}
