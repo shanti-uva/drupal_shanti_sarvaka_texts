@@ -209,13 +209,13 @@
 .block-quicktabs{ margin-top:5rem;}
 .view-text-search > .view-filters{ position:absolute;top:-6rem;}
 
-.view-text-search .nav-tabs{ border:none;}
-.view-text-search .nav-tabs>li{ margin-bottom:0;}
+.region-search-flyout .nav-tabs{ border:none;}
+.region-search-flyout .nav-tabs>li{ margin-bottom:0;}
 
 
-.view-text-search .nav-tabs>li.active>a, 
-.view-text-search .nav-tabs>li.active>a:focus, 
-.view-text-search .nav-tabs>li.active>a:hover{ background-color:transparent; border:none;}
+.region-search-flyout .nav-tabs>li.active>a, 
+.region-search-flyout .nav-tabs>li.active>a:focus, 
+.region-search-flyout .nav-tabs>li.active>a:hover{ background-color:transparent; border:none;}
 
 
 
