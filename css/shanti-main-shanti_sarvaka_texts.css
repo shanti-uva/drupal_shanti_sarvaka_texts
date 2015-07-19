@@ -47,11 +47,11 @@
 .view-result-count-info{ font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;font-size:0.93em;}
 .view-all-texts-control-box-cell-filters{ margin:0 auto;}
 .view-all-texts-control-box-cell-pager{ padding:0 2rem; margin:0; width:auto; height:5rem; position:relative; top:0; float:left;}
-.view-all-texts table.pagerer{ margin:0 1rem; position:relative; top: 0.2rem;font-size:70%;}
 
 /* Pagerer */
-.view-all-texts .pagerer .ajax-progress{ display:none;}
-.view-all-texts .pagerer-pager input{ height: 1.5em;width: 2em;font-size:1em;}
+.region-search-flyout .pagerer{ margin:0 1rem; position:relative; top: 0.2rem;font-size:70%;}
+.region-search-flyout .pagerer .ajax-progress{ display:none;}
+.region-search-flyout .pagerer-pager input{ height: 1.5em;width: 2em;font-size:1em;}
 
 
 /* Exposed Widgets */
