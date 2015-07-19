@@ -168,7 +168,7 @@
 .view-all-texts-control-box .views-submit-button { display:none;}
 
 /* Search flyout list styles */
-.view-text-search a{ color:#444; display:block; font-size:1em !important; line-height:1.32em; white-space:nowrap; padding: 0.2em 0.5em 0 0;}
+.view-text-search a{ color:#444; display: inline-block; font-size:1em !important; line-height:1.32em; white-space:nowrap; padding: 0.2em 0.5em 0 0;}
 .view-text-search a:hover{ color: rgb(207, 47, 30);}
 .view-text-search a:active{ color:#555;}
 /* .view-text-search h3{  margin: 0.5rem 0 -0.2rem 0 !important; border-top: none; padding-top: 0.2rem; padding-left:1rem;} */
@@ -178,7 +178,7 @@
 .view-text-search h3 a:hover::before{ background: #888;-webkit-box-shadow:none;box-shadow:none;}
 .view-text-search h3 a:active::before{ background:#fff; -webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);}
 .view-text-search h3 ~ div{ padding-left:3rem; font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
-.view-text-search h3 ~ div::before{ content:'+ '; width:1.25rem; position:relative;top:0.25rem;float:left;}
+.view-text-search h3 ~ div::before{ font-family: 'FontAwesome';position: relative;top: 0.45rem;margin-right:.7rem;float: left;content: "\f111";font-size:.38em;color:#888;}
 .view-text-search h3 + div,
 .view-text-search h3 + div a,
 .view-text-search h3 + div div,
@@ -197,6 +197,15 @@
 
 
 #search-flyout.extruder .text{ border: 1px solid rgb(238, 238, 238); padding: 5px;}
+
+
+
+
+
+
+.region-search-flyout{ position:relative;}
+.block-quicktabs{ margin-top:6rem;}
+.view-text-search > .view-filters{ position:absolute;top:-5rem;}
 
 
 /*----------------*/
