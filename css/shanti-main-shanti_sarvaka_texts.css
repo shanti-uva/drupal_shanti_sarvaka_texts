@@ -215,7 +215,7 @@
 .region-search-flyout .nav-tabs>li>a,
 .region-search-flyout .nav-tabs>li>a:hover{ padding: 0 10px;color:#555;border-radius:0;}
 .region-search-flyout .nav-tabs>li.active>a{ font-weight:bold;font-size:105%;}
-
+.region-search-flyout .nav-tabs>li>a,
 .region-search-flyout .nav-tabs>li>a:hover,
 .region-search-flyout .nav-tabs>li.active>a, 
 .region-search-flyout .nav-tabs>li.active>a:hover{ background-color:transparent; border:none;}
