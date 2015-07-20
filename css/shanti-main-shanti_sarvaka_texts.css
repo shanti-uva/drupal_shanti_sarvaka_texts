@@ -179,7 +179,7 @@
 .view-text-search h3 a:hover::before{ background:#764B8D !important; -webkit-box-shadow:none;box-shadow:none;}
 .view-text-search h3 a:active::before{ background:#fff; -webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);}
 .view-text-search h3 ~ div{ padding-left:3rem; font-family:'Helvetica Neue',helvetica,arial,sans-serif;}
-.view-text-search h3 ~ div::before{ font-family: 'FontAwesome';position: relative;top: 0.45rem;margin-right:.7rem;float: left;content: "\f111";font-size:.38em;color:#888;}
+.view-text-search h3 ~ div::before{ font-family: 'FontAwesome';position: relative;top: 0.5rem;margin-right:.7rem;float: left;content: "\f111";font-size:.38em;color:#888;}
 .view-text-search h3 + div,
 .view-text-search h3 + div a,
 .view-text-search h3 + div div,
