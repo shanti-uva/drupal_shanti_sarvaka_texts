@@ -212,15 +212,15 @@
 
 .region-search-flyout .nav-tabs{ border:none;margin-left:3rem;}
 .region-search-flyout .nav-tabs>li{ margin-bottom:0;}
+.region-search-flyout .nav-tabs>li>a{ padding-top:0;padding-bottom:0;}
 
-
+.region-search-flyout .nav-tabs>li>a:focus, 
+.region-search-flyout .nav-tabs>li>a:hover,
 .region-search-flyout .nav-tabs>li.active>a, 
 .region-search-flyout .nav-tabs>li.active>a:focus, 
 .region-search-flyout .nav-tabs>li.active>a:hover{ background-color:transparent; border:none;}
 
-
-
-
+.region-search-flyout .nav-tabs::before{ content:'Search by:';margin-right:.7rem;}
 
 
 
