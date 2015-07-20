@@ -398,6 +398,8 @@ background:transparent;
 	.view-all-texts-control-box-cell-filters{ padding: 0; width:37%;max-width:37%;}
 	
 	.nav-justified > li.active::before{ color: #764B8D;} /* give arrow color, show it when tabs are not stacked */
+
+	.view-all-texts-control-box-cell-pager{ float:right;}
 }
 
 
