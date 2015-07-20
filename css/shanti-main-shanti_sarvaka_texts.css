@@ -51,7 +51,7 @@
 .view-all-texts-control-box-cell-pager{ padding:0 2rem; margin:0; width:auto; height:5rem; position:relative; top:0; float:left;}
 
 /* Pagerer */
-.region-search-flyout .pagerer{ margin:0; position:relative; top:1rem;font-size:90%;}
+.region-search-flyout .pagerer{ margin:0; position:relative; top:1rem;font-size:90%;width:auto !important;float:right;}
 .region-search-flyout .pagerer .ajax-progress{ display:none;}
 /* .region-search-flyout .pagerer-pager input{ height: 1.5em;width: 2em;font-size:1em;} */
 
@@ -378,9 +378,7 @@ background:transparent;
 /* begin min-width */
 
 @media (min-width: 600px) {
-	
-	.view-all-texts table.pagerer,
-	.view-all-texts-control-box-cell-pager.col-xs-12{ float:right;}
+
 }	
 
 
@@ -392,9 +390,6 @@ background:transparent;
 	
 	.view-all-texts-control-box-cell-header.col-xs-5{ width:28% !important;max-width:28% !important;padding-top:0.7rem;}
 	.view-all-texts-control-box-cell-filters{ padding: 0; width:37%;max-width:37%;}
-
-	.view-all-texts table.pagerer,
-	.view-all-texts-control-box-cell-pager.col-xs-12{ margin: 0; width:auto !important;}
 	
 	.nav-justified > li.active::before{ color: #764B8D;} /* give arrow color, show it when tabs are not stacked */
 }
