@@ -31,7 +31,7 @@
 .carousel-inner,
 .carousel-inner > .item,
 .front-overview{ max-width:1050px; margin:0 auto !important;}
-.front-overview p{ padding:0 2.5rem 0.4rem;}
+.front-overview p{ padding:0 2.5rem;}
 .carousel{ margin-top: 0.75em;}
 .carousel-inner{ max-width:1030px; min-height: 280px; margin:0 auto !important;}
 
@@ -212,15 +212,23 @@
 
 .region-search-flyout .nav-tabs{ border:none;margin-left:3rem;}
 .region-search-flyout .nav-tabs>li{ margin-bottom:0;}
-.region-search-flyout .nav-tabs>li>a{ padding-top:0;padding-bottom:0;}
+.region-search-flyout .nav-tabs>li>a,
+.region-search-flyout .nav-tabs>li>a:hover{ padding-top:0;padding-bottom:0;color:#555;border-radius:0;}
+.region-search-flyout .nav-tabs>li.active>a{ font-weight:bold;font-size:105%;}
 
-.region-search-flyout .nav-tabs>li>a:focus, 
 .region-search-flyout .nav-tabs>li>a:hover,
 .region-search-flyout .nav-tabs>li.active>a, 
-.region-search-flyout .nav-tabs>li.active>a:focus, 
 .region-search-flyout .nav-tabs>li.active>a:hover{ background-color:transparent; border:none;}
 
-.region-search-flyout .nav-tabs::before{ content:'Search by:';margin-right:.7rem;}
+.region-search-flyout .nav-tabs::before{ content: 'Search by:';
+margin-right: 0rem;
+float:left;
+top:.3rem;
+position:relative;
+font-weight:bold;
+color:#777;
+text-transform:uppercase;
+font-size:85%;}
 
 
 
