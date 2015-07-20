@@ -160,7 +160,7 @@
 .view-text-search h3, 
 .view-solr-texts h3, 
 .view-full-text-local h3{ margin: 0.8rem 0 -0.2rem 0.8rem;font-size: 1em;border-top:1px solid #e0e0e0;padding-top: .3rem;}
-.view-text-search h3{ padding-left: .8rem;margin-left:1rem;}
+.view-text-search h3{ padding-left: .8rem;margin-left:0;}
 .view-text-search p, 
 .view-solr-texts p, 
 .view-full-text-local p{ margin: .5em 0 0 1em;}
@@ -210,7 +210,7 @@
 .block-quicktabs{ margin-top:5rem;}
 .view-text-search > .view-filters{ position:absolute;top:-6rem;}
 
-.region-search-flyout .nav-tabs{ border:none;}
+.region-search-flyout .nav-tabs{ border:none;margin-left:3rem;}
 .region-search-flyout .nav-tabs>li{ margin-bottom:0;}
 
 
