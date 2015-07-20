@@ -205,9 +205,6 @@
 
 
 
-
-
-
 .region-search-flyout{ position:relative;}
 .block-quicktabs{ margin-top:5rem;}
 .view-text-search > .view-filters{ position:absolute;top:-6.4rem;}
@@ -215,19 +212,11 @@
 .region-search-flyout .nav-tabs{ border:none;margin-left:2rem;margin-bottom: 2rem;}
 .region-search-flyout .nav-tabs>li{ margin-bottom:0;}
 .region-search-flyout .nav-tabs>li>a,
-.region-search-flyout .nav-tabs>li>a:hover{ padding: 0 10px;color:#555;border-radius:0;}
-.region-search-flyout .nav-tabs>li.active>a{ font-weight:bold;border: 1px solid #ccc; border-radius:5px;}
-.region-search-flyout .nav-tabs>li>a,
-.region-search-flyout .nav-tabs>li>a:hover,
-.region-search-flyout .nav-tabs>li.active>a, 
-.region-search-flyout .nav-tabs>li.active>a:hover{ background-color:transparent; border:none;}
+.region-search-flyout .nav-tabs>li>a:hover{ background-color:transparent; border:none; border-radius:0; padding: 0 10px;color:#555;}
+.region-search-flyout .nav-tabs>li.active>a,
+.region-search-flyout .nav-tabs>li.active>a:hover{ font-weight:bold;border: 1px solid #ccc !important; background-color: #fff !important; border-radius:5px;}
 
-.region-search-flyout .nav-tabs>li.active>a{ top:-.1rem;}
-
-.region-search-flyout .nav-tabs::before{ content: 'Search by:';margin-right: 0.7rem;float:left;top:.35rem;position:relative;font-weight:bold;color:#777;text-transform:uppercase;font-size:85%;}
-
-
-
+.region-search-flyout .nav-tabs::before{ content: 'Search by:';margin-right: 0.7rem;float:left;top:.2rem;position:relative;font-weight:bold;color:#777;text-transform:uppercase;font-size:85%;}
 
 
 /*--- START / Search Panel / Input & View ----*/
