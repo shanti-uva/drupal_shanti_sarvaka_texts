@@ -231,7 +231,7 @@ text-transform:uppercase;
 font-size:85%;}
 
 
-.region-search-flyout .nav-tabs>li>a:last-child{ display:none;}
+.region-search-flyout .nav-tabs>li ~ a:last-child{ display:none;}
 
 
 
