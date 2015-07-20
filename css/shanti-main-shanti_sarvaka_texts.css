@@ -263,7 +263,7 @@
 
 
 /*--- button group ---*/
-.view-text-search .view-filters .views-exposed-widgets .views-submit-button{ width:45px !important; height:35px; position:absolute; top:15px; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
+.view-text-search .view-filters .views-exposed-widgets .views-submit-button{ width:45px !important; height:35px; position:absolute; top:2.2rem; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
 
 /*--- button ---*/
 .view-text-search .view-filters .views-exposed-widgets .btn.btn-primary{
@@ -287,10 +287,10 @@
 .view-text-search .view-filters .views-exposed-widgets .btn.btn-primary:hover{ background:#eee; color:#777;}
 .view-text-search .view-filters .views-exposed-widgets .btn.btn-primary:active, 
 .view-text-search .view-filters .views-exposed-widgets .btn-primary.active{ background: transparent; border-color:#fff;}
-.view-text-search .view-filters .views-exposed-widgets .btn.btn-primary span{ font-family: 'Glyphicons Halflings' !important;	background:transparent;}
-.view-text-search .view-filters .views-exposed-widgets .btn.btn-primary span::before{ content: '\e080'; position:relative; right:0.25rem; top:-0.56rem;}
-.view-text-search .view-filters .views-exposed-widgets .btn.btn-primary:active .icon,
-.view-text-search .view-filters .views-exposed-widgets .btn.btn-primary.active .icon{ color:#777;}
+.view-text-search .view-filters .views-exposed-widgets .btn.btn-primary span{ font-family: 'Glyphicons Halflings' !important;color:transparent;background:transparent;}
+.view-text-search .view-filters .views-exposed-widgets .btn.btn-primary span::before{ content: '\e080'; color:#aaa; position:relative;top: 0.2rem;left: 1.2rem;font-size:1.5rem;}
+.view-text-search .view-filters .views-exposed-widgets .btn.btn-primary:active span,
+.view-text-search .view-filters .views-exposed-widgets .btn.btn-primary.active span{ color:#777;}
 
 
 
