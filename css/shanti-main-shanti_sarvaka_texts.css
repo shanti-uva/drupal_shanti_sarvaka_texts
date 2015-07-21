@@ -130,7 +130,7 @@
 .views-widget-filter-field_book_author_value{ display:inline-block;padding: 0;}
 
 .views-widget-filter-title div,
-.views-widget-field_book_author_value div{ margin:0;}
+.views-widget-field_book_author_value div{ margin:0; width:100%;}
 
 .views-widget-filter-title .form-control.form-text, 
 .views-widget-filter-field_book_author_value .form-control.form-text{ max-width:14rem;}
