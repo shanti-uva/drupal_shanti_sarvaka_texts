@@ -375,7 +375,7 @@ background:transparent;
 	.view-all-texts-control-box-cell-header.col-xs-5{ width:100% !important;}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 
 	.carousel{ min-height:550px;}
 }
