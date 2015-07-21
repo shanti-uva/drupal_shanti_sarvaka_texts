@@ -344,6 +344,7 @@ background:transparent;
 .extruder.right .view-filters .feature-group .feature-reset .icon::before{ font-family: 'shanticon'; content: "\e610"; }
 
 
+.extruder.right .view-filters .ajax-progress{ display:none;}
 
 
 /* search by text section */
