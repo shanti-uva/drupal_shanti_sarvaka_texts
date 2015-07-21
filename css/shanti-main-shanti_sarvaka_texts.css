@@ -216,7 +216,7 @@
 .region-search-flyout .nav-tabs>li>a:active{ background-color:transparent; border:none; border-radius:0; padding: 0 10px;color:#555;}
 .region-search-flyout .nav-tabs>li.active>a,
 .region-search-flyout .nav-tabs>li.active>a:hover,
-.region-search-flyout .nav-tabs>li.active>a:active{ font-weight:bold;border: 1px solid #ccc !important; background-color: #fff !important; border-radius:5px;}
+.region-search-flyout .nav-tabs>li.active>a:active{ font-weight:bold;border: 1px solid #ccc !important; background-color: #fff !important; border-radius:5px; padding-top:0.2rem; font-size:90%;}
 
 .region-search-flyout .nav-tabs>li>a:hover,
 .region-search-flyout .nav-tabs>li>a:active{ background-color: #fff !important;color:#000;}
@@ -360,9 +360,6 @@ background:transparent;
 
 
 
-
-
-
 /*----------------*/
 /** breakpoints **/
 /*----------------*/
@@ -400,6 +397,8 @@ background:transparent;
 	.nav-justified > li.active::before{ color: #764B8D;} /* give arrow color, show it when tabs are not stacked */
 
 	.view-all-texts-control-box-cell-pager{ float:right;}
+
+
 }
 
 
