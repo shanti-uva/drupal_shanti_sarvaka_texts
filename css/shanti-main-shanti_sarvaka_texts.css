@@ -348,13 +348,11 @@ background:transparent;
 
 
 
-
-
-
-
-
-
-
+/* search by text section */
+.views-exposed-widget .description{ display:none;}
+#quicktabs-search_qt2.tab-pane.active{ position:absolute; top:-6.3rem;}
+.region-search-flyout .nav-tabs{ position:relative;top:1rem;}
+.views-exposed-form .views-exposed-widget.views-widget-filter-search_api_views_fulltext{ padding-right:0;}
 
 
 
