@@ -262,7 +262,7 @@
 .extruder.right .views-exposed-widgets input.form-control:hover{ border: 1px solid #ccc; color:#777;}
 .extruder.right .views-exposed-widgets input.form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
 
-
+.extruder.right .view-full-text-local input.form-control{ margin-top:1.4rem;}
 
 
 /*--- button group ---*/
