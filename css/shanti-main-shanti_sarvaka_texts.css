@@ -374,9 +374,14 @@ background:transparent;
 #shanti-texts-sidebar .field{ border-bottom:1px solid #ccc; padding-bottom:0.7rem; margin-bottom:0.7rem;}
 
 
-.view-full-text-local .view-content{ margin:0 auto 5rem; padding-top:0rem;}
-
+.view-full-text-local .view-content,
 .view-text-search .view-content{padding-top:3rem;margin-bottom:5rem;}
+
+
+
+
+
+
 
 .panels-flexible-region-3-left_bottom_region{ width:100%;}
 
