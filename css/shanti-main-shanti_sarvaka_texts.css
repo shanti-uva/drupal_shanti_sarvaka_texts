@@ -383,7 +383,7 @@ background:transparent;
 
 .views-exposed-widget.views-reset-button{ display:none;}
 
-.view-full-text-local .view-empty p{ margin-top:5rem;}
+.view-full-text-local .view-empty p{ position:absolute; top:10rem;}
 
 
 
