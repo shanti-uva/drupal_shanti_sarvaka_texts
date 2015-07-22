@@ -165,7 +165,7 @@
 .view-solr-texts p, 
 .view-full-text-local p{ margin: .5em 0 0 1em;}
 
-.mega-search-title.depth-1.weight-0,
+/*.mega-search-title.depth-1.weight-0,*/
 .view-all-texts-control-box .views-submit-button { display:none;}
 
 /* Search flyout list styles */
