@@ -183,9 +183,9 @@
 
 /*.view-text-search h3 + div, 
 .view-text-search h3 + div a,
-.view-text-search h3 + div div,
+.view-text-search h3 + div div,*/
 .view-text-search h3 + div::before{ display:none;}
-*/
+
 
 
 /* adjust searchbox position */
