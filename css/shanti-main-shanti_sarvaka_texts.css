@@ -159,7 +159,7 @@
 
 .view-text-search h3, 
 .view-solr-texts h3, 
-.view-full-text-local h3{ margin: 0.8rem 0 -0.2rem 0.8rem;font-size: 1em;padding-top:0.3rem;}
+.view-full-text-local h3{ margin: 1rem 0 -0.2rem 0.8rem;font-size: 1em;padding-top:0.3rem;border-top:1px solid #ddd;}
 .view-text-search h3{ padding-left:0.8rem;margin-left:0;}
 .view-text-search p, 
 .view-solr-texts p, 
