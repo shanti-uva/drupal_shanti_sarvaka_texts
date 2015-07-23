@@ -159,8 +159,8 @@
 
 .view-text-search h3, 
 .view-solr-texts h3, 
-.view-full-text-local h3{ margin: 0.8rem 0 -0.2rem 0.8rem;font-size: 1em;border-top:1px solid #e0e0e0;padding-top: .3rem;}
-.view-text-search h3{ padding-left: .8rem;margin-left:0;}
+.view-full-text-local h3{ margin: 0.8rem 0 -0.2rem 0.8rem;font-size: 1em;padding-top:0.3rem;}
+.view-text-search h3{ padding-left:0.8rem;margin-left:0;}
 .view-text-search p, 
 .view-solr-texts p, 
 .view-full-text-local p{ margin: .5em 0 0 1em;}
@@ -182,9 +182,9 @@
 
 /* .view-text-search h3 ~ div::before{ font-family: 'FontAwesome';position: relative;top: 0.5rem;margin-right:.7rem;float: left;content: "\f111";font-size:.38em;color:#888;} 
 */
-.view-full-text-local p{ font-size:90%;border-bottom:1px solid #aaa; padding-bottom:1.5rem;}
+.view-full-text-local p{ font-size:90%; border-bottom:1px solid #aaa; padding-bottom:1.5rem;}
 .view-full-text-local h3{ font-size:90%;font-weight:bold !important; border-left:3px solid #a066c0; padding-left:.7rem;}
-
+.view-full-text-local h3 a{ font-weight:normal !important;}
 
 /*.view-text-search h3 + div, 
 .view-text-search h3 + div a,
