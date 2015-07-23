@@ -142,11 +142,6 @@
 .form-type-textfield.form-item-title{ margin-right:0.7rem;}
 .views-exposed-widget.views-widget-filter-title{ margin-top:0;}
 
-
-
-
-
-
 /*
 .mega-search-title.depth-1 {margin-left:.5em;font-size:110%;border-top:1px solid gray;margin-top:.25em;padding-top:.25em;}
 .mega-search-title.depth-2{margin-left:1.5em;}
@@ -157,16 +152,22 @@
 .mega-search-title.depth-7{ margin-left:3.5em;}
 */
 
-.view-text-search h3, 
-.view-solr-texts h3, 
-.view-full-text-local h3{ margin: 1rem 0 -0.2rem 0.8rem;font-size: 1em;padding-top:0.3rem;border-top:1px solid #ddd;}
-.view-text-search h3{ padding-left:0.8rem;margin-left:0;}
+
+
 .view-text-search p, 
 .view-solr-texts p, 
 .view-full-text-local p{ margin: .5em 0 0 1em;}
 
 /*.mega-search-title.depth-1.weight-0,*/
 .view-all-texts-control-box .views-submit-button { display:none;}
+
+.view-text-search h3, 
+.view-solr-texts h3, 
+.view-full-text-local h3{ margin: 1rem 0 -0.2rem 0.8rem;font-size: 1em;padding-top:0.3rem;}
+
+.view-text-search h3{ padding-left:0.8rem;margin-left:0;}
+.view-full-text-local h3{ font-size:90%;font-weight:bold !important; border-left:3px solid #a066c0; padding-left:.7rem;}
+
 
 /* Search flyout list styles */
 .view-text-search a{ color:#444; display:inline-block; font-size:1em !important; line-height:1.32em; white-space:nowrap; padding: 0.2em 0.5em 0 0;}
@@ -183,7 +184,6 @@
 /* .view-text-search h3 ~ div::before{ font-family: 'FontAwesome';position: relative;top: 0.5rem;margin-right:.7rem;float: left;content: "\f111";font-size:.38em;color:#888;} 
 */
 .view-full-text-local p{ font-size:90%; border-bottom:1px solid #aaa; padding-bottom:1.5rem;}
-.view-full-text-local h3{ font-size:90%;font-weight:bold !important; border-left:3px solid #a066c0; padding-left:.7rem;}
 .view-full-text-local h3 a{ font-weight:normal !important;}
 
 /*.view-text-search h3 + div, 
