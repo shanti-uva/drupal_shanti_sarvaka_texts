@@ -183,12 +183,8 @@
 /* .view-text-search h3 ~ div::before{ font-family: 'FontAwesome';position: relative;top: 0.5rem;margin-right:.7rem;float: left;content: "\f111";font-size:.38em;color:#888;} 
 */
 .view-full-text-local p{ font-size:90%;}
-.view-full-text-local h3 a{ font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;}
-.view-full-text-local h3 a:hover{ color:#000;}
-.view-full-text-local h3 a::before{ background:#fff; color: transparent;font-family: 'shanticon';content: '\e625';font-size: 1.06em;float: left;position: relative; top: 0.5rem;border-radius: 50%;background-clip: padding-box; width: 7px;height: 7px;display: inline-block;margin:0 9px 0 0; -webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);border-collapse: separate;} 
-.view-full-text-local h3 a:hover::before{ background:#aaa !important; -webkit-box-shadow:none;box-shadow:none;}
-.view-full-text-local h3 a:active::before{ background:#fff; -webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);}
 
+.view-full-text-local h3 a{ font-weight:bold !important;}
 
 
 /*.view-text-search h3 + div, 
