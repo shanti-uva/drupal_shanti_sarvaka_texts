@@ -214,7 +214,7 @@
 .block-quicktabs{ margin-top:5rem;}
 .view-text-search > .view-filters{ position:absolute;top:-6.4rem;}
 
-.region-search-flyout .nav-tabs{ border:none;margin-left:2rem;margin-bottom: 2rem;}
+.region-search-flyout .nav-tabs{ border:none;margin-left:2rem;margin-bottom: 2rem;position: absolute; top: -1.8rem; z-index:12000;}
 .region-search-flyout .nav-tabs>li{ margin-bottom:0;}
 .region-search-flyout .nav-tabs>li>a,
 .region-search-flyout .nav-tabs>li>a:hover,
@@ -358,7 +358,6 @@ background:transparent;
 .views-exposed-widget .description{ display:none;}
 #quicktabs-search_qt2.tab-pane.active{ position:absolute; top:-6.4rem;}
 
-.region-search-flyout .nav-tabs{ position: absolute; top: -1.8rem;}
 
 
 .views-exposed-form .views-exposed-widget.views-widget-filter-search_api_views_fulltext{ padding-right:0;}
