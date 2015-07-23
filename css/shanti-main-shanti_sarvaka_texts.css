@@ -184,7 +184,7 @@
 */
 .view-full-text-local p{ font-size:90%;}
 
-.view-full-text-local h3 a{ font-weight:bold !important;}
+.view-full-text-local h3{ font-size:90%; font-weight:bold !important;}
 
 
 /*.view-text-search h3 + div, 
