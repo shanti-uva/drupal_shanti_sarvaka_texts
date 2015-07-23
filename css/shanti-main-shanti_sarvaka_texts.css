@@ -49,10 +49,10 @@
 .view-all-texts-control-box-cell-pager{ padding:0; margin:0; width:auto; height:5rem; position:relative; top:0; float:left;}
 
 /* Pagerer */
-.region-search-flyout .pagerer{ margin:0; position:relative; top:1rem;font-size:90%;width:auto !important;float:right;}
-.region-search-flyout .pagerer .ajax-progress{ display:none;}
+.region-search-flyout table.pagerer{ margin:0; position:relative; top:1rem;font-size:90%;width:auto !important;float:right;}
+.region-search-flyout table.pagerer .ajax-progress{ display:none;}
 /* .region-search-flyout .pagerer-pager input{ height: 1.5em;width: 2em;font-size:1em;} */
-
+.region-search-flyout table.pagerer tbody{ border:none;}
 
 /* Exposed Widgets */
 .views-exposed-widget label,
@@ -374,7 +374,7 @@ background:transparent;
 
 
 .view-full-text-local .view-content,
-.view-text-search .view-content{padding-top:3rem;margin-bottom:5rem;}
+.view-text-search .view-content{padding-top:3rem;/*margin-bottom:5rem;*/}
 
 
 
