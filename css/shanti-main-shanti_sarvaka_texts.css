@@ -180,8 +180,8 @@
 .view-text-search h3 a:active::before{ background:#fff; -webkit-box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);box-shadow: 0 0 2px 1px rgba(0,0,0,0.2700);}
 .view-text-search h3 ~ div{ padding-left:3.5rem; font-family:'Helvetica Neue',helvetica,arial,sans-serif;white-space:nowrap;font-style:italic;}
 
-.view-text-search h3 ~ div::before{ font-family: 'FontAwesome';position: relative;top: 0.5rem;margin-right:.7rem;float: left;content: "\f111";font-size:.38em;color:#888;} 
-
+/* .view-text-search h3 ~ div::before{ font-family: 'FontAwesome';position: relative;top: 0.5rem;margin-right:.7rem;float: left;content: "\f111";font-size:.38em;color:#888;} 
+*/
 .view-full-text-local p{ font-size:90%; border-bottom:1px solid #aaa; padding-bottom:1.5rem;}
 .view-full-text-local h3{ font-size:90%;font-weight:bold !important; border-left:3px solid #a066c0; padding-left:.7rem;}
 .view-full-text-local h3 a{ font-weight:normal !important;}
