@@ -230,7 +230,7 @@
 border-radius: 5px;}
 .region-search-flyout .nav-tabs>li.active>a,
 .region-search-flyout .nav-tabs>li.active>a:hover,
-.region-search-flyout .nav-tabs>li.active>a:active{ position: relative; top:-.05rem; font-weight:bold; border-color: #ccc !important; background-color: #fff !important; border-radius:5px; padding-top:0.2rem; font-size:85%;}
+.region-search-flyout .nav-tabs>li.active>a:active{ position: relative; top:0.05rem; font-weight:bold; border-color: #ccc !important; background-color: #fff !important; border-radius:5px; padding-top:0.2rem; font-size:85%;}
 
 .region-search-flyout .nav-tabs>li>a:hover,
 .region-search-flyout .nav-tabs>li>a:active{ background-color: #fff !important;color:#000;border:1px solid #e0e0e0;}
