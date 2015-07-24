@@ -188,7 +188,7 @@
 .view-full-text-local p{ font-size:90%; border-bottom:1px solid #aaa; padding-bottom:1.5rem;}
 .view-full-text-local h3 a{ font-weight:normal !important;}
 
-.view-full-text-local input.pagerer-page{ width:3em; padding: 0.15rem 0.3rem 0;} /* pager input submit - counter */
+.view-full-text-local input.pagerer-page{ width:3em; padding: 0.15rem 0.3rem 0rem 0.3rem;} /* pager input submit - counter */
 
 
 
@@ -275,7 +275,7 @@ border-radius: 5px;}
 
 
 /*--- button group ---*/
-.extruder.right .views-exposed-widgets .views-submit-button{ width:45px !important; height:35px; position:absolute; top:2.2rem; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
+.extruder.right .views-exposed-widgets .views-submit-button{ width:45px !important; height:35px; position:absolute; top:2.2rem; left:25.9rem; z-index:10; background:transparent; padding:0; margin:0;}
 
 /*--- button ---*/
 .extruder.right .views-exposed-widgets .btn.btn-primary{
