@@ -275,7 +275,7 @@ border-radius: 5px;}
 
 
 /*--- button group ---*/
-.extruder.right .views-exposed-widgets .views-submit-button{ width:45px !important; height:35px; position:absolute; top:2.2rem; left:25.9rem; z-index:10; background:transparent; padding:0; margin:0;}
+.extruder.right .views-exposed-widgets .views-submit-button{ width:45px !important; height:35px; position:absolute; top:2.2rem; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
 
 /*--- button ---*/
 .extruder.right .views-exposed-widgets .btn.btn-primary{
