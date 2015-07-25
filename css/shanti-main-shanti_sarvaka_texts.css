@@ -221,6 +221,7 @@
 .region-search-flyout{ position:relative;}
 .block-quicktabs{ margin-top:5rem;}
 .view-text-search > .view-filters{ position:absolute;top:-6.4rem;}
+.extruder.right .view-filters .ajax-progress{ display:none;}
 
 .region-search-flyout .nav-tabs{ border:none;margin-left:2rem;margin-bottom: 2rem;position: absolute; top: -1.8rem; z-index:12000;}
 .region-search-flyout .nav-tabs>li{ margin-bottom:0;}
@@ -310,57 +311,23 @@ border-radius: 5px;}
 
 
 /*--- reset search button ---*/
-.extruder.right .view-filters .input-group-btn .searchreset {
-        border:none;
-        background:transparent;
-        background-image:none;
-        position:absolute;
-        right:5rem;
-        top:0.9rem;
-        z-index:10;
-        padding:0;
-        margin:0;
-        display:none;
-        border-radius:50%;
-}
-.extruder.right .view-filters .input-group-btn .searchreset:hover,
-.extruder.right .view-filters .input-group-btn .searchreset:active{ color:#777;}
-.extruder.right .view-filters .input-group-btn .searchreset:active,
-.extruder.right .view-filters .input-group-btn .searchreset.active{ background:transparent;border:none;background-image:none;box-shadow:none;}
+.extruder.right .view-filters .views-reset-button button {border:none;background:transparent;background-image:none;position:absolute;right:5rem;top:0.9rem;z-index:10;padding:0;margin:0;display:none;border-radius:50%;}
+.extruder.right .view-filters .views-reset-button button:hover,
+.extruder.right .view-filters .views-reset-button button:active{ color:#777;}
+.extruder.right .view-filters .views-reset-button button,
+.extruder.right .view-filters .views-reset-button button{ background:transparent;border:none;background-image:none;box-shadow:none;}
 
-.extruder.right .view-filters .input-group-btn .searchreset .icon{ cursor:pointer; width: 2.75rem;
-height: 2.75rem;
-border-radius: 50%;
-border: none;
-position: relative; top:-0.55rem; left:0;
-background:transparent;
-}
-.extruder.right .view-filters .input-group-btn .searchreset .icon::before,
-.extruder.right .view-filters .input-group-btn .searchreset .icon::after{ background:#aaa; position:absolute;top:1.3rem; left:0.5rem; width:1.7rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
-.extruder.right .view-filters .input-group-btn .searchreset .icon::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
-.extruder.right .view-filters .input-group-btn .searchreset:hover .icon,
-.extruder.right .view-filters .input-group-btn .searchreset:active .icon{ background:#f5f5f5;}
-
-.extruder.right .view-filters .feature-group .feature-reset{
-	border:none;
-	background:transparent;
-	background-image:none;
-	width:15px;
-	height:15px;
-	position:absolute;
-	right:13px;
-	top:22px;
-	/*z-index:10000;*/
-	display:none;
-	padding:0;
-	margin:0;
-	position:absolute; top:23px; right:11px;
-}
-.extruder.right .view-filters .feature-group .feature-reset .icon{ font-size:1.25em; color:#c0c0c0; }
-.extruder.right .view-filters .feature-group .feature-reset .icon::before{ font-family: 'shanticon'; content: "\e610"; }
+.extruder.right .view-filters .views-reset-button button span{ cursor:pointer; width: 2.75rem;height: 2.75rem;border-radius: 50%;border: none;position: relative; top:-0.55rem; left:0;background:transparent;}
+.extruder.right .view-filters .views-reset-button button span::before,
+.extruder.right .view-filters .views-reset-button button span::after{ background:#aaa; position:absolute;top:1.3rem; left:0.5rem; width:1.7rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+.extruder.right .view-filters .views-reset-button button span::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
+.extruder.right .view-filters .views-reset-button button:hover span,
+.extruder.right .view-filters .views-reset-button button:active span{ background:#f5f5f5;}
 
 
-.extruder.right .view-filters .ajax-progress{ display:none;}
+
+
+
 
 
 /* search by text section */
@@ -398,8 +365,13 @@ background:transparent;
 
 
 
-
+/*
 .views-exposed-widget.views-reset-button{ display:none;}
+*/
+
+
+
+
 
 .view-full-text-local .view-empty p{ position:absolute; top:10rem;}
 
