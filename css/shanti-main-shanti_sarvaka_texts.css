@@ -309,7 +309,7 @@ border-radius: 5px;}
 
 
 
-/*--- reset search button ---
+/*--- reset search button ---*/
 .extruder.right .view-filters .views-reset-button button {border:none;background:transparent;background-image:none;position:absolute;right:5rem;top:0.9rem;z-index:10;padding:0;margin:0;display:none;border-radius:50%;}
 .extruder.right .view-filters .views-reset-button button:hover,
 .extruder.right .view-filters .views-reset-button button:active{ color:#777;}
@@ -322,8 +322,11 @@ border-radius: 5px;}
 .extruder.right .view-filters .views-reset-button button span::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 .extruder.right .view-filters .views-reset-button button:hover span,
 .extruder.right .view-filters .views-reset-button button:active span{ background:#f5f5f5;}
-*/
+/*
 .views-exposed-widget.views-reset-button{ display:none;}
+*/
+.views-exposed-form .views-exposed-widget.views-reset-button{ padding:0;}
+.views-exposed-form .views-exposed-widget.views-reset-button::before{ display:none;}
 
 
 
@@ -337,7 +340,6 @@ border-radius: 5px;}
 
 
 .views-exposed-form .views-exposed-widget.views-widget-filter-search_api_views_fulltext{ padding-right:0;}
-
 
 
 
