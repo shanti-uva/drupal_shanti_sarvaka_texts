@@ -310,23 +310,23 @@ border-radius: 5px;}
 
 
 /*--- reset search button ---*/
-.extruder.right .view-filters .views-reset-button button {border:none;background:transparent;background-image:none;position:absolute;right:5rem;top:0.9rem;z-index:10;padding:0;margin:0;display:none;border-radius:50%;}
-.extruder.right .view-filters .views-reset-button button:hover,
-.extruder.right .view-filters .views-reset-button button:active{ color:#777;}
-.extruder.right .view-filters .views-reset-button button,
-.extruder.right .view-filters .views-reset-button button{ background:transparent;border:none;background-image:none;box-shadow:none;}
+.extruder.right .views-reset-button button {border:none;background:transparent;background-image:none;position:absolute;right:5rem;top:0.9rem;z-index:10;padding:0;margin:0;display:none;border-radius:50%;}
+.extruder.right .views-reset-button button:hover,
+.extruder.right .views-reset-button button:active{ color:#777;}
+.extruder.right .views-reset-button button,
+.extruder.right .views-reset-button button{ background:transparent;border:none;background-image:none !important;box-shadow:none;width: 2.75rem;height: 2.75rem;}
 
-.extruder.right .view-filters .views-reset-button button span{ cursor:pointer; width: 2.75rem;height: 2.75rem;border-radius: 50%;border: none;position: relative; top:-0.55rem; left:0;background:transparent;}
-.extruder.right .view-filters .views-reset-button button span::before,
-.extruder.right .view-filters .views-reset-button button span::after{ background:#aaa; position:absolute;top:1.3rem; left:0.5rem; width:1.7rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
-.extruder.right .view-filters .views-reset-button button span::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
-.extruder.right .view-filters .views-reset-button button:hover span,
-.extruder.right .view-filters .views-reset-button button:active span{ background:#f5f5f5;}
+.extruder.right .views-reset-button button span{ cursor:pointer; width: 2.75rem;height: 2.75rem;border-radius: 50%;border: none;position: relative; top:-0.55rem; left:0;background:transparent;}
+.extruder.right .views-reset-button button span::before,
+.extruder.right .views-reset-button button span::after{ background:#aaa; position:absolute;top:1.3rem; left:0.5rem; width:1.7rem;height:1px; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+.extruder.right .views-reset-button button span::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
+.extruder.right .views-reset-button button:hover span,
+.extruder.right .views-reset-button button:active span{ background:#f5f5f5;}
 /*
 .views-exposed-widget.views-reset-button{ display:none;}
 */
 .views-exposed-form .views-exposed-widget.views-reset-button{ padding:0;}
-.views-exposed-form .views-exposed-widget.views-reset-button::before{ display:none;}
+.views-exposed-form .views-exposed-widget.views-reset-button button span::before{ display:none;}
 
 
 
