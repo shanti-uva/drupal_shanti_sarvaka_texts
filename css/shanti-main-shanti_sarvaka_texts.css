@@ -54,6 +54,8 @@
 /* .region-search-flyout .pagerer-pager input{ height: 1.5em;width: 2em;font-size:1em;} */
 .region-search-flyout table.pagerer tbody{ border:none;}
 
+.front .content table.pagerer{ position:relative; top:-0.3rem;}
+
 /* Exposed Widgets */
 .views-exposed-widget label,
 .views-exposed-widget div{ float:left;margin: 0;vertical-align: middle;}
@@ -307,10 +309,7 @@ border-radius: 5px;}
 
 
 
-
-
-
-/*--- reset search button ---*/
+/*--- reset search button ---
 .extruder.right .view-filters .views-reset-button button {border:none;background:transparent;background-image:none;position:absolute;right:5rem;top:0.9rem;z-index:10;padding:0;margin:0;display:none;border-radius:50%;}
 .extruder.right .view-filters .views-reset-button button:hover,
 .extruder.right .view-filters .views-reset-button button:active{ color:#777;}
@@ -323,7 +322,8 @@ border-radius: 5px;}
 .extruder.right .view-filters .views-reset-button button span::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 .extruder.right .view-filters .views-reset-button button:hover span,
 .extruder.right .view-filters .views-reset-button button:active span{ background:#f5f5f5;}
-
+*/
+.views-exposed-widget.views-reset-button{ display:none;}
 
 
 
@@ -359,15 +359,6 @@ border-radius: 5px;}
 
 
 .panels-flexible-region-3-left_bottom_region{ width:100%;}
-
-
-
-
-
-
-/*
-.views-exposed-widget.views-reset-button{ display:none;}
-*/
 
 
 
@@ -416,6 +407,8 @@ border-radius: 5px;}
 	.nav-justified > li.active::before{ color: #764B8D;} /* give arrow color, show it when tabs are not stacked */
 
 	.view-all-texts-control-box-cell-pager{ float:right;}
+
+	.front table.pagerer{ position:relative; top:0;}
 
 
 }
