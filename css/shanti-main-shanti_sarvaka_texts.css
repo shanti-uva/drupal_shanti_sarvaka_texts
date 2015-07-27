@@ -43,6 +43,8 @@
 /* VIEWS FILTER BAR */
 .view-all-texts-control-box{ border-top:0;border-color:none;}
 
+.view-all-texts-control-box .ajax-progress{ display:none;}
+
 .view-all-texts-control-box-cell-header{ margin: 0.8rem 0 0 0; padding:0 0 0 2.5rem;font-size:0.93em;width:54%;max-width:54%;}
 .view-result-count-info{ font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;font-size:0.93em;}
 .view-all-texts-control-box-cell-filters{ margin:0 auto;}
@@ -50,8 +52,6 @@
 
 /* Pagerer */
 .region-search-flyout table.pagerer{ margin:0; position:relative; top:1rem;font-size:0.75em;width:auto !important;float:right;}
-.region-search-flyout table.pagerer .ajax-progress{ display:none;}
-/* .region-search-flyout .pagerer-pager input{ height: 1.5em;width: 2em;font-size:1em;} */
 .region-search-flyout table.pagerer tbody{ border:none;}
 
 .front .content table.pagerer{ position:relative; top:-0.3rem;}
