@@ -8,6 +8,7 @@
 				var mbsrch = $(".view-filters input.form-control");  // the main search input
 				$(mbsrch).attr("placeholder", "Enter Search...");
 			    $(mbsrch).data("holder", $(mbsrch).attr("placeholder"));
+			    $(".views-reset-button button").hide();
 			
 			    // --- focusin - focusout
 			    $(mbsrch).focusin(function () {
