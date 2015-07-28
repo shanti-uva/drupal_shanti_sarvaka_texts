@@ -310,12 +310,11 @@ border-radius: 5px;}
 
 
 /*--- reset search button ---*/
-.extruder.right .views-reset-button .btn.btn-primary {width: 2.25rem;box-shadow:none;height: 2.25rem;border:none;background:transparent;background-image:none !important;position:absolute;right:6.2rem;top:2.5rem;z-index:10;padding:0;margin:0;border-radius:50%;}
+.extruder.right .views-reset-button .btn.btn-primary {width: 2.25rem;box-shadow:none;height: 2.25rem;border:none;background:transparent;background-image:none;position:absolute;right:6.2rem;top:2.5rem;z-index:10;padding:0;margin:0;border-radius:50%;}
 .extruder.right .views-reset-button .btn.btn-primary:hover,
-.extruder.right .views-reset-button .btn.btn-primary:active{ color:transparent !important;background-image:none !important;background:transparent !important;border:none;}
-.extruder.right .views-reset-button .btn.btn-primary{ background:transparent;border:none;background-image:none !important;box-shadow:none;width: 2.75rem;height: 2.75rem;}
-
+.extruder.right .views-reset-button .btn.btn-primary:active{ color:transparent;background-image:none;background:#f5f5f5;border:none;}
 .extruder.right .views-reset-button .btn.btn-primary span{ cursor:pointer; width: 1px; height: 2.75rem;position: relative; top:-0.55rem; left:0.5rem;background:transparent;border-radius: 50%;border: none;}
+.extruder.right .views-reset-button .btn.btn-primary span:hover{ background-color:transparent;}
 .extruder.right .views-reset-button .btn.btn-primary span::before,
 .extruder.right .views-reset-button .btn.btn-primary span::after{ background:#aaa; width:1.7rem;height:1px; position:absolute;top:1rem;right:1.5rem; content: ''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 .extruder.right .views-reset-button .btn.btn-primary span::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
