@@ -5,7 +5,8 @@
 			attach: function (context, settings) {
 				if(context == window.document) {
 													
-				  var mbsrch = $(".view-filters .form-control");  // the main search input
+				var mbsrch = $(".view-filters input.form-control");  // the main search input
+				$(mbsrch).attr("placeholder", "Enter Search...");
 			    $(mbsrch).data("holder", $(mbsrch).attr("placeholder"));
 			
 			    // --- focusin - focusout
@@ -32,5 +33,5 @@
 				}
 		  }
 		};
-			
+
 }(jQuery));
