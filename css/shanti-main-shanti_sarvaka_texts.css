@@ -225,7 +225,7 @@
 .view-text-search > .view-filters{ position:absolute;top:-6.4rem;}
 .extruder.right .view-filters .ajax-progress{ display:none;} 
 
-.region-search-flyout .nav-tabs{ border:none;margin-left:2rem;margin-bottom: 2rem;position: absolute; top: -1.8rem; z-index:12000;}
+.region-search-flyout .nav-tabs{ border:none;margin-left:2rem;margin-bottom:2rem; position: absolute; z-index:12000;}
 .region-search-flyout .nav-tabs>li{ margin-bottom:0;}
 .region-search-flyout .nav-tabs>li>a,
 .region-search-flyout .nav-tabs>li>a:hover,
