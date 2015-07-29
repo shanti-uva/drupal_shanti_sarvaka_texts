@@ -225,7 +225,7 @@
 .view-text-search > .view-filters{ position:absolute;top:-6.4rem;}
 .extruder.right .view-filters .ajax-progress{ display:none;} 
 
-.region-search-flyout .nav-tabs{ border:none;margin-left:2rem;margin-bottom:2rem; position: absolute; z-index:12000;}
+.region-search-flyout .nav-tabs{ border:none;margin-left:2rem;margin-bottom:2rem; position:absolute; z-index:12000;}
 .region-search-flyout .nav-tabs>li{ margin-bottom:0;}
 .region-search-flyout .nav-tabs>li>a,
 .region-search-flyout .nav-tabs>li>a:hover,
@@ -310,7 +310,7 @@ border-radius: 5px;}
 
 
 /*--- reset search button ---*/
-.extruder.right .views-reset-button .btn.btn-primary {width: 2.25rem;box-shadow:none;height: 2.25rem;border:none;background:transparent;background-image:none;position:absolute;right:6.4rem;top:2.8rem;z-index:10;padding:0;margin:0;border-radius:50%;}
+.extruder.right .views-reset-button .btn.btn-primary { width: 2.25rem;height: 2.25rem; box-shadow:none;border:none;background:transparent;background-image:none;position:absolute;right:6.4rem;top:2.8rem;z-index:10;padding:0;margin:0;border-radius:50%;}
 .extruder.right .views-reset-button .btn.btn-primary:hover,
 .extruder.right .views-reset-button .btn.btn-primary:active{ color:transparent;background-image:none;background:#f5f5f5;border:none;}
 .extruder.right .views-reset-button .btn.btn-primary span{ cursor:pointer; width: 1px; height: 2.75rem;position: relative; top:-0.55rem; left:0.5rem;background:transparent;border-radius: 50%;border: none;}
