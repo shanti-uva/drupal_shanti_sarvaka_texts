@@ -178,7 +178,7 @@
 .extruder.right .views-submit-button .btn.btn-primary.active span{ color:#777;}
 
 /*--- reset search button ---*/
-.extruder.right .views-reset-button .btn.btn-primary { position:absolute;right:7.8rem;top:2.3rem;z-index:10; color: transparent;text-shadow: none;box-shadow:none;border:none;background:transparent;background-image:none;padding:0;margin:0;border-radius:50%;}
+.extruder.right .views-reset-button .btn.btn-primary { position:absolute;right:7.8rem;top:3.3rem;z-index:10; color: transparent;text-shadow: none;box-shadow:none;border:none;background:transparent;background-image:none;padding:0;margin:0;border-radius:50%;}
 .extruder.right .views-reset-button .btn.btn-primary:hover,
 .extruder.right .views-reset-button .btn.btn-primary:active{ color:transparent;background-image:none;background:transparent;border:none;}
 .extruder.right .views-reset-button .btn.btn-primary span{ display:inline-block; width:2.25rem;height:2.25rem;cursor:pointer; position:relative; top:-0.55rem; left:1.5rem;background:transparent;border-radius: 50%;border: none;}
@@ -186,7 +186,7 @@
 .extruder.right .views-reset-button .btn.btn-primary span::after{ background:#aaa; width:1.7rem;height:1px; position:absolute;top:1.1rem;left: 0.3rem; content:''; -webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
 .extruder.right .views-reset-button .btn.btn-primary span::after{ -webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg);}
 .extruder.right .views-reset-button .btn.btn-primary:hover span,
-.extruder.right .views-reset-button .btn.btn-primary:active span{ background:#fafafa;}
+.extruder.right .views-reset-button .btn.btn-primary:active span{ background:#f0f0f0;}
 /*
 /*
 .views-exposed-widget.views-reset-button{ display:none;}
