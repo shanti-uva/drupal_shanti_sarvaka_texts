@@ -104,12 +104,6 @@
 .view-full-text-local h3{ margin: 1rem 0 -0.2rem 0.8rem;font-size: 1em;padding-top:0.3rem;}
 .view-text-search h3{ padding-left:0.8rem;margin-left:0;}
 .view-full-text-local h3{ font-size:90%;font-weight:bold !important; border-left:3px solid #a066c0; padding-left:.7rem;}
-
-.view-full-text-local p{ font-size:90%; border-bottom:1px solid #aaa; padding-bottom:1.5rem;}
-.view-full-text-local h3 a{ font-weight:normal !important;}
-.view-full-text-local input.pagerer-page{ width:3em; padding: 0.15rem 0.3rem 0rem 0.3rem;} /* pager input submit - counter */
-
-
 /* Search flyout list styles */
 .view-text-search a{ color:#444; display:inline-block; font-size:1em !important; line-height:1.32em; white-space:nowrap; padding: 0.2em 0.5em 0 0;}
 .view-text-search a:hover{ color: rgb(207, 47, 30);}
@@ -126,6 +120,11 @@
 
 /* .view-text-search h3 ~ div::before{ font-family: 'FontAwesome';position: relative;top: 0.5rem;margin-right:.7rem;float: left;content: "\f111";font-size:.38em;color:#888;} 
 */
+.view-full-text-local p{ font-size:90%; border-bottom:1px solid #aaa; padding-bottom:1.5rem;}
+.view-full-text-local h3 a{ font-weight:normal !important;}
+
+.view-full-text-local input.pagerer-page{ width:3em; padding: 0.15rem 0.3rem 0rem 0.3rem;} /* pager input submit - counter */
+
 .view-text-search .form-type-textfield.form-item-title{ margin-right:0; width:100%;}
 .view-text-search .view-filters .description{ display:none;}
 
@@ -146,11 +145,13 @@
 .region-search-flyout .nav-tabs>li.active>a,
 .region-search-flyout .nav-tabs>li.active>a:hover,
 .region-search-flyout .nav-tabs>li.active>a:active{ position: relative; top:0.05rem; font-weight:bold; border-color: #ccc !important; background-color: #fff !important; border-radius:5px; padding-top:0.2rem; font-size:85%;}
-/* override hover ---*/
+
 .region-search-flyout .nav-tabs>li>a:hover,
 .region-search-flyout .nav-tabs>li>a:active{ background-color: #fff !important;color:#000;border:1px solid #e0e0e0;}
-/* set text for Search by ---*/
+
 .region-search-flyout .nav-tabs::before{ content:'Search by:';font-size:70%;margin-right: 0.3rem;margin-left:1rem;float:left;top:.2rem;position:relative;font-weight:bold;color:#777;text-transform:uppercase;}
+
+
 
 
 /*--- START / Search Panel / Input & View ----*/
