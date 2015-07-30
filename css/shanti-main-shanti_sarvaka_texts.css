@@ -57,7 +57,7 @@
 
 /* Exposed Widgets */
 .views-exposed-widget label,
-.views-exposed-widget div{ float:left;margin: 0;vertical-align: middle;}
+.views-exposed-widget div{ margin: 0;vertical-align: middle;}
 .view-content{ margin-left: auto;margin-right: auto;width: 100%;}
 .views-row { float: left;width: 100% !important;height: 70px;background: white;padding: 0 1rem 1.2rem;margin: 0 1.5rem 1rem 0;border-top:4px solid #a066c0;}
 .views-field-title h3{ font-size: 1.25em; /* 18px; */margin: 0.5rem 0 0;width: 100%;float: left;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color: inherit;}
@@ -91,7 +91,7 @@
 .views-exposed-widget.views-widget-filter-title,
 .views-exposed-widget.views-widget-filter-field_book_author_value{ padding: .5em 0 0 0;}
 .form-type-textfield.form-item-title{ margin-right:0.7rem;}
-.views-exposed-widget.views-widget-filter-title{ margin-top:0;}
+.views-exposed-widget.views-widget-filter-title{ margin-top:0;width:100%;}
 
 
 .view-text-search p, 
@@ -135,7 +135,7 @@
 #search-flyout.extruder .text{ border: 1px solid rgb(238, 238, 238); padding: 5px;}
 .region-search-flyout{ position:relative;}
 .block-quicktabs{ margin-top:5rem;}
-.view-text-search > .view-filters{ position:absolute;top:-6.4rem;}
+.view-text-search > .view-filters{ position:absolute;top:-6.4rem;width:100%;}
 .extruder.right .view-filters .ajax-progress{ display:none;} 
 
 .region-search-flyout .nav-tabs{ border:none;margin-left:2rem;margin-bottom: 2rem;position: absolute; top: -1.8rem; z-index:12000;}
