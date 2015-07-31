@@ -94,6 +94,8 @@
 .views-exposed-widget.views-widget-filter-title{ margin-top:0;width:100%;}
 .view-all-texts-control-box .views-exposed-widget.views-widget-filter-title{ width:auto;}
 
+#edit-title-wrapper.views-exposed-widget.views-widget-filter-title{ width:100%;}
+
 .view-text-search p, 
 .view-solr-texts p, 
 .view-full-text-local p{ margin: .5em 0 0 1em;}
