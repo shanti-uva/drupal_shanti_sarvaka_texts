@@ -91,7 +91,7 @@
 .views-exposed-widget.views-widget-filter-title,
 .views-exposed-widget.views-widget-filter-field_book_author_value{ padding: .5em 0 0 0;}
 .form-type-textfield.form-item-title{ margin-right:0.7rem;}
-.views-exposed-widget.views-widget-filter-title{ margin-top:0;width:100%;}
+.views-exposed-widget.views-widget-filter-title{ margin-top:0;width:auto;}
 
 
 .view-text-search p, 
