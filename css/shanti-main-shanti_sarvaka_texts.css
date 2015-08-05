@@ -51,8 +51,6 @@
 .view-all-texts-control-box-cell-pager{ padding:0; margin:0; width:auto; height:5rem; position:relative; top:0; right:1rem; float:left;}
 
 /* Pagerer */
-.region-search-flyout table.pagerer{ margin:0; position:relative; top:1rem;font-size:0.75em;width:auto !important;float:right;}
-.region-search-flyout table.pagerer tbody{ border:none;}
 .front .content table.pagerer{ position:relative; top:-0.3rem;}
 
 /* Exposed Widgets */
@@ -107,7 +105,6 @@
 
 .view-full-text-local p{ font-size:90%; border-bottom:1px solid #aaa; padding-bottom:1.5rem;}
 .view-full-text-local h3 a{ font-weight:normal !important;}
-.view-full-text-local input.pagerer-page{ width:3em; padding: 0.15rem 0.3rem 0rem 0.3rem;} /* pager input submit - counter */
 
 
 /* Search flyout list styles */
@@ -222,6 +219,11 @@
 
 .mb-solr-results .results{ margin-top:3rem;}
 
+/*
+.region-search-flyout table.pagerer{ margin:0; position:relative; top:1rem;font-size:0.75em;width:auto !important;float:right;}
+.region-search-flyout table.pagerer tbody{ border:none;}
+.view-full-text-local input.pagerer-page{ width:3em; padding: 0.15rem 0.3rem 0rem 0.3rem;} /* pager input submit - counter 
+*/
 
 
 /*----------------*/
