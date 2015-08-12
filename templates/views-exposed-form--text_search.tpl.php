@@ -71,7 +71,12 @@
       </div>
     <?php endif; ?>
     <div class="views-exposed-widget views-submit-button">
-      <?php print $button; ?>
+    	<!-- TEST -->
+      <?php 
+      $button = str_replace('&#8203;','',$button);
+      print $button; 
+      ?>
+      <!-- TEST -->
     </div>
     <?php if (!empty($reset_button)): ?>
       <div class="views-exposed-widget views-reset-button">
