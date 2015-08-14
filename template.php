@@ -29,7 +29,6 @@ function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
 }
 
 function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
-
 	/*
   if (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
   

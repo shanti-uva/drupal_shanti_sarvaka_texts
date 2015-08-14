@@ -93,17 +93,17 @@
 
 .view-text-search p, 
 .view-solr-texts p, 
-.view-full-text-local p{ margin: .5em 0 0 1em;}
+.view-full-text-local p,.view-full-text-solr p{ margin: .5em 0 0 1em;}
 /*.mega-search-title.depth-1.weight-0,*/
 .view-all-texts-control-box .views-submit-button { display:none;}
 .view-text-search h3, 
 .view-solr-texts h3, 
-.view-full-text-local h3{ margin: 1rem 0 -0.2rem 0.8rem;font-size: 1em;padding-top:0.3rem;}
+.view-full-text-local h3,view-full-text-solr h3{ margin: 1rem 0 -0.2rem 0.8rem;font-size: 1em;padding-top:0.3rem;}
 .view-text-search h3{ padding-left:0.8rem;margin-left:0;}
-.view-full-text-local h3{ font-size:90%;font-weight:bold !important; border-left:3px solid #a066c0; padding-left:.7rem;}
+.view-full-text-local h3,.view-full-text-solr h3{ font-size:90%;font-weight:bold !important; border-left:3px solid #a066c0; padding-left:.7rem;}
 
-.view-full-text-local p{ font-size:90%; border-bottom:1px solid #aaa; padding-bottom:1.5rem;}
-.view-full-text-local h3 a{ font-weight:normal !important;}
+.view-full-text-local p,.view-full-text-solr p{ font-size:90%; border-bottom:1px solid #aaa; padding-bottom:1.5rem;}
+.view-full-text-local h3 a,.view-full-text-solr h3 a{ font-weight:normal !important;}
 
 
 /* Search flyout list styles */
@@ -158,7 +158,7 @@
 .extruder.right .views-exposed-widgets input.form-control:hover{ border: 1px solid #ccc; color:#777;}
 .extruder.right .views-exposed-widgets input.form-control:focus{ border: 1px solid #9097d3; -webkit-box-shadow: 0 0 4px #949bd8;box-shadow: 0 0 4px #949bd8; border-collapse: separate; /* fix for ie9 shadow */}
 
-.extruder.right .view-full-text-local input.form-control{ margin-top:1.4rem;}
+.extruder.right .view-full-text-local input.form-control,.extruder.right .view-full-text-solr input.form-control{ margin-top:1.4rem;}
 
 /*--- button group ---*/
 .extruder.right .views-submit-button{ width:45px !important; height:35px; position:absolute; top:2.2rem; right:13px; z-index:10; background:transparent; padding:0; margin:0;}
@@ -206,9 +206,9 @@
 #shanti-texts-sidebar .field{ border-bottom:1px solid #ccc; padding-bottom:0.7rem; margin-bottom:0.7rem;}
 
 
-.view-full-text-local .view-content,
+.view-full-text-local .view-content,.view-full-text-solr .view-content,
 .view-text-search .view-content{padding-top:3rem;/*margin-bottom:5rem;*/}
-.view-full-text-local .view-empty p{ position:absolute; top:10rem;}
+.view-full-text-local .view-empty p,.view-full-text-solr .view-empty p{position:absolute; top:10rem;}
 
 
 
