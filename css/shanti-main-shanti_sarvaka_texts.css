@@ -174,7 +174,7 @@
 .extruder.right .views-submit-button .btn.btn-primary.active span{ color:#777;}
 
 /*--- reset search button ---*/
-.extruder.right .views-reset-button .btn.btn-primary{ display:none;} /* TEMPORARILY Hiding */
+.extruder.right .views-reset-button{ display:none;} /* TEMPORARILY Hiding */
 .extruder.right .views-reset-button .btn.btn-primary { position:absolute;right:7.8rem;top:3.3rem;z-index:10; color: transparent;text-shadow: none;box-shadow:none;border:none;background:transparent;background-image:none;padding:0;margin:0;border-radius:50%;}
 .extruder.right .views-reset-button .btn.btn-primary:hover,
 .extruder.right .views-reset-button .btn.btn-primary:active{ color:transparent;background-image:none;background:transparent;border:none;}
