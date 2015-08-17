@@ -10,13 +10,16 @@ while ($r = $rs->fetchObject()) {
 	foreach($this_node->field_book_author[$lang] as $auth) {
 		$authors[] = $auth['value'];
 	}	
+
+	$desc = $this_node->field_dc_description[$lang][0]['value'];
+
 	$items[] = array(
 		'node_url'	=> url("node/".$r->nid),
 		'title' 		=> $this_node->title,
 		'authors' 	=> implode(',', $authors),
 		'orig_date' => sizeof($this_node->field_dc_date_orginial_year) > 0 ? preg_replace("/^\s*(....)-.+/","$1", $this_node->field_dc_date_orginial_year[$lang][0]['value']) : '',
 		'pub_date' 	=> preg_replace("/^\s*(....)-.+/","$1", $this_node->field_dc_date_publication_year[$lang][0]['value']),
-		'desc' 			=> $this_node->field_dc_description[$lang][0]['value'],
+		'desc' 			=> $desc,
 		'img_url' 	=> file_create_url($this_node->field_general_featured_image[$lang][0]['uri']),
 	);
 }
