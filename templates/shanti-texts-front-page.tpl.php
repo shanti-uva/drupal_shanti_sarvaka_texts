@@ -68,7 +68,7 @@ while ($r = $rs->fetchObject()) {
 						</div>
 						<div class="carousel-main-image col-xs-12 col-sm-5 col-md-4">
 							<a href="<?php echo $item['node_url'] ?>">
-								<img src="<?php echo $item['img_url'] ?>" height="250" alt="">
+								<img src="<?php echo $item['img_url'] ?>" alt="">
 							</a>
 						</div>
 					</div>				
