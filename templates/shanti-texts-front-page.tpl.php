@@ -12,7 +12,9 @@ while ($r = $rs->fetchObject()) {
 	}	
 
 	$desc = $this_node->field_dc_description[$lang][0]['value'];
-
+	$img_url = image_style_url('front_carousel', $this_node->field_general_featured_image[$lang][0]['uri']);
+	//$img_url = file_create_url($this_node->field_general_featured_image[$lang][0]['uri']);
+	
 	$items[] = array(
 		'node_url'	=> url("node/".$r->nid),
 		'title' 		=> $this_node->title,
@@ -20,7 +22,7 @@ while ($r = $rs->fetchObject()) {
 		'orig_date' => sizeof($this_node->field_dc_date_orginial_year) > 0 ? preg_replace("/^\s*(....)-.+/","$1", $this_node->field_dc_date_orginial_year[$lang][0]['value']) : '',
 		'pub_date' 	=> preg_replace("/^\s*(....)-.+/","$1", $this_node->field_dc_date_publication_year[$lang][0]['value']),
 		'desc' 			=> $desc,
-		'img_url' 	=> file_create_url($this_node->field_general_featured_image[$lang][0]['uri']),
+		'img_url' 	=> $img_url,
 	);
 }
 
