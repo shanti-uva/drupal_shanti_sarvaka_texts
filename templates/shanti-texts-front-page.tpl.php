@@ -1,5 +1,4 @@
 <?php
-// kpr(get_defined_vars());
 $items = array();
 $sql = "SELECT n.nid FROM {book} b JOIN {node} n USING (nid) WHERE b.nid = b.bid AND n.promote = 1 AND n.status = 1 ORDER BY n.changed DESC LIMIT 0,5";
 $rs = db_query($sql);
@@ -10,11 +9,8 @@ while ($r = $rs->fetchObject()) {
 	foreach($this_node->field_book_author[$lang] as $auth) {
 		$authors[] = $auth['value'];
 	}	
-
 	$desc = $this_node->field_dc_description[$lang][0]['value'];
-	$img_url = image_style_url('front_carousel', $this_node->field_general_featured_image[$lang][0]['uri']);
-	//$img_url = file_create_url($this_node->field_general_featured_image[$lang][0]['uri']);
-	
+	$img_url = image_style_url('front_carousel', $this_node->field_general_featured_image[$lang][0]['uri']);	
 	$items[] = array(
 		'node_url'	=> url("node/".$r->nid),
 		'title' 		=> $this_node->title,
@@ -25,7 +21,6 @@ while ($r = $rs->fetchObject()) {
 		'img_url' 	=> $img_url,
 	);
 }
-
 ?>
 <div class="front-overview">
 	<!-- <h4>Overview</h4> -->
@@ -33,7 +28,6 @@ while ($r = $rs->fetchObject()) {
 	primary sources to long-form scholarly blog posts to be shared via social media. It is designed to allow you create 
 	content on-site or to upload long texts.</p>
 </div>
-
 <div class="container-fluid carouseldiv">
 	<div class="row">
 		<div class="col-xs-12">
@@ -99,6 +93,5 @@ while ($r = $rs->fetchObject()) {
 	$view->override_path = $_GET['q'];
 	$viewsoutput = $view->preview('panel_pane_1');
 	print $viewsoutput;
-	//print views_embed_view('all_texts','panel_pane_1'); 
 ?>
 </div>

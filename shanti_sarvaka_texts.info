@@ -41,7 +41,7 @@ stylesheets[all][] =  css/shanti-main-shanti_sarvaka_texts.css
 stylesheets[all][] =  css/shanti-search-shanti_sarvaka_texts.css
 ;stylesheets[all][] =  css/jquery.bxslider.css
                           
-;; FOAD
+;; FOAD	
 stylesheets[all][] =  css/jquery.ui.tabs.min.css
 
 
