@@ -336,12 +336,13 @@
   padding-left: 0.8rem;
   padding-top: 0.3rem;
   border-top: 1px solid #ddd;
-  margin: 1.5rem 5px 0 -1.7rem;
+  margin: 1.5rem 5px 0 1.7rem;
 }
 
 .view-text-search h3 a {
   color: #111;
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
+  white-space: normal;
 }
 
 .view-text-search h3 a:hover {
