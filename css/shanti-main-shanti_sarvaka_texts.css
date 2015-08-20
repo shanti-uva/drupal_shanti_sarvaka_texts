@@ -311,6 +311,31 @@
   font-weight: normal !important;
 }
 
+
+
+
+
+
+.view-text-search a {
+  color: #444;
+  display: inline-block;
+  font-size: 1em !important;
+  line-height: 1.32em;
+  white-space: nowrap;
+  padding: 0.2em 0.5em 0 0;
+}
+
+.view-text-search a:hover {
+  color: rgb(207, 47, 30);
+}
+
+.view-text-search a:active {
+  color: #555;
+}
+
+
+
+
 .view-text-search h3 {
   font-size:1em;
   padding-left: 0.8rem;
@@ -322,10 +347,6 @@
 .view-text-search h3 a {
   color: #111;
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
-  white-space: normal;
-  font-size: 1em !important;
-  line-height: 1.32em;
-  padding: 0.2em 0.5em 0 0;
 }
 
 .view-text-search h3 a:hover {
