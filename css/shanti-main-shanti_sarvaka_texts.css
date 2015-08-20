@@ -434,6 +434,9 @@
   top: -1.8rem;
   z-index: 12000;
 }
+@-moz-document url-prefix() { 
+  .region-search-flyout .nav-tabs { position: absolute; top:0;}
+}
 
 .region-search-flyout .nav-tabs>li {
   margin-bottom: 0;
