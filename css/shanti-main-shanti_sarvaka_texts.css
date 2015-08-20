@@ -544,7 +544,7 @@
   -webkit-box-shadow: 0 0 4px #949bd8;
   box-shadow: 0 0 4px #949bd8;
   border-collapse: separate;
- /* fix for ie9 shadow */;
+ /* fix for ie9 shadow */
 }
 
 .extruder.right .view-full-text-local input.form-control,.extruder.right .view-full-text-solr input.form-control {
@@ -726,7 +726,7 @@
 .view-full-text-local .view-content,.view-full-text-solr .view-content,
 .view-text-search .view-content {
   padding-top: 3rem;
-/*margin-bottom:5rem;*/;
+/*margin-bottom:5rem;*/
 }
 
 .view-full-text-local .view-empty p,.view-full-text-solr .view-empty p {
@@ -810,7 +810,7 @@ table.pagerer {
     float: right;
   }
 
-	/* .front table.pagerer{ position:relative; top:0; right:2rem;} */;
+	/* .front table.pagerer{ position:relative; top:0; right:2rem;} */
 }
 
 
