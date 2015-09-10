@@ -772,8 +772,6 @@ table.pagerer {
 
 
 
-
-
 /* begin min-width */
 @media (min-width: 768px) {
 	
@@ -838,4 +836,11 @@ table.pagerer {
   }
 }
 
+/* CKEDITOR */
+
+.cke_widget_wrapper.cke_widget_block {
+	padding: 10px 0;
+	margin: 30px 0;
+	clear:both;
+}
 
