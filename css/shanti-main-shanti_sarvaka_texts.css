@@ -431,7 +431,7 @@
   margin-left: 2rem;
   margin-bottom: 2rem;
   position: absolute;
-  top: -1.8rem;
+  top: -1.5rem;
   z-index: 12000;
 }
 @-moz-document url-prefix() { 
