@@ -36,14 +36,7 @@ while ($r = $rs->fetchObject()) {
 <div class="container-fluid carouseldiv">
 	<div class="row">
 		<div class="col-xs-12">
-		
-			<!-- <div data-ride="carousel" class="carousel-header show-more">
-				<span>Featured Texts</span>
-				<a href="/alltexts">View All Texts</a>
-			</div> -->
-		
-		<div class="carousel carousel-fade slide row" id="collection-carousel" data-speed="12">
-
+			<div class="carousel carousel-fade slide row" id="collection-carousel" data-speed="12">
 				<div class="carousel-inner">
 				<?php foreach($items as $i => $item): ?>
 					<div class="item <?php if ($i == 0) { print 'active'; } ?>">
@@ -75,18 +68,15 @@ while ($r = $rs->fetchObject()) {
 					</div>				
 				<?php endforeach; ?>
 				</div>
-
 				<div class="control-box">
 					<a data-slide="prev" href="#collection-carousel" class="carousel-control left"><span class="icon"></span></a>
 					<a data-slide="next" href="#collection-carousel" class="carousel-control right"><span class="icon"></span></a>
 				</div>
-
 				<div class="control-box-2">
 					<button class="btn btn-default btn-sm carousel-pause">
 						<span class="glyphicon glyphicon-pause"></span>
 					</button>
 				</div>
-
 			</div>
 		</div>
 	</div>
