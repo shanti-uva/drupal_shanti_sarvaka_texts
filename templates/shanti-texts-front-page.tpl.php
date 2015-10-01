@@ -1,4 +1,9 @@
 <?php
+
+// Get items for use in the Carousel
+// We make a direct query to the db to grab items that have been promoted
+// to the front page, taking advantage of this legacy field for our own
+// purposes.
 $items = array();
 $sql = "SELECT n.nid FROM {book} b JOIN {node} n USING (nid) WHERE b.nid = b.bid AND n.promote = 1 AND n.status = 1 ORDER BY n.changed DESC LIMIT 0,5";
 $rs = db_query($sql);
@@ -22,8 +27,10 @@ while ($r = $rs->fetchObject()) {
 	);
 }
 ?>
+
+// Now that we have the $items array, we build the carousel based on Than and
+// Mark's work. We hard code the blurb, which is not good, but OK for now.
 <div class="front-overview">
-	<!-- <h4>Overview</h4> -->
 	<p>SHANTI Texts is a published repository of texts that can be used for a variety of content types, from remediated 
 	primary sources to long-form scholarly blog posts to be shared via social media. It is designed to allow you create 
 	content on-site or to upload long texts.</p>
