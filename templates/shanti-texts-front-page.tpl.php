@@ -28,8 +28,6 @@ while ($r = $rs->fetchObject()) {
 }
 ?>
 
-// Now that we have the $items array, we build the carousel based on Than and
-// Mark's work. We hard code the blurb, which is not good, but OK for now.
 <div class="front-overview">
 	<p>SHANTI Texts is a published repository of texts that can be used for a variety of content types, from remediated 
 	primary sources to long-form scholarly blog posts to be shared via social media. It is designed to allow you create 
