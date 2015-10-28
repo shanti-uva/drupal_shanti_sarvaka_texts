@@ -49,6 +49,10 @@
   padding: 4px;
 }
 
+.front #block-system-main .front-overview p { 
+  padding:0 2rem;
+}
+
 /* BEGIN carousel WIDTH - box-model layout theme properties 
 .carouseldiv + div {
   margin: 0 auto;
