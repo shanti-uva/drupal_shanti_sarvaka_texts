@@ -1,5 +1,5 @@
 /* custom theme colors */
-.basebg,
+/*.basebg,*/
 .titlearea,
 .carousel-control,
 .breadwrap .icon,
@@ -9,7 +9,7 @@
   background: #764B8D !important;
 }
 
-.basecolor,
+/*.basecolor,*/
 .shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark {
   color: #764B8D !important;
@@ -49,7 +49,7 @@
   padding: 4px;
 }
 
-/* BEGIN carousel WIDTH - box-model layout theme properties */
+/* BEGIN carousel WIDTH - box-model layout theme properties 
 .carouseldiv + div {
   margin: 0 auto;
   max-width: 1050px;
@@ -69,14 +69,9 @@
 
 .carousel-inner {
   max-width: 1030px;
-/* min-height: 280px;*/
   margin: 0 auto !important;
 }
-
-.front-overview p {
-  padding: 0 2.5rem;
-}
-
+*/
 /* END carousel */
 
 
