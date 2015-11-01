@@ -811,6 +811,8 @@ table.pagerer {
 
   .view-all-texts-control-box-cell-pager {
     float: right;
+    left: 1rem;
+    right: 0;
   }
 
 	/* .front table.pagerer{ position:relative; top:0; right:2rem;} */
