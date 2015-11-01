@@ -747,9 +747,9 @@
 */
 
 /* Pagerer */
-table.pagerer {
+.view-all-texts-control-box-cell-pager table.pagerer {
   position: relative;
-  top: -1rem;
+  top: 1rem;
 }
 
 
@@ -763,7 +763,7 @@ table.pagerer {
     width: 100% !important;
   }
 
-  .shanti-filters table.pagerer {
+  .view-all-texts-control-box-cell-pager table.pagerer {
     margin-left:2rem;
   }
 }
@@ -791,14 +791,9 @@ table.pagerer {
     font-size: 1.32em;
   }
 
-  .shanti-filters table.pagerer {
-    right:2.5rem;
-  }
-
   .view-all-texts-control-box-cell-header.col-xs-5 {
     width: 28% !important;
     max-width: 28% !important;
-    padding-top: 0.7rem;
   }
 
   .view-all-texts-control-box-cell-filters {
@@ -831,7 +826,7 @@ table.pagerer {
   }
 
   .view-all-texts-control-box-cell-filters {
-    margin-top: 0.5rem;
+    
   }
 
   .view-all-texts-control-box-cell-header {
