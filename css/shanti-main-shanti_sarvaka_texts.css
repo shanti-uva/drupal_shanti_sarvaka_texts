@@ -110,14 +110,9 @@
 }
 
 .view-all-texts-control-box-cell-pager {
-  padding: 0;
+  padding: 0 2.5rem 0 0;
   margin: 0;
-  width: auto;
-  height: 5rem;
-  position: relative;
-  top: 0;
-  right: 1rem;
-  float: left;
+  height: 2rem;
 }
 
 
@@ -777,8 +772,9 @@ table.pagerer {
 }
 
 
-
-/* begin min-width */
+/*-----------------*/
+/* BEGIN min-width */
+/*-----------------*/
 @media (min-width: 768px) {
 	
   .views-row {
@@ -816,8 +812,6 @@ table.pagerer {
 
   .view-all-texts-control-box-cell-pager {
     float: right;
-    left: 1rem;
-    right: 0;
   }
 
 	/* .front table.pagerer{ position:relative; top:0; right:2rem;} */
