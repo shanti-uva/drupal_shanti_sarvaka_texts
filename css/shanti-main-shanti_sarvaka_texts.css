@@ -87,7 +87,7 @@
   border-top: 0;
   border-color: none;
   margin-top: -0.5rem;
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .view-all-texts-control-box .ajax-progress {
@@ -112,9 +112,8 @@ margin-bottom: 1rem;
 }
 
 .view-all-texts-control-box-cell-pager {
-  padding: 0 2.5rem 0 0;
+  padding: 0;
   margin: 0;
-  height: 2rem;
 }
 
 
@@ -811,10 +810,6 @@ table.pagerer {
   .nav-justified > li.active::before {
     color: #764B8D;
   } /* give arrow color, show it when tabs are not stacked */
-
-  .view-all-texts-control-box-cell-pager {
-    float: right;
-  }
 
 	/* .front table.pagerer{ position:relative; top:0; right:2rem;} */
 }
