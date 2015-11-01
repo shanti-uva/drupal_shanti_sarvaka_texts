@@ -766,9 +766,9 @@ table.pagerer {
 	.view-all-texts-control-box-cell-header.col-xs-5 {
     width: 100% !important;
   }
+
   .shanti-filters table.pagerer {
     margin-left:2rem;
-    right:2.5rem;
   }
 }
 
@@ -792,6 +792,10 @@ table.pagerer {
 
   .front .views-field-title h3 {
     font-size: 1.32em;
+  }
+
+  .shanti-filters table.pagerer {
+    right:2.5rem;
   }
 
   .view-all-texts-control-box-cell-header.col-xs-5 {
