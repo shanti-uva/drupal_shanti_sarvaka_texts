@@ -118,11 +118,7 @@
   margin: 1rem 2rem 0 0;
 }
 
-.view-all-texts-control-box-cell-header,
-.view-all-texts-control-box-cell-filters,
-.view-all-texts-control-box-cell-pager{
-  width:100%;
-}
+
 
 
 
@@ -763,10 +759,11 @@
 /*-----------------*/
 @media (max-width: 599px) {
 	
-  .view-all-texts-control-box-cell-filters,
-	.view-all-texts-control-box-cell-header{
-    width: 100% !important;
-  }
+.view-all-texts-control-box-cell-header,
+.view-all-texts-control-box-cell-filters,
+.view-all-texts-control-box-cell-pager{
+  width:100%;
+}
 
   .view-all-texts-control-box-cell-pager table.pagerer {
     margin-left:1.3rem;
