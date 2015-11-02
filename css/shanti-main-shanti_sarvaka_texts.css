@@ -106,7 +106,7 @@
 }
 
 .view-all-texts-control-box-cell-filters > form{
-  margin-left: 2.5rem;
+  margin-left: 0.8rem;
 }
 
 .view-all-texts-control-box-cell-pager {
@@ -758,6 +758,7 @@
 
   .view-all-texts-control-box-cell-pager table.pagerer {
     margin-left:2rem;
+    margin-top:1.3rem;
   }
 }
 
@@ -822,7 +823,6 @@
   }
 
   .view-all-texts-control-box-cell-header .view-result-count-info {
-    margin-left:1.5rem;
     font-size: 1em;
   }
 }
