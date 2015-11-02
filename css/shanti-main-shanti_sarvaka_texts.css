@@ -760,6 +760,21 @@
 /*-----------------*/
 /* BEGIN max-width */
 /*-----------------*/
+@media screen and (max-width: 379px) {
+
+  .view-all-texts-control-box-cell-pager table.pagerer{
+    float: left;
+    margin-top:1rem;  
+  }
+}
+
+@media screen and (max-width: 499px) {
+
+  .view-all-texts-control-box-cell-header .view-result-count-info{
+    font-size: 0.88em;
+  }
+}
+
 @media (max-width: 599px) {
 	
 .view-all-texts-control-box-cell-header,
@@ -769,9 +784,9 @@
 }
 
   .view-all-texts-control-box-cell-pager table.pagerer {
-    margin-left:1.3rem;
-    margin-top:1.3rem;
-    float:left;
+    margin-left: 1.3rem;
+    margin-top: -5.3rem;
+    float:right;
   }
 }
 
