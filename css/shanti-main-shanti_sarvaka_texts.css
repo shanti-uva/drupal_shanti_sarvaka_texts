@@ -10,14 +10,18 @@
 }
 
 /*.basecolor,*/
-.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google,
+.shanticon-twitter,
+.shanticon-facebook,
+.shanticon-email,
+.shanticon-google,
+.nav-justified > li.active::before,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark {
   color: #764B8D !important;
 }
 
 .nav-justified > li.active > a:after {
-  border-color: #764B8D !important;
-  border-top-color: #764B8D !important;
+  /* border-color: #764B8D !important; */
+  /*border-top-color: #764B8D !important;*/
 } 
 /* banner header anchor hover */
 .navbar-brand:hover .site-slogan {
@@ -28,11 +32,6 @@
   color: #444 !important;
 }
 
-@media screen and (min-width: 768px) {
-  .nav-justified>li.active::before {
-    color: #764B8D !important;
-  }
-}
 /* .view-mega-search h3 {display:none;font-size: 100%;font-weight: bold;margin-left: 1em;} .view-mega-search ul{ list-style-type: none;} */
 
 .shanti-text .content-section {
@@ -118,12 +117,7 @@
 }
 
 .view-all-texts-control-box-cell-pager table.pagerer {
-  margin: 1rem 2rem 0 0;
-}
-
-
-.pager-alltexts .view-all-texts-control-box-cell-pager table.pagerer{
-  margin-right:3.5rem;
+  margin: 1rem 3rem 0 0;
 }
 
 
@@ -796,6 +790,13 @@
   }
 }
 
+@media (max-width: 767px) {
+
+  .nav-justified > li.active::before {
+    color: transparent;
+  }
+}
+
 
 /*-----------------*/
 /* BEGIN min-width */
@@ -814,18 +815,6 @@
   .front .views-field-title h3 {
     font-size: 1.32em;
   }
-
-  .view-all-texts-control-box-cell-header {
-
-  }
-
-  .view-all-texts-control-box-cell-filters {
-    padding: 0;
-  }
-
-  .nav-justified > li.active::before {
-    color: #764B8D;
-  } /* give arrow color, show it when tabs are not stacked */
 }
 
 
