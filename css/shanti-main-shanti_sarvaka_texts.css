@@ -766,6 +766,10 @@
     float: left;
     margin-top:1rem;  
   }
+
+  .view-all-texts-control-box-cell-header .view-result-count-info{
+    font-size:0.93em;
+  }
 }
 
 @media screen and (max-width: 499px) {
@@ -777,11 +781,11 @@
 
 @media (max-width: 599px) {
 	
-.view-all-texts-control-box-cell-header,
-.view-all-texts-control-box-cell-filters,
-.view-all-texts-control-box-cell-pager{
-  width:100%;
-}
+  .view-all-texts-control-box-cell-header,
+  .view-all-texts-control-box-cell-filters,
+  .view-all-texts-control-box-cell-pager{
+    width:100%;
+  }
 
   .view-all-texts-control-box-cell-pager table.pagerer {
     margin-left: 1.3rem;
