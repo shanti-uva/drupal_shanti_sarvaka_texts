@@ -96,12 +96,11 @@
 
 .view-all-texts-control-box-cell-header {
   padding: 0;
-  font-size: 0.93em;
 }
 
 .view-all-texts-control-box-cell-header .view-result-count-info {
   font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
-  font-size: 0.93em;
+  font-size: 1em;
   margin: 1rem 0 0 2.5rem;
 }
 
@@ -822,10 +821,6 @@
 
   .view-all-texts-control-box-cell-filters .views-exposed-widgets {
     margin-top: 0;
-  }
-
-  .view-all-texts-control-box-cell-header .view-result-count-info {
-    font-size: 1em;
   }
 }
 
