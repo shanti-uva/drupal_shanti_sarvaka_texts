@@ -99,10 +99,10 @@
   font-size: 0.93em;
 }
 
-.view-result-count-info {
+.view-all-texts-control-box-cell-header .view-result-count-info {
   font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
   font-size: 0.93em;
-  margin: 1rem 0 0 1.5rem;
+  margin: 1rem 0 0 2.5rem;
 }
 
 .view-all-texts-control-box-cell-filters > form{
@@ -742,9 +742,7 @@
 
 /* Pagerer */
 .view-all-texts-control-box-cell-pager table.pagerer {
-  position: relative;
-  top: 1rem;
-  margin: 0 1.5rem 0 0;
+  margin: 1rem 2rem 0 0;
 }
 
 
@@ -811,6 +809,10 @@
     width: 48.5% !important;
   }
 
+  .view-all-texts-control-box-cell-pager table.pagerer{
+
+  }
+
   .view-all-texts-control-box-cell-filters .views-exposed-widgets {
     margin-top: 0;
   }
@@ -819,7 +821,8 @@
     
   }
 
-  .view-all-texts-control-box-cell-header {
+  .view-all-texts-control-box-cell-header .view-result-count-info {
+    margin-left:1.5rem;
     font-size: 1em;
   }
 }
