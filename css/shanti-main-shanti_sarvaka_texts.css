@@ -97,8 +97,6 @@
 .view-all-texts-control-box-cell-header {
   padding: 0;
   font-size: 0.93em;
-  width: 54%;
-  max-width: 54%;
 }
 
 .view-result-count-info {
@@ -794,7 +792,6 @@
 
   .view-all-texts-control-box-cell-filters {
     padding: 0;
-    width: 41.66666667%;
   }
 
   .nav-justified > li.active::before {
