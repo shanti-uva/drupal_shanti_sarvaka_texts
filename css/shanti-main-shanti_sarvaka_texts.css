@@ -104,11 +104,11 @@
 .view-result-count-info {
   font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
   font-size: 0.93em;
-  margin: 1rem 0 0 2.5rem;
+  margin: 1rem 0 0 1.5rem;
 }
 
-.view-all-texts-control-box-cell-filters {
-
+.view-all-texts-control-box-cell-filters > form{
+  margin-left: 2.5rem;
 }
 
 .view-all-texts-control-box-cell-pager {
@@ -259,10 +259,6 @@
 .views-exposed-widget.views-widget-filter-title {
   margin-top: 0;
   width: 100%;
-}
-
-.view-all-texts-control-box .views-exposed-widget.views-widget-filter-title {
-  width: auto !important;
 }
 
 .view-text-search p, 
@@ -750,7 +746,7 @@
 .view-all-texts-control-box-cell-pager table.pagerer {
   position: relative;
   top: 1rem;
-  margin: 0 1rem 0 0;
+  margin: 0 1.5rem 0 0;
 }
 
 
@@ -759,8 +755,8 @@
 /*----------------*/
 @media (max-width: 599px) {
 	
-  .view-all-texts-control-box-cell-filters.col-xs-6,
-	.view-all-texts-control-box-cell-header.col-xs-5 {
+  .view-all-texts-control-box-cell-filters,
+	.view-all-texts-control-box-cell-header{
     width: 100% !important;
   }
 
@@ -792,7 +788,7 @@
     font-size: 1.32em;
   }
 
-  .view-all-texts-control-box-cell-header.col-xs-5 {
+  .view-all-texts-control-box-cell-header {
     width: 28% !important;
     max-width: 28% !important;
   }

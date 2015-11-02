@@ -10,13 +10,13 @@ drupal_add_css(drupal_get_path('theme','shanti_sarvaka_texts') . '/css/shanti_te
 		<!-- CONTROLS -->
 		<div class="view-all-texts-control-box">
 			<div class="view-all-texts-control-box-row row">
-				<div class="view-all-texts-control-box-cell-header 	view-all-texts-control-box-cell  col-xs-5">
+				<div class="view-all-texts-control-box-cell-header view-all-texts-control-box-cell col-xs-12 col-sm-4"> 
 				<?php print $header; ?>
 				</div>
-				<div class="view-all-texts-control-box-cell-filters view-all-texts-control-box-cell  col-xs-6 col-md-4">
+				<div class="view-all-texts-control-box-cell-filters view-all-texts-control-box-cell col-xs-6 col-sm-4">
 				<?php print $exposed; ?>
 				</div>
-				<div class="view-all-texts-control-box-cell-pager 	view-all-texts-control-box-cell  col-xs-12 col-md-4">
+				<div class="view-all-texts-control-box-cell-pager view-all-texts-control-box-cell col-xs-6 col-sm-4">
 				<?php print $pager; ?>
 				</div>
 			</div>
