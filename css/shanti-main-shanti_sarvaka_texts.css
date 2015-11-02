@@ -122,7 +122,9 @@
 }
 
 
-
+.pager-alltexts .view-all-texts-control-box-cell-pager table.pagerer{
+  margin-right:3.5rem;
+}
 
 
 
