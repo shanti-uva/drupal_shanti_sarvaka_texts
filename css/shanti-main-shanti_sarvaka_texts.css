@@ -757,7 +757,7 @@
 	
   .view-all-texts-control-box-cell-filters,
 	.view-all-texts-control-box-cell-header{
-    width: 100% !important;
+
   }
 
   .view-all-texts-control-box-cell-pager table.pagerer {
@@ -789,8 +789,7 @@
   }
 
   .view-all-texts-control-box-cell-header {
-    width: 28% !important;
-    max-width: 28% !important;
+
   }
 
   .view-all-texts-control-box-cell-filters {
