@@ -426,7 +426,7 @@
   width: 100%;
 }
 
-.extruder.right .view-filters .ajax-progress {
+.extruder .view-filters .ajax-progress {
   display: none;
 }
 
@@ -438,6 +438,7 @@
   top: -1.5rem;
   z-index: 12000;
 }
+
 @-moz-document url-prefix() { 
   .region-search-flyout .nav-tabs { position: absolute; top:0;}
 }
@@ -493,26 +494,30 @@
 
 /*--- START / Search Panel / Input & View ----*/
 /*----------------------------------------------*/
-.extruder.right {
+.extruder {
   padding: 0;
   display: block;
   width: 100%;
 }
 
-.extruder.right .views-exposed-widgets input.form-control:first-child {
+.extruder .views-exposed-widget{
+  width:100%;
+}
+
+.extruder .views-exposed-widgets input.form-control:first-child {
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   background-clip: padding-box;
 }
 
-.extruder.right .views-exposed-widgets {
+.extruder .views-exposed-widgets {
   padding: 0 12px 0 10px;
   display: block;
   width: 100%;
   background: #f8f8f8;
 }
 
-.extruder.right .views-exposed-widgets input.form-control {
+.extruder .views-exposed-widgets input.form-control {
   color: #777;
   border: 1px solid #ccc;
   border-radius: 25px;
@@ -538,12 +543,12 @@
   transition-duration: 400ms;
 }
 
-.extruder.right .views-exposed-widgets input.form-control:hover {
+.extruder .views-exposed-widgets input.form-control:hover {
   border: 1px solid #ccc;
   color: #777;
 }
 
-.extruder.right .views-exposed-widgets input.form-control:focus {
+.extruder .views-exposed-widgets input.form-control:focus {
   border: 1px solid #9097d3;
   -webkit-box-shadow: 0 0 4px #949bd8;
   box-shadow: 0 0 4px #949bd8;
@@ -551,12 +556,12 @@
  /* fix for ie9 shadow */
 }
 
-.extruder.right .view-full-text-local input.form-control,.extruder.right .view-full-text-solr input.form-control {
+.extruder .view-full-text-local input.form-control,.extruder .view-full-text-solr input.form-control {
   margin-top: 1.4rem;
 }
 
 /*--- button group ---*/
-.extruder.right .views-submit-button {
+.extruder .views-submit-button {
   width: 45px !important;
   height: 35px;
   position: absolute;
@@ -569,7 +574,7 @@
 }
 
 /*--- submit button ---*/
-.extruder.right .views-submit-button .btn.btn-primary {
+.extruder .views-submit-button .btn.btn-primary {
   display: block;
   height: 33px;
  /* 2px less than search input height above */
@@ -589,24 +594,24 @@
   background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
 }
 
-.extruder.right .views-submit-button .btn.btn-primary:hover {
+.extruder .views-submit-button .btn.btn-primary:hover {
   background: #eee;
   color: #777;
 }
 
-.extruder.right .views-submit-button .btn.btn-primary:active, 
-.extruder.right .views-submit-button .btn-primary.active {
+.extruder .views-submit-button .btn.btn-primary:active, 
+.extruder .views-submit-button .btn-primary.active {
   background: transparent;
   border-color: #fff;
 }
 
-.extruder.right .views-submit-button .btn.btn-primary span {
+.extruder .views-submit-button .btn.btn-primary span {
   font-family: 'Glyphicons Halflings' !important;
   color: transparent;
   background: transparent;
 }
 
-.extruder.right .views-submit-button .btn.btn-primary span::before {
+.extruder .views-submit-button .btn.btn-primary span::before {
   content: '\e080';
   color: #aaa;
   position: relative;
@@ -615,16 +620,16 @@
   font-size: 1.5rem;
 }
 
-.extruder.right .views-submit-button .btn.btn-primary:active span,
-.extruder.right .views-submit-button .btn.btn-primary.active span {
+.extruder .views-submit-button .btn.btn-primary:active span,
+.extruder .views-submit-button .btn.btn-primary.active span {
   color: #777;
 }
 
 /*--- reset search button ---*/
-.extruder.right .views-reset-button {
+.extruder .views-reset-button {
   display: none;
 } /* TEMPORARILY Hiding */
-.extruder.right .views-reset-button .btn.btn-primary {
+.extruder .views-reset-button .btn.btn-primary {
   position: absolute;
   right: 7.8rem;
   top: 3.3rem;
@@ -640,15 +645,15 @@
   border-radius: 50%;
 }
 
-.extruder.right .views-reset-button .btn.btn-primary:hover,
-.extruder.right .views-reset-button .btn.btn-primary:active {
+.extruder .views-reset-button .btn.btn-primary:hover,
+.extruder .views-reset-button .btn.btn-primary:active {
   color: transparent;
   background-image: none;
   background: transparent;
   border: none;
 }
 
-.extruder.right .views-reset-button .btn.btn-primary span {
+.extruder .views-reset-button .btn.btn-primary span {
   display: inline-block;
   width: 2.25rem;
   height: 2.25rem;
@@ -661,8 +666,8 @@
   border: none;
 }
 
-.extruder.right .views-reset-button .btn.btn-primary span::before,
-.extruder.right .views-reset-button .btn.btn-primary span::after {
+.extruder .views-reset-button .btn.btn-primary span::before,
+.extruder .views-reset-button .btn.btn-primary span::after {
   background: #aaa;
   width: 1.7rem;
   height: 1px;
@@ -675,14 +680,14 @@
   transform: rotate(45deg);
 }
 
-.extruder.right .views-reset-button .btn.btn-primary span::after {
+.extruder .views-reset-button .btn.btn-primary span::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-.extruder.right .views-reset-button .btn.btn-primary:hover span,
-.extruder.right .views-reset-button .btn.btn-primary:active span {
+.extruder .views-reset-button .btn.btn-primary:hover span,
+.extruder .views-reset-button .btn.btn-primary:active span {
   background: #f0f0f0;
 }
 /*
@@ -792,9 +797,7 @@
 
 @media (max-width: 767px) {
 
-  .nav-justified > li.active::before {
-    color: transparent;
-  }
+
 }
 
 
