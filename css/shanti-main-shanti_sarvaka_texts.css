@@ -690,7 +690,13 @@
 .extruder .views-reset-button .btn.btn-primary:active span {
   background: #f0f0f0;
 }
-/*
+
+.extruder table.pagerer{
+  font-size: 0.75em;
+}
+
+
+
 /*
 .views-exposed-widget.views-reset-button{ display:none;}
 */
@@ -751,11 +757,6 @@
   margin-top: 3rem;
 }
 
-/*
-.region-search-flyout table.pagerer{ margin:0; position:relative; top:1rem;font-size:0.75em;width:auto !important;float:right;}
-.region-search-flyout table.pagerer tbody{ border:none;}
-.view-full-text-local input.pagerer-page{ width:3em; padding: 0.15rem 0.3rem 0rem 0.3rem;} /* pager input submit - counter 
-*/
 
 
 /*-----------------*/
