@@ -693,6 +693,7 @@
 
 .extruder table.pagerer{
   font-size: 0.75em;
+  margin:1.5rem auto;
 }
 
 
@@ -715,7 +716,7 @@
   width: 100%;
 }
 
-.views-exposed-form .views-exposed-widget.views-widget-filter-search_api_views_fulltext {
+.views-exposed-form .views-widget-filter-search_api_views_fulltext {
   padding-right: 0;
   width: 100%;
 }
@@ -738,13 +739,20 @@
   margin-bottom: 0.7rem;
 }
 
-.view-full-text-local .view-content,.view-full-text-solr .view-content,
+.view-full-text-local .view-content,
+.view-full-text-solr .view-content,
 .view-text-search .view-content {
   padding-top: 3rem;
 /*margin-bottom:5rem;*/
 }
 
-.view-full-text-local .view-empty p,.view-full-text-solr .view-empty p {
+.view-text-search .view-content{
+  padding-bottom:1rem;
+  border-bottom:1px solid #ddd;
+}
+
+.view-full-text-local .view-empty p,
+.view-full-text-solr .view-empty p {
   position: absolute;
   top: 10rem;
 }
