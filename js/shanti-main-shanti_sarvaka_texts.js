@@ -6,12 +6,13 @@
 		  if(context == window.document) {
 
 		    $(".view-all-texts .views-row").click(function() {
+		      $(this).toggleClass("views-row-active");
 		      window.location=$(this).find('a').attr('href');
 		      return false;
 		    });
 
 		    $(".view-all-texts .views-row").hover(function() {
-		    	$(this).toggleClass("view-row-hover");
+		    	$(this).toggleClass("views-row-hover");
 		    });	
 
 		  }

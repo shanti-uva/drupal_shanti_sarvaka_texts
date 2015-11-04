@@ -168,17 +168,6 @@
   font-size: 1.38em;
 }
 
-.views-row.view-row-hover{
-  border: 1px solid #cab7cd;
-  border-top-color:#a066c0;
-  border-width: 4px 1px 1px;
-  cursor:pointer;
-}
-
-.views-row.view-row-hover .views-field-title a {
-  color: rgb(207, 47, 30);
-}
-
 /* shanticon font on h3 header */
 .views-field-title h3 .icon {
   color: #a066c0;
@@ -196,6 +185,27 @@
 
 .views-field-title a:active .icon {
   opacity: 0.7;
+}
+
+.views-row.views-row-hover{
+  border: 1px solid #cab7cd;
+  border-top-color:#a066c0;
+  border-width: 4px 1px 1px;
+  cursor:pointer;
+}
+
+.views-row.views-row-active{
+  border-color: #a066c0 #fff #fff #fff;
+}
+
+.views-row.views-row-hover .views-field-title a,
+.views-row.views-row-hover .views-field-title a:hover .icon {
+  color: rgb(207, 47, 30);
+  opacity: 1.0;
+}
+
+.views-row.views-row-active .views-field-title a {
+  color: #454fa4;
 }
 
 .views-field-field-general-featured-image img {
