@@ -13,10 +13,9 @@
 		    $('.view-all-texts .views-row').hover(function() {
 		    	$(this).toggleClass('views-row-hover');
 		    });	
-		    
+
 		    $('.view-all-texts').on('click','.views-row', function(){
-		      $('.view-all-texts .views-row').removeClass('views-row-active');
-		      $(this).addClass('views-row-active');
+		      $('.view-all-texts .views-row').addClass('views-row-active');
 		    });
 
 		  }
