@@ -5,15 +5,19 @@
 		attach: function (context, settings) {
 		  if(context == window.document) {
 
-		    $(".view-all-texts .views-row").click(function() {
-		      $(this).toggleClass("views-row-active");
+		    $('.view-all-texts .views-row').on('click', function(){
 		      window.location=$(this).find('a').attr('href');
 		      return false;
 		    });
 
-		    $(".view-all-texts .views-row").hover(function() {
-		    	$(this).toggleClass("views-row-hover");
+		    $('.view-all-texts .views-row').hover(function() {
+		    	$(this).toggleClass('views-row-hover');
 		    });	
+		    
+		    $('.view-all-texts').on('click','.views-row', function(){
+		      $('.view-all-texts .views-row').removeClass('views-row-active');
+		      $(this).addClass('views-row-active');
+		    });
 
 		  }
 		} 
