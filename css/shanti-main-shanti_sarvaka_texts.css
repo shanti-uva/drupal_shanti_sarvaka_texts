@@ -172,6 +172,7 @@
   border: 1px solid #cab7cd;
   border-top-color:#a066c0;
   border-width: 4px 1px 1px;
+  cursor:pointer;
 }
 
 .views-row.view-row-hover .views-field-title a {
