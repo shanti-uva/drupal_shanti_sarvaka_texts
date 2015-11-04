@@ -149,7 +149,6 @@
   padding: 0 1rem 1.2rem;
   margin: 0 1.5rem 1rem 0;
   border-top: 4px solid #a066c0;
-  border-bottom: 4px solid #fff;
 }
 
 .views-field-title h3 {
@@ -190,12 +189,8 @@
 }
 
 .views-row.views-row-hover{
-  border-color: #cab7cd;
+  border-color: #9961b7;
   cursor:pointer;
-}
-
-.views-row.views-row-active{
-  border-color: #a066c0;
 }
 
 .views-row .views-field-title a:hover,
@@ -203,17 +198,9 @@
   color: rgb(207, 47, 30);
 }
 
-.views-row .views-field-title a:active{
-  color: #454fa4;
-}
-
 .views-row.views-row-hover .views-field-title a .icon {
   filter: alpha(opacity=100);
   opacity: 1.0;
-}
-
-.views-row.views-row-active .views-field-title a {
-  color: #454fa4;
 }
 
 .views-field-field-general-featured-image img {
