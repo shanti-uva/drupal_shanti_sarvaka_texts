@@ -14,8 +14,8 @@
 		    	$(this).toggleClass('views-row-hover');
 		    });	
 
-		    $('.view-all-texts').on('click','.views-row', function(){
-		      $('.view-all-texts .views-row').addClass('views-row-active');
+		    $('.view-all-texts .views-row').on('click', function(){
+		      $(this).addClass('views-row-active');
 		    });
 
 		  }
