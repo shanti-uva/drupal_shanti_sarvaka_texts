@@ -21,7 +21,7 @@
 
 /* adjust for Texts */
 .main-wrapper{
-  margin-right: 1.5rem;
+  margin-right: 15px !important;
 }
 
 .nav-justified > li.active > a:after {
