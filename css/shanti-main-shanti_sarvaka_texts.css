@@ -19,8 +19,6 @@
   color: #764B8D !important;
 }
 
-/* bugfix */
-.main-wrapper{ margin-right: 15px !important;}
 .header-banner .menu-icon{ right:0.4rem; /* coordinate with main-wrapper margin-right shim */}
 
 .nav-justified > li.active > a:after {
