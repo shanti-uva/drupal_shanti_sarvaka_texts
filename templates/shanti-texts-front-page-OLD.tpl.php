@@ -5,17 +5,23 @@
 // to the front page, taking advantage of this legacy field for our own
 // purposes.
 $items = array();
-#$sql = "SELECT n.nid FROM {book} b JOIN {node} n USING (nid) WHERE b.nid = b.bid AND n.promote = 1 AND n.status = 1 ORDER BY n.changed DESC LIMIT 0,5";
-$sql = "SELECT nid FROM {node} WHERE type = 'collection' and promote = 1 AND status = 1";
+$sql = "SELECT n.nid FROM {book} b JOIN {node} n USING (nid) WHERE b.nid = b.bid AND n.promote = 1 AND n.status = 1 ORDER BY n.changed DESC LIMIT 0,5";
 $rs = db_query($sql);
 while ($r = $rs->fetchObject()) {
 	$this_node = node_load($r->nid);
 	$lang = $this_node->language;
-	$desc = $this_node->body['und'][0]['value'];
+	$authors = array();
+	foreach($this_node->field_book_author[$lang] as $auth) {
+		$authors[] = $auth['value'];
+	}	
+	$desc = $this_node->field_dc_description[$lang][0]['value'];
 	$img_url = image_style_url('front_carousel', $this_node->field_general_featured_image[$lang][0]['uri']);	
 	$items[] = array(
 		'node_url'	=> url("node/".$r->nid),
 		'title' 		=> $this_node->title,
+		'authors' 	=> implode(',', $authors),
+		'orig_date' => sizeof($this_node->field_dc_date_orginial_year) > 0 ? preg_replace("/^\s*(....)-.+/","$1", $this_node->field_dc_date_orginial_year[$lang][0]['value']) : '',
+		'pub_date' 	=> preg_replace("/^\s*(....)-.+/","$1", $this_node->field_dc_date_publication_year[$lang][0]['value']),
 		'desc' 			=> $desc,
 		'img_url' 	=> $img_url,
 	);
@@ -28,7 +34,6 @@ while ($r = $rs->fetchObject()) {
 	content on-site or to upload long texts.</p>
 </div>
 <div class="container-fluid carouseldiv">
-	<div class="carousel-header show-more" data-ride="carousel"><span>Featured Collections</span><a href="/collections">View All Collections</a></div>
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="carousel carousel-fade slide row" id="collection-carousel" data-speed="12">
@@ -39,17 +44,21 @@ while ($r = $rs->fetchObject()) {
 							<div>
 								<h3 class="carousel-title">
 									<a href="<?php echo $item['node_url'] ?>">
-										<span class="icon shanticon-stack"></span>
+										<span class="icon shanticon-texts"></span>
 										<?php echo $item['title'] ?>
 									</a>
 								</h3>
+							</div>
+							<div class="byline">
+								<?php echo $item['authors'] . " "; ?> 
+								<?php echo $item['pub_date'] . " "; ?> 
+								<?php if (preg_match("/^....$/", $item['orig_date'])) { echo '('.$item['orig_date'].')'; }?>								
 							</div>
 							<div class="carousel-description">
 								<div class="field field-name-body field-type-text-with-summary field-label-hidden">
 									<?php echo $item['desc'] ?>
 								</div>
 							</div>
-							<p class="show-more h5"><a href="<?php echo $item['node_url']; ?>">View Collection </a></p>
 						</div>
 						<div class="carousel-main-image col-xs-12 col-sm-5 col-md-4">
 							<a href="<?php echo $item['node_url'] ?>">

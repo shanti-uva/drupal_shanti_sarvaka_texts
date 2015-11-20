@@ -21,5 +21,4 @@
  * regardless of any changes in the aliasing that might happen if
  * the view is modified.
  */
-?>
-<?php print $output; ?>
+?><?php print $output; ?>
