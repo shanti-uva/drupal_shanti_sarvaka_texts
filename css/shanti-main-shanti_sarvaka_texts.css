@@ -19,6 +19,11 @@
   color: #764B8D !important;
 }
 
+/* adjust for Texts */
+.main-wrapper{
+  margin-right: 1.5rem;
+}
+
 .nav-justified > li.active > a:after {
   /* border-color: #764B8D !important; */
   /*border-top-color: #764B8D !important;*/
@@ -456,10 +461,6 @@
   z-index: 12000;
 }
 
-@-moz-document url-prefix() { 
-  .region-search-flyout .nav-tabs { position: absolute; top:0;}
-}
-
 .region-search-flyout .nav-tabs>li {
   margin-bottom: 0;
 }
@@ -873,5 +874,17 @@
 	padding: 10px 0;
 	margin: 30px 0;
 	clear:both;
+}
+
+
+/*
+@-moz-document url-prefix() { 
+  .region-search-flyout .nav-tabs { position: absolute; top:0;}
+}
+*/
+
+/* firefox hack */
+@supports (-moz-appearance:none) and (display:contents) {
+    .region-search-flyout .nav-tabs { position: absolute; top:0;} 
 }
 
