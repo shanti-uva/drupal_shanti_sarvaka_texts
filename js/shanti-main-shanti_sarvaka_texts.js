@@ -1,7 +1,7 @@
-(function ($) {
+// (function ($) {
 
 	// targets click-hover on whole teaser box not just title text anchor
-	Drupal.behaviors.shantiTextsTeaserTargetAll = {
+	/* Drupal.behaviors.shantiTextsTeaserTargetAll = {
 		attach: function (context, settings) {
 		  if(context == window.document) {
 
@@ -21,6 +21,6 @@
 		  }
 		} 
 	};
+	*/
 
-
-}(jQuery));
+// }(jQuery));
