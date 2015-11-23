@@ -126,9 +126,16 @@
 
 
 
+/* BEGIN VIEW COLLECTIONS */
+.view-collections .views-row {
+	height: 90px;
+}
 
+.view-collections .views-field-title h3 {
+  margin: 0.5rem 0 .5rem;
+}
 
-
+/* END VIEW COLLECTIONS */
 
 
 
