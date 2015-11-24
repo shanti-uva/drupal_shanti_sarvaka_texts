@@ -166,7 +166,6 @@
   font-size: 1.25em;
   margin: 0.5rem 0 0;
   width: 100%;
-  float: left;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -258,7 +257,7 @@
 
 .views-field.views-field-nothing{
   margin-top: 1rem;
-  margin-left: 5rem;
+  margin-left: 5.4rem;
   font-family: helvetica, arial, sans-serif;
   width: auto;
   white-space: nowrap;
@@ -273,7 +272,7 @@
   font-size: 1em;
   float: left;
   color: #905cad;
-  margin: 0 0 0 -0.2rem;
+  margin: 0 0 0 0.2rem;
   position: relative;
   top: 0.8rem;
   left: 0.2rem;
