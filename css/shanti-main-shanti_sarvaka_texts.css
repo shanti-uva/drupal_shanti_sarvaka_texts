@@ -125,9 +125,11 @@
 
 
 /* BEGIN VIEW COLLECTIONS */
+/*
 .view-collections .views-row {
 	height: 90px;
 }
+*/
 
 .view-collections .views-field-title h3 {
   margin: 0.5rem 0 .5rem;
@@ -153,7 +155,7 @@
 .views-row {
   float: left;
   width: 100% !important;
-  height: 85px;
+  height: 90px;
   background: white;
   padding: 0 1rem 1.2rem;
   margin: 0 1.5rem 1rem 0;
@@ -235,10 +237,10 @@
   top: 0.7rem;
   left: 1.1rem;
   font-family: 'museo-sans-500', helvetica, arial, sans-serif;
-  font-size: 0.82em;
+  font-size: 0.88em;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  color: #444;
+  color: #222;
   font-weight: normal;
   width: auto;
   white-space: nowrap;
@@ -255,13 +257,12 @@
 
 
 .views-field.views-field-nothing{
-  margin-top: 0.9rem;
+  margin-top: 1rem;
   margin-left: 5rem;
   font-family: helvetica, arial, sans-serif;
   width: auto;
   white-space: nowrap;
   text-overflow: ellipsis;
-  line-height: 1.2em;
 }
 
 
@@ -271,9 +272,7 @@
 .views-field-field-dc-date-publication-year {
   font-size: 1em;
   float: left;
-  /*display: block;
-  width: 100%;*/
-  color: #444;
+  color: #905cad;
   margin: 0 0 0 -0.2rem;
   position: relative;
   top: 0.8rem;
