@@ -97,9 +97,6 @@
 
 
 /* BEGIN VIEW COLLECTIONS */
-.view-collections .views-field-title h3 {
-  margin: 0.5rem 0 .5rem;
-}
 
 /* Exposed Widgets */
 .views-exposed-widget label,
@@ -132,11 +129,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
   color: inherit;
+  padding-bottom: 0.2rem;
 }
 
 .front .views-field-title h3 {
   font-size: 1.38em;
-  padding-bottom: 2px;
+}
+
+.view-collections .views-field-title h3 {
+  margin: 0.5rem 0 .5rem;
 }
 
 /* shanticon font on h3 header */
