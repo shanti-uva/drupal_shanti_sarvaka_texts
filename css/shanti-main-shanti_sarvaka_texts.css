@@ -119,6 +119,7 @@
   padding: 0 1rem 1.2rem;
   margin: 0 1.5rem 1rem 0;
   border-top: 4px solid #a066c0;
+  box-shadow: 0 0 5px #ccc;
 }
 
 .views-field-title h3 {
