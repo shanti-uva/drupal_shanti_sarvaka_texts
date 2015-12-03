@@ -117,7 +117,7 @@
   height: 90px;
   background: white;
   padding: 0 1rem 1.2rem;
-  margin: 0 1.5rem 1rem 0;
+  margin: 0 0.5rem 1rem;
   border-top: 4px solid #a066c0;
   box-shadow: 0 0 5px #ccc;
 }
@@ -808,7 +808,7 @@
 	
   .views-row {
     width: 48% !important;
-    margin: 0 0.5rem 1rem;
+    margin: 0 1rem 1rem 0;
   }
 
   .front .views-row {
