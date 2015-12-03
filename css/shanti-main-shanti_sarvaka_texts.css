@@ -807,12 +807,16 @@
 @media (min-width: 768px) {
 	
   .views-row {
-    width: 48% !important;
+    width: 49.5% !important;
     margin: 0 1rem 1rem 0;
   }
 
   .front .views-row {
-    width: 48% !important;
+    width: 49.5% !important;
+  }
+
+  .front .views-row:nth-child(odd){
+    margin-right:0;
   }
 
   .front .views-field-title h3 {
@@ -826,10 +830,6 @@
 	
   .views-row {
     width: 31.75% !important;
-  }
-
-  .front .views-row {
-    width: 48.5% !important;
   }
 
   .view-all-texts-control-box-cell-filters .views-exposed-widgets {
