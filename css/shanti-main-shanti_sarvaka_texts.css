@@ -815,7 +815,7 @@
     width: 49.5% !important;
   }
 
-  .front .views-row:nth-child(odd){
+  .front .view-all-texts .views-row:nth-child(even){
     margin-right:0;
   }
 
@@ -829,7 +829,15 @@
 @media (min-width: 992px) {
 	
   .views-row {
-    width: 31.75% !important;
+    width: 32.5% !important;
+  }
+
+  .view-all-texts .views-row:nth-child(3n) {
+    margin-right: 0 !important;
+  }
+
+  .front .view-all-texts .views-row:nth-child(3n) {
+    margin-right: 1rem !important;
   }
 
   .view-all-texts-control-box-cell-filters .views-exposed-widgets {
