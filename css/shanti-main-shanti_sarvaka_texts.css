@@ -815,12 +815,8 @@
 @media (min-width: 768px) {
 	
   .views-row {
-    width: 48.5% !important;
+    width: 49% !important;
     margin: 0 1rem 1rem 0;
-  }
-
-  .front .views-row {
-    width: 49.3% !important;
   }
 
   .front .view-all-texts .views-row:nth-child(even){
