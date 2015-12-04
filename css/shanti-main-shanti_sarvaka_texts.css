@@ -819,6 +819,10 @@
     margin: 0 1rem 1rem 0;
   }
 
+  .front .views-row {
+    width: 49% !important;
+  }
+
   .front .view-all-texts .views-row:nth-child(even){
     margin-right:0;
   }
