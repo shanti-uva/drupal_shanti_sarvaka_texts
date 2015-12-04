@@ -815,12 +815,12 @@
 @media (min-width: 768px) {
 	
   .views-row {
-    width: 49.3% !important;
+    width: 48.3% !important;
     margin: 0 1rem 1rem 0;
   }
 
   .front .views-row {
-    width: 49.5% !important;
+    width: 48.5% !important;
   }
 
   .front .view-all-texts .views-row:nth-child(even){
@@ -837,7 +837,7 @@
 @media (min-width: 992px) {
 	
   .views-row {
-    width: 32.5% !important;
+    width: 32.3% !important;
   }
 
   .view-all-texts .views-row:nth-child(3n) {
