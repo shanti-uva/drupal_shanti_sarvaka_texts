@@ -55,6 +55,10 @@
 /* -------------------------------------------*/
 /* begin migration from shanti_texts_page_all_texts */
 
+.view-all-texts-control-box-row{ /* on collections page */
+  margin-right:0;
+}
+
 /* VIEWS FILTER BAR */
 .view-all-texts-control-box {
   border-top: 0;
@@ -807,12 +811,8 @@
 @media (min-width: 768px) {
 	
   .views-row {
-    width: 49.5% !important;
+    width: 49.3% !important;
     margin: 0 1rem 1rem 0;
-  }
-
-  .front .views-row {
-    width: 49.5% !important;
   }
 
   .front .view-all-texts .views-row:nth-child(even){
