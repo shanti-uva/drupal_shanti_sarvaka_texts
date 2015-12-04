@@ -59,6 +59,10 @@
   margin-right:0;
 }
 
+.front .view-all-texts-control-box-row{ /* on collections page */
+  margin-right: -15px;
+}
+
 /* VIEWS FILTER BAR */
 .view-all-texts-control-box {
   border-top: 0;
