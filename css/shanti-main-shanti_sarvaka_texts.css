@@ -95,11 +95,12 @@
 
 .view-all-texts-control-box-cell-pager {
   padding: 0;
-  margin: 0;
+  margin: 1.25rem 0 0;
 }
 
 .view-all-texts-control-box-cell-pager table.pagerer {
-  margin: 1rem 3rem 0 0;
+  padding: 0 15px 0 0;
+  margin: 0;
 }
 
 
@@ -692,7 +693,7 @@
 
 .extruder table.pagerer{
   font-size: 0.75em;
-  margin:1.5rem auto;
+  margin:0;
   float:left;
 }
 
@@ -767,41 +768,44 @@
 
 
 
-/*-----------------*/
-/* BEGIN max-width */
-/*-----------------*/
-@media screen and (max-width: 379px) {
 
-  .view-all-texts-control-box-cell-pager table.pagerer{
-    float: left;
-    margin-top:1rem;  
-  }
-
-  .view-all-texts-control-box-cell-header .view-result-count-info{
-    font-size:0.93em;
-  }
-}
-
-@media screen and (max-width: 499px) {
 
   .view-all-texts-control-box-cell-header .view-result-count-info{
     font-size: 0.88em;
   }
-}
 
-@media (max-width: 599px) {
-	
+  .view-all-texts-control-box-cell-pager table.pagerer{
+    float: left;  
+  }
   .view-all-texts-control-box-cell-header,
   .view-all-texts-control-box-cell-filters,
   .view-all-texts-control-box-cell-pager{
     width:100%;
   }
 
-  .view-all-texts-control-box-cell-pager table.pagerer {
-    margin-left: 1.3rem;
+  .view-all-texts-control-box-cell-pager {
     margin-top: -5.5rem;
     float:right;
   }
+
+
+
+  
+/*-----------------*/
+/* BEGIN max-width */
+/*-----------------*/
+@media screen and (max-width: 379px) {
+
+
+}
+
+@media screen and (max-width: 499px) {
+
+
+}
+
+@media (max-width: 599px) {
+	
 }
 
 @media (max-width: 767px) {
@@ -813,8 +817,32 @@
 /*-----------------*/
 /* BEGIN min-width */
 /*-----------------*/
+@media (min-width: 380px) {
+
+  .view-all-texts-control-box-cell-pager table.pagerer{
+    float: right;  
+  }
+}
+
+@media (min-width: 500px) {
+
+}
+
+@media (min-width: 600px) {
+  
+  .view-all-texts-control-box-cell-header,
+  .view-all-texts-control-box-cell-filters,
+  .view-all-texts-control-box-cell-pager{
+    width:33.333%;
+  }
+
+  .view-all-texts-control-box-cell-pager {
+    margin-top: -5.5rem;
+  }
+}
+
 @media (min-width: 768px) {
-	
+
   .views-row {
     width: 48.5% !important;
     margin: 0 1rem 1rem 0;
