@@ -858,6 +858,27 @@
 
 
 
+
+
+/*--- texts window scroller styles ---*/
+#shanti-texts-body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+ 
+#shanti-texts-body::-webkit-scrollbar-thumb {
+  background-color: #555;
+  outline: 1px solid #555;
+}
+
+ 
+#shanti-texts-body::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    background-color: #fff;
+}
+
+
+
+
 /* CKEDITOR */
 
 .cke_widget_wrapper.cke_widget_block {
