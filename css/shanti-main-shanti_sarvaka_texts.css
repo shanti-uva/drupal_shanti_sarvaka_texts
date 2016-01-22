@@ -23,6 +23,13 @@
   /* border-color: #764B8D !important; */
   /* border-top-color: #764B8D !important; */
 } 
+
+::-moz-selection, 
+::selection {
+  background: #8d824b !important;
+}
+
+
 /* banner header anchor hover */
 .navbar-brand:hover .site-slogan {
   color: #9961b7 !important;
