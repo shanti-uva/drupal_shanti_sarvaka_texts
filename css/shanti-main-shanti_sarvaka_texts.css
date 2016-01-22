@@ -17,7 +17,7 @@
   color: #764B8D !important;
 }
 
-.header-banner .menu-icon{ right:0.4rem; /* coordinate with main-wrapper margin-right shim */}
+/* .header-banner .menu-icon{ right:0.4rem; coordinate with main-wrapper margin-right shim } */
 
 .nav-justified > li.active > a:after {
   /* border-color: #764B8D !important; */
