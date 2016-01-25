@@ -17,12 +17,19 @@
   color: #764B8D !important;
 }
 
-.header-banner .menu-icon{ right:0.4rem; /* coordinate with main-wrapper margin-right shim */}
+/* .header-banner .menu-icon{ right:0.4rem; coordinate with main-wrapper margin-right shim } */
 
 .nav-justified > li.active > a:after {
   /* border-color: #764B8D !important; */
   /* border-top-color: #764B8D !important; */
 } 
+
+::-moz-selection, 
+::selection {
+  background: #8d824b !important;
+}
+
+
 /* banner header anchor hover */
 .navbar-brand:hover .site-slogan {
   color: #9961b7 !important;
@@ -855,6 +862,35 @@
   }
 }
 
+
+
+
+#shanti-texts-body,
+#shanti-texts-sidebar{ overflow-y: auto !important;}
+
+
+/*--- texts window scroller styles ---*/
+#shanti-texts-body::-webkit-scrollbar,
+#shanti-texts-sidebar::-webkit-scrollbar {
+    width: .8rem !important;
+}
+ 
+#shanti-texts-body::-webkit-scrollbar-thumb,
+#shanti-texts-sidebar::-webkit-scrollbar-thumb {
+  background-color: #aaa !important;
+  /*outline: 1px solid #555;*/
+  border-radius:  1rem !important;
+  width: .8rem !important;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+}
+
+ 
+#shanti-texts-body::-webkit-scrollbar-track,
+#shanti-texts-sidebar::-webkit-scrollbar-track {
+    /*background-color: #fff;*/
+    border-radius: 1rem !important;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1.5) !important;
+}
 
 
 
