@@ -15,8 +15,8 @@ while ($r = $rs->fetchObject()) {
 	$img_url = image_style_url('front_carousel', $this_node->field_general_featured_image[$lang][0]['uri']);	
 	$items[] = array(
 		'node_url'	=> url("node/".$r->nid),
-		'title' 		=> $this_node->title,
-		'desc' 			=> $desc,
+		'title' 	=> $this_node->title,
+		'desc' 		=> $desc,
 		'img_url' 	=> $img_url,
 	);
 }
