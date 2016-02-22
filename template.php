@@ -11,7 +11,6 @@ function shanti_sarvaka_texts_menu_breadcrumb_alter(&$active_trail, $item) {
 }
 
 function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
-	drupal_set_message($form_id);
 	// Note that $form_id != $form['#id']
 	#$my_form_ids = array('views-exposed-form-all-texts-panel-pane-1','views-exposed-form-all-texts-page-1','views-exposed-form-all-texts-page-3');
 	#if ($form_id == 'views_exposed_form' && in_array($form['#id'], $my_form_ids)) {
