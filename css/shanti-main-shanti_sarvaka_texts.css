@@ -213,7 +213,8 @@
 }
 
 .views-field.views-field-nothing,
-.views-field.views-field-title-1{
+.views-field.views-field-title-1,
+.views-field-field-og-collection-ref {
   margin-top: 1rem;
   margin-left: 5.4rem;
   font-family: helvetica, arial, sans-serif;

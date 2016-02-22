@@ -75,7 +75,7 @@ while ($r = $rs->fetchObject()) {
 
 <div>
 <?php 
-	$view = views_get_view('all_texts');
+	$view = views_get_view('all_texts_open');
 	$view->override_path = $_GET['q'];
 	$viewsoutput = $view->preview('panel_pane_1');
 	print $viewsoutput;
