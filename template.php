@@ -4,17 +4,19 @@
 
 define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts'));
 
-function shanti_sarvaka_texts_menu_breadcrumb_alter(&$active_trail, $item) {
-	if ($active_trail[0]['title'] == 'Home') {
+function shanti_sarvaka_texts_menu_breadcrumb_alter(&$active_trail, $item) 
+{
+	if ($active_trail[0]['title'] == 'Home') 
+	{
 		array_shift($active_trail);
 	}
 }
 
-function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
+function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) 
+{
 	// Note that $form_id != $form['#id']
-	#$my_form_ids = array('views-exposed-form-all-texts-panel-pane-1','views-exposed-form-all-texts-page-1','views-exposed-form-all-texts-page-3');
-	#if ($form_id == 'views_exposed_form' && in_array($form['#id'], $my_form_ids)) {
-	if ($form_id == 'views_exposed_form' && preg_match('/^views-exposed-form-all-texts/', $form['#id'])) {
+	if ($form_id == 'views_exposed_form' && preg_match('/^views-exposed-form-all-texts/', $form['#id'])) 
+	{
 		$form['title'] += array(
 			'#attributes' => array(
 				'placeholder' => 'Search by Title',
@@ -28,121 +30,121 @@ function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id) {
 	}
 }
 
-function shanti_sarvaka_texts_preprocess_views_view(&$vars) {
-	/*
-  if (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
-  
-    // Grab the pieces you want and then remove them from the array    
-    $header   = $vars['header'];    $vars['header']   = '';
-    $filters  = $vars['exposed'];   $vars['exposed']  = '';
-    $pager    = $vars['pager'];     $vars['pager']    = '';
+function shanti_sarvaka_texts_preprocess_node(&$vars) 
+{
+  if ($vars['type'] == 'book' && $vars['teaser'] == FALSE) 
+  {
+    // If not top of book, redirect to the book
+    $nid = $vars['nid'];
+    $bid = $vars['book']['bid'];
+    if (!$bid) 
+    {
+    	drupal_set_message("This is not a book!"); 
+	}
+    elseif ($bid != $nid) 
+    { 
+		$s = '';
+		if (array_key_exists('s',$_GET)) { $s = $_GET['s']; }
+		drupal_goto("node/$bid", array('query' => array('s' => $s), 'fragment' => "book-node-$nid")); 
+	}
+    $top_mlid = $vars['book']['p1'];
+
+    // Highlight search hits
+    if (isset($_GET['s']) && !preg_match("/^\s*$/",$_GET['s'])) 
+    {
+      $s = $_GET['s'];
+      $book_body_rendered = preg_replace_callback(
+        "/($s)/i",
+        function($match) use (&$count) 
+        {
+          $count++; 
+          return "<span id='shanti-texts-search-hit-{$count}' "
+            . "class='shanti-texts-search-hit'>$match[1]</span>";
+        },
+        $book_body_rendered,-1,$count
+      );
+    }
     
-    $control_box = array(
+	// Build the render array for the page
+    $vars['content']['shanti_texts_container'] = array(
       '#type' => 'container',
-      '#attributes' => array('class' => array('view-all-texts-control-box')),
-      'control_box_row' => array(
-        '#type' => 'container',
-        '#attributes' => array('class' => array('view-all-texts-control-box-row row')),
-        'header' => array(
-          '#markup' => $header,
-          '#prefix'  => "<div class='view-all-texts-control-box-cell-header view-all-texts-control-box-cell col-xs-12 col-md-4'>",
-          '#suffix' => "</div>",        
-        ),
-        'filters' => array(
-          '#markup' => $filters,
-          '#prefix'  => "<div class='view-all-texts-control-box-cell-filters view-all-texts-control-box-cell col-xs-12 col-md-4'>",
-          '#suffix' => "</div>",        
-        ),
-        'switch_list' => array(
-            '#prefix'  => "<div class='view-all-texts-control-box-cell-switch view-all-texts-control-box-cell col-xs-12 col-md-2'>",
-            '#suffix' => "</div>",        
-            '#theme' => 'item_list',
-            '#type'  => 'ul',
-            '#attributes' => array('id' => 'view-all-texts-switcher'),
-            '#items' => array(
-              array(
-                'class' => array('fat-list'),
-                'data'  => "<span id='view-all-texts-fat-list' class='icon shanticon-list'></span>",
-              ), 
-              array(
-                'class' => array('thin-list'),
-                'data'  => "<span id='view-all-texts-thin-list' class='icon shanticon-list4'></span>",              
-              ),
-              array(
-                'class' => array('grid'),
-                'data'  => "<span id='view-all-texts-grid' class='icon shanticon-grid'></span>",              
-              ),
-            ),
-          ),
-        'pager' => array(
-          '#markup' => $pager,
-          '#prefix' => "<div class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell col-xs-12 col-md-4'>",
-          '#suffix' => "</div>",
-        ),
+      '#attributes' => array('id' => 'shanti-texts-container'),
+    );
+    $vars['content']['shanti_texts_container']['body'] = array(
+      '#type'   => 'markup',
+      '#prefix' => '<div id="shanti-texts-body">',
+      '#markup' => views_embed_view('single_text_body',	'panel_pane_default',$bid),
+      '#suffix' => '</div>',
+    );
+    $vars['content']['shanti_texts_container']['sidebar'] = array(
+      '#type' => 'container',
+      '#attributes' => array('id' => 'shanti-texts-sidebar', 'role' => 'tabpanel'), // Set to hidden in CSS 
+    );
+    $vars['content']['shanti_texts_container']['sidebar']['tabs'] = array(
+      '#type' => 'ul',  
+      '#theme' => 'item_list',
+      '#attributes' => array('id' => 'shanti-texts-sidebar-tabs', 'role' => 'tablist', 'class' => array('nav','nav-tabs','nav-justified')),
+      '#items' => array(
+        array('class' => '', 'role' => 'presentation', 'data' => '<a href="#shanti-texts-toc" role="tab" data-toggle="tab" aria-expanded="true">Contents</a>'),
+        array('class' => '', 'role' => 'presentation', 'data' => '<a href="#shanti-texts-meta" role="tab" data-toggle="tab">Description</a>'),
+        array('class' => '', 'role' => 'presentation', 'data' => '<a href="#shanti-texts-links" role="tab" data-toggle="tab">Views</a>'),
       ),
     );
-    
-    $control_box['#attached']['js'] = array(
-      SHANTI_TEXTS_PATH . '/js/jquery.transit.min.js',
-      SHANTI_SARVAKA_TEXTS_PATH . '/js/jquery.cookie.js',
-      SHANTI_SARVAKA_TEXTS_PATH . '/js/shanti_texts_page_all_texts.js',
-    );
-
-    $control_box['#attached']['css'] = array(
-      SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts_page_all_texts.css'    
-    );
-
-    // Attach the new element to the array
-    $vars['attachment_before'] = drupal_render($control_box);
-    $vars['attachment_after']  = $pager;
-
-  }
-  */
-  
-  /*
-  if (isset($vars['view']->name) && $vars['view']->name == 'all_texts') {
-  
-    // Grab the pieces you want and then remove them from the array    
-    $header   = $vars['header'];    $vars['header']   = '';
-    $filters  = $vars['exposed'];   $vars['exposed']  = '';
-    $pager    = $vars['pager'];     $vars['pager']    = '';
-    
-    $control_box = array(
+    $vars['content']['shanti_texts_container']['sidebar']['tabcontent'] = array(
       '#type' => 'container',
-      '#attributes' => array('class' => array('view-all-texts-control-box')),
-      'control_box_row' => array(
-        '#type' => 'container',
-        '#attributes' => array('class' => array('view-all-texts-control-box-row row')),
-        'header' => array(
-          '#markup' => $header,
-          '#prefix'  => "<div class='view-all-texts-control-box-cell-header view-all-texts-control-box-cell  col-xs-12 col-md-4'>",
-          '#suffix' => "</div>",        
-        ),
-        'filters' => array(
-          '#markup' => $filters,
-          '#prefix'  => "<div class='view-all-texts-control-box-cell-filters view-all-texts-control-box-cell  col-xs-12 col-md-4'>",
-          '#suffix' => "</div>",        
-        ),
-        'pager' => array(
-          '#markup' => $pager,
-          '#prefix' => "<div class='view-all-texts-control-box-cell-pager view-all-texts-control-box-cell  col-xs-12 col-md-4'>",
-          '#suffix' => "</div>",
-        ),
+      '#attributes' => array('class' => array('tab-content')),
+    );
+    $vars['content']['shanti_texts_container']['sidebar']['tabcontent']['toc'] = array(
+      '#type'   => 'markup',
+      '#prefix' => '<div role="tabpanel" class="tab-pane" id="shanti-texts-toc">',
+      '#markup' => views_embed_view('single_text_toc', 'panel_pane_default',$bid),
+      '#suffix' => '</div>',
+    );
+    $vars['content']['shanti_texts_container']['sidebar']['tabcontent']['meta'] = array(
+      '#type'   => 'markup',
+      '#prefix' => '<div role="tabpanel" class="tab-pane" id="shanti-texts-meta">',
+      '#markup' => views_embed_view('single_text_meta', 'panel_pane_default',$bid), 
+      '#suffix' => '</div>',
+    );
+    $vars['content']['shanti_texts_container']['sidebar']['tabcontent']['links'] = array(
+      '#type' 	=> 'markup',
+      '#prefix' => '<div role="tabpanel" class="tab-pane" id="shanti-texts-links">',
+      '#markup' => views_embed_view('single_text_views', 'panel_pane_default',$bid),
+      '#suffix' => '</div>',
+    );
+    
+    // Add CSS and JS
+    $js_settings = array(
+      'book'        => $vars['book'],
+      'book_title'  => $vars['book']['link_title'],
+      'kwic_n'      => isset($_GET['n']) ? $_GET['n'] : 0,  
+      'edit_rights'	=> user_access('add content to books') && user_access('create new books'),
+    );
+    
+    $vars['content']['shanti_texts_container']['#attached'] = array(
+      'js' => array(
+        SHANTI_SARVAKA_TEXTS_PATH . '/js/shanti_texts.js' => array('type' => 'file'),
+        SHANTI_SARVAKA_TEXTS_PATH . '/js/jquery.localscroll.min.js' => array('type' => 'file'),
+        SHANTI_SARVAKA_TEXTS_PATH . '/js/jquery.scrollTo.min.js' => array('type' => 'file'),
+        array('data' => array('shantiTexts' => $js_settings), 'type' => 'setting'),
+      ),                                                     
+      'css' => array(
+        SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts.css',
+        SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts_footnotes.css',
       ),
     );
+ 
+    // Remove things we don't want to see
+    foreach(array_keys($vars['content']) as $k) {
+      if ($k != 'shanti_texts_container') {
+        unset($vars['content'][$k]);
+      }      
+    }
+
+    // NOT SURE WHY THIS IS HERE
+    unset($vars['submitted']);
     
-    $control_box['#attached']['js'] = array();
-
-    $control_box['#attached']['css'] = array(
-      SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts_page_all_texts.css'    
-    );
-
-    // Attach the new element to the array
-    $vars['attachment_before'] = drupal_render($control_box);
-    $vars['attachment_after']  = $pager;
-  	
   }
-  */
-
-
 }
+
+
