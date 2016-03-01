@@ -1,7 +1,5 @@
 <?php
 
-# Just an extra line for testing
-
 define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts'));
 
 function shanti_sarvaka_texts_menu_breadcrumb_alter(&$active_trail, $item) 
@@ -34,6 +32,7 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
 {
   if ($vars['type'] == 'book' && $vars['teaser'] == FALSE) 
   {
+  
     // If not top of book, redirect to the book
     $nid = $vars['nid'];
     $bid = $vars['book']['bid'];
@@ -147,4 +146,4 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
   }
 }
 
-
+function shanti_sarvaka_texts_preprocess_views_view(&$vars) {}

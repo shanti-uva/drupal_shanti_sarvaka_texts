@@ -5,9 +5,13 @@
   padding: 0;
 }
 
-#shanti-texts-body,
-#shanti-texts-sidebar { 
+#shanti-texts-body, #shanti-texts-sidebar { 
 	overflow-y: auto !important;
+}
+
+#shanti-texts-body .shanti-texts-section-content * {
+    font-family: Garamond, "Times New Roman", serif;
+    font-size: 12pt;
 }
 
 #shanti-texts-body {
@@ -25,7 +29,7 @@
 #shanti-texts-sidebar {
   /* display:none; */ /* INITIAL CONDITION to prevent showing un-tabbed content */
   /* position:relative; */ /* Disabling this fixed problem of cut-off popovers */
-  padding: 0 1em;
+  padding: 0 1em;                                
   height: 100%;
   overflow: scroll;
 }
@@ -51,10 +55,12 @@
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1.5) !important;
 }
 
+/* What is this? */
 #shanti-texts-sidebar.ui-widget-content {
   border: none;
 }
 
+/* What is this? */
 #shanti-texts-sidebar .ui-widget-header {
   background: none;
   border: none;
@@ -211,23 +217,34 @@ h2.book-heading {
   font-size: 18pt;
 }
 
-.book-edit-menu {
-  background: rgba(118,75,141,0.5);
-  width: 60px;
-  text-align: center;
-  padding: 5px;
-  margin-bottom: 5px;
-  display: none;
+.shanti-texts-section-controls {
+  text-align:right;   
 }
 
-.book-edit-menu a {
-  margin: 0 5px;
+/*
+.shanti-texts-section-controls .glyphicon {
+    _font-size:10pt;    
+    _background: rgba(118,75,141,0.5);
+    padding:3px;
 }
 
-.book-edit-menu a,
-.book-edit-menu a:visited {
+.shanti-texts-section-controls {
+  _background: rgba(118,75,141,0.5);
+  _width: 60px;
+  _text-align: center;
+  _padding: 5px;
+  _margin-bottom: 5px;
+}
+
+.shanti-texts-section-controls a {
+  _margin: 0 5px;
+}
+
+.shanti-texts-section-controls a,
+.shanti-texts-section-controls a:visited {
   color: white;
 }
+*/
 
 .node-type-book section.content-section {
   padding: 0;
@@ -243,4 +260,27 @@ h2.book-heading {
   background-color: #ffc;
 }
 
+.shanti-texts-section {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1em;
+}
 
+.shanti-texts-section-kmaps {
+    text-align:right;   
+}
+
+.content table.shanti-texts-record td {
+    padding:0 1em!important;
+}
+
+.content table.shanti-texts-record tbody {
+    border-top: 0;
+}
+
+td.shanti-texts-field-label {
+    text-align:righ!important;
+    font-weight:bold;
+}
+td.shanti-texts-field-content {
+    text-align:left;
+}
