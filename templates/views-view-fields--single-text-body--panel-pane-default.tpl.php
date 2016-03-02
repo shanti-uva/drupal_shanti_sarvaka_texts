@@ -59,7 +59,7 @@
 ?>
 <a name="shanti-texts-<?php print $nid; ?>"></a>
 <div id="shanti-texts-<?php print $nid; ?>" class="shanti-texts-section text-level-<?php print $depth; ?>">
-    <div id="shanti-texts-<?php print $nid; ?>" >
+    <div id="shanti-texts-<?php print $nid; ?>" class="">
         <h<?php print $depth; ?> class="shanti-texts-section-title text-level-<?php print $depth; ?>">
             <?php print $title; ?>
         </h<?php print $depth; ?>>
@@ -67,14 +67,16 @@
     <div class="shanti-texts-section-content">
         <?php print $content; ?>
     </div>
+    <?php if($subjects || $places): ?>
     <div class="shanti-texts-section-kmaps"> 
         <?php print $subjects; ?>
         <?php print $places; ?>
     </div>
+    <?php endif; ?>
     <?php if(user_access('add content to books')): ?>
     <div class="shanti-texts-section-controls">
         <?php print $node_edit_url; ?>
         <?php print $node_add_url; ?>
     </div>
-    <?php endif; ?>
+    <?php endif; ?>    	
 </div>

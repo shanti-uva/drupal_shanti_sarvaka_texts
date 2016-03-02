@@ -1,5 +1,5 @@
 <?php
-
+# Replaces views-view-fields--single-text-meta--panel-pane-default.tpl.php
 /**
  * @file
  * Default simple view template to all the fields as a row.
@@ -23,13 +23,28 @@
  *
  * @ingroup views_templates
  */
+$title = $fields['title']->content;
+unset($fields['title']);
 ?>
-<?php foreach ($fields as $id => $field): ?>
-  <?php if (!empty($field->separator)): ?>
-    <?php print $field->separator; ?>
-  <?php endif; ?>
-  <?php print $field->wrapper_prefix; ?>
-    <?php print $field->label_html; ?>
-    <?php print $field->content; ?>
-  <?php print $field->wrapper_suffix; ?>
-<?php endforeach; ?>
+<div class="shanti-texts-record-title"><?php print $title; ?></div>
+<table class="shanti-texts-record-table table">
+    <tbody>
+    <?php foreach ($fields as $id => $field): ?>
+        <tr class='shanti-texts-field <?php print $id; ?>'>
+        <?php if ($field->label != ''): ?>
+            <td class='shanti-texts-field-label'>
+            <?php print $field->label_html; ?>:
+            </td>      
+            <td class='shanti-texts-field-content'>
+            <?php print $field->content; ?>
+            </td>
+        <?php else: ?>
+            <td colspan="2" class='shanti-texts-field-content'>
+				<span style="font-size:12pt;">&raquo;</span> 
+				<?php print $field->content; ?>
+	        </td>    
+        <?php endif; ?>
+        </tr>
+    <?php endforeach; ?>
+    </tbody>
+</table>

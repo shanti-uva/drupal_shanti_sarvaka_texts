@@ -39,11 +39,14 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
     if (!$bid) 
     {
     	drupal_set_message("This is not a book!"); 
-	}
+    }
     elseif ($bid != $nid) 
     { 
 		$s = '';
-		if (array_key_exists('s',$_GET)) { $s = $_GET['s']; }
+		if (array_key_exists('s',$_GET)) 
+		{ 
+		    $s = $_GET['s']; 
+		}
 		drupal_goto("node/$bid", array('query' => array('s' => $s), 'fragment' => "book-node-$nid")); 
 	}
     $top_mlid = $vars['book']['p1'];
@@ -102,7 +105,7 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
     $vars['content']['shanti_texts_container']['sidebar']['tabcontent']['meta'] = array(
       '#type'   => 'markup',
       '#prefix' => '<div role="tabpanel" class="tab-pane" id="shanti-texts-meta">',
-      '#markup' => views_embed_view('single_text_meta', 'panel_pane_default',$bid), 
+      '#markup' => views_embed_view('single_text_meta', 'panel_pane_default',$bid),
       '#suffix' => '</div>',
     );
     $vars['content']['shanti_texts_container']['sidebar']['tabcontent']['links'] = array(

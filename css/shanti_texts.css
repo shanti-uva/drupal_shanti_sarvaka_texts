@@ -1,11 +1,12 @@
 #shanti-texts-container {
-  position: relative;
-  height: 739px;
-  margin: 0;
-  padding: 0;
+	position: relative;
+	height: 739px;
+	margin: 0;
+	padding: 0;
 }
 
-#shanti-texts-body, #shanti-texts-sidebar { 
+#shanti-texts-body, 
+#shanti-texts-sidebar { 
 	overflow-y: auto !important;
 }
 
@@ -33,6 +34,7 @@
   height: 100%;
   overflow: scroll;
 }
+
 /*--- texts window scroller styles ---*/
 #shanti-texts-body::-webkit-scrollbar,
 #shanti-texts-sidebar::-webkit-scrollbar {
@@ -56,17 +58,21 @@
 }
 
 /* What is this? */
+/*
 #shanti-texts-sidebar.ui-widget-content {
   border: none;
 }
+*/
 
 /* What is this? */
+/*
 #shanti-texts-sidebar .ui-widget-header {
   background: none;
   border: none;
   margin-top: 1em;
   margin-left: 1.7em;
 }
+*/
 
 #shanti-texts-sidebar .tab-content {
   padding-left: 1.5rem;
@@ -88,6 +94,10 @@
 
 #shanti-texts-sidebar .field-type-shanti-kmaps-fields-default .field-item {
   display: inline-block;
+}
+
+#shanti-texts-sidebar-tabs {
+    margin-top:0;
 }
 
 #shanti-texts-toc {
@@ -126,19 +136,9 @@
   padding-left: 0;
 }
 
-/*
-#shanti-texts-toc li {
-  font-size:12pt;
-  font-family: 'Helvetica Neue',helvetica,arial,sans-serif;
-}
-*/
+#shanti-texts-links {}
 
-#shanti-texts-links {
-
-}
-
-#shanti-texts-meta {
-}
+#shanti-texts-meta {}
 
 #shanti-texts-body .book-section {
 	clear: both;
@@ -153,7 +153,9 @@
   font-size: 16px;
 }
 
+
 /* PUT THIS IN CKEDITOR ENHANCEMENTS */
+
 #shanti-texts-body .book-section .bourdieu {
   /* font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif; */
   font-size: 95%;
@@ -164,14 +166,15 @@
 }
 
 #shanti-texts-body .pull-quote-right {
-	float:right;
-  margin-left: 1em;
-  margin-right: 0;
+	float: right;
+  	margin-left: 1em;
+  	margin-right: 0;
 }
+
 #shanti-texts-body  .pull-quote-left {
 	float:left;
-  margin-left: 0;
-  margin-right: 1em;
+  	margin-left: 0;
+  	margin-right: 1em;
 }
 
 #shanti-texts-body .pull-quote-right,
@@ -205,20 +208,51 @@
   list-style-type: none;
 }
 
+/*
 h2.book-heading {
   font-size: 14pt;
-  /* border-top:1px solid gray; */
   padding-top: 1em;
   padding-bottom: .5em;
   font-weight: bold;
 }
+*/
 
+/*
 .section-1 > h2.book-heading {
   font-size: 18pt;
 }
+*/
 
 .shanti-texts-section-controls {
-  text-align:right;   
+ 	text-align:right;
+ 	font-family: sans-serif;
+}
+
+.shanti-texts-section-kmaps {
+	font-family: sans-serif;
+	font-size:10pt;	
+	border-top: 1px dotted lightgray;
+	border-bottom: 1px dotted lightgray;
+	padding: 1rem;
+	margin: 1rem 0;
+	background-color: #EEE;
+}
+
+.shanti-texts-section.text-level-1 .shanti-texts-section-kmaps {
+	display:none;
+}
+
+.shanti-texts-section-title {
+	margin-top:1.5rem;
+	margin-bottom: 2rem;	
+}
+
+.shanti-texts-section-title.text-level-5 {
+	margin-left: 2.5rem;	
+}
+
+.shanti-texts-section-title.text-level-6 {
+	margin-left: 5rem;	
 }
 
 /*
@@ -261,26 +295,37 @@ h2.book-heading {
 }
 
 .shanti-texts-section {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px dotted gray;
     padding-bottom: 1em;
 }
 
-.shanti-texts-section-kmaps {
-    text-align:right;   
+
+/* Tabbed Content Areas */
+
+.shanti-texts-record-title {
+    font-weight: bold;   
+    margin-bottom: 1em;
 }
 
-.content table.shanti-texts-record td {
-    padding:0 1em!important;
-}
-
-.content table.shanti-texts-record tbody {
+#shanti-texts-sidebar table.shanti-texts-record-table tbody {
     border-top: 0;
 }
 
-td.shanti-texts-field-label {
-    text-align:righ!important;
-    font-weight:bold;
+#shanti-texts-sidebar tr.shanti-texts-field td {
+    padding: .5em 1em .5em 0;   
 }
-td.shanti-texts-field-content {
+
+#shanti-texts-sidebar td.shanti-texts-field-label {
+    width:25%;
+    max-width:100px;
+    text-align: right;
+}
+
+#shanti-texts-sidebar td.shanti-texts-field-content {
     text-align:left;
+}
+
+#shanti-texts-sidebar .shanti-texts-record-table ul {
+	list-style-type: none;
+	margin-left: -1.75rem;
 }
