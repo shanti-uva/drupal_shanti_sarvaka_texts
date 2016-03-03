@@ -1,5 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,latin-ext);
+
+.tab-pane.main-col > div, 
+.page-node-devel .tab-pane.main-col > div {
+    margin-bottom: 0;    
+}
+
 #shanti-texts-container {
-	position: relative;
+	/* position: relative; */
 	height: 739px;
 	margin: 0;
 	padding: 0;
@@ -11,17 +18,17 @@
 }
 
 #shanti-texts-body .shanti-texts-section-content * {
-    font-family: Garamond, "Times New Roman", serif;
-    font-size: 12pt;
+    font-family: "EB Garamond", "Times New Roman", serif;
+    font-size: 14pt;
 }
 
 #shanti-texts-body {
-  position: relative;
-  float: left;
+  /* position: relative; */
+  /* float: left; */
+  /* width: 50%; */
+  /* min-width: 480px; */
   height: 100%;
-  width: 50%;
-  min-width: 480px;
-  padding: 0 2em;
+  padding: 0 1em;
   margin: 0;
   overflow: scroll;
   background-color: white;
@@ -242,19 +249,52 @@ h2.book-heading {
 	display:none;
 }
 
-#shanti-texts-body .shanti-texts-section-title {
+.shanti-texts-section-title {
 	margin-top:1.5rem;
 	margin-bottom: 2rem;
-	font-family: Garamond!important;
+	font-family: "EB Garamond"!important;
 	font-weight:bold!important;	
 }
 
+.shanti-texts-section-title.text-level-1 {
+	margin-bottom: 1rem;
+    font-size:18pt;
+}
+
+.shanti-texts-section-title.text-level-2 {
+	margin-bottom: 1rem;
+    font-size:16pt;
+}
+
+.shanti-texts-section-title.text-level-3 {
+	margin-bottom: 1rem;
+    font-size:14pt;
+}
+
+.shanti-texts-section-title.text-level-4 {
+	margin-bottom: 1rem;
+    font-size:12pt;
+    font-variant:small-caps;
+}
+
 .shanti-texts-section-title.text-level-5 {
-	margin-left: 2.5rem;	
+    font-size:12pt;
+	margin-left: 1.5rem;	
+	margin-bottom: 0rem;
 }
 
 .shanti-texts-section-title.text-level-6 {
-	margin-left: 5rem;	
+    font-size:12pt;
+    font-style: italic;
+	margin-left: 1.5rem;
+	margin-bottom: 0rem;
+}
+
+.shanti-texts-section-title.text-level-7 {
+    font-size:12pt;
+    text-decoration: underline;
+	margin-left: 1.5rem;	
+	margin-bottom: 0rem;
 }
 
 /*
@@ -320,7 +360,7 @@ h2.book-heading {
 #shanti-texts-sidebar td.shanti-texts-field-label {
     width:25%;
     max-width:100px;
-    text-align: right;
+    /* text-align: right; */
 }
 
 #shanti-texts-sidebar td.shanti-texts-field-content {

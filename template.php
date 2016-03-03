@@ -28,11 +28,19 @@ function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id)
 	}
 }
 
+function shanti_sarvaka_texts_preprocess_page(&$vars)
+{
+    #kpr($vars);
+    #hide($page['content']['shanti_texts_mega_search']);
+    #hide($page['content']['explore_menu_explore_menu_block']);
+    #hide($page['content']['menu_menu-test']);
+    #print drupal_render($page['content']);   
+}
+
 function shanti_sarvaka_texts_preprocess_node(&$vars) 
 {
   if ($vars['type'] == 'book' && $vars['teaser'] == FALSE) 
   {
-  
     // If not top of book, redirect to the book
     $nid = $vars['nid'];
     $bid = $vars['book']['bid'];
@@ -51,7 +59,7 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
 	}
     $top_mlid = $vars['book']['p1'];
 
-    // Highlight search hits
+    // Highlight search hits (a bit of a kludge)
     if (isset($_GET['s']) && !preg_match("/^\s*$/",$_GET['s'])) 
     {
       $s = $_GET['s'];
@@ -66,86 +74,41 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
         $book_body_rendered,-1,$count
       );
     }
-    
-	// Build the render array for the page
-    $vars['content']['shanti_texts_container'] = array(
-      '#type' => 'container',
-      '#attributes' => array('id' => 'shanti-texts-container'),
-    );
-    $vars['content']['shanti_texts_container']['body'] = array(
-      '#type'   => 'markup',
-      '#prefix' => '<div id="shanti-texts-body">',
-      '#markup' => views_embed_view('single_text_body',	'panel_pane_default',$bid),
-      '#suffix' => '</div>',
-    );
-    $vars['content']['shanti_texts_container']['sidebar'] = array(
-      '#type' => 'container',
-      '#attributes' => array('id' => 'shanti-texts-sidebar', 'role' => 'tabpanel'), // Set to hidden in CSS 
-    );
-    $vars['content']['shanti_texts_container']['sidebar']['tabs'] = array(
-      '#type' => 'ul',  
-      '#theme' => 'item_list',
-      '#attributes' => array('id' => 'shanti-texts-sidebar-tabs', 'role' => 'tablist', 'class' => array('nav','nav-tabs','nav-justified')),
-      '#items' => array(
-        array('class' => '', 'role' => 'presentation', 'data' => '<a href="#shanti-texts-toc" role="tab" data-toggle="tab" aria-expanded="true">Contents</a>'),
-        array('class' => '', 'role' => 'presentation', 'data' => '<a href="#shanti-texts-meta" role="tab" data-toggle="tab">Description</a>'),
-        array('class' => '', 'role' => 'presentation', 'data' => '<a href="#shanti-texts-links" role="tab" data-toggle="tab">Views</a>'),
-      ),
-    );
-    $vars['content']['shanti_texts_container']['sidebar']['tabcontent'] = array(
-      '#type' => 'container',
-      '#attributes' => array('class' => array('tab-content')),
-    );
-    $vars['content']['shanti_texts_container']['sidebar']['tabcontent']['toc'] = array(
-      '#type'   => 'markup',
-      '#prefix' => '<div role="tabpanel" class="tab-pane" id="shanti-texts-toc">',
-      '#markup' => views_embed_view('single_text_toc', 'panel_pane_default',$bid),
-      '#suffix' => '</div>',
-    );
-    $vars['content']['shanti_texts_container']['sidebar']['tabcontent']['meta'] = array(
-      '#type'   => 'markup',
-      '#prefix' => '<div role="tabpanel" class="tab-pane" id="shanti-texts-meta">',
-      '#markup' => views_embed_view('single_text_meta', 'panel_pane_default',$bid),
-      '#suffix' => '</div>',
-    );
-    $vars['content']['shanti_texts_container']['sidebar']['tabcontent']['links'] = array(
-      '#type' 	=> 'markup',
-      '#prefix' => '<div role="tabpanel" class="tab-pane" id="shanti-texts-links">',
-      '#markup' => views_embed_view('single_text_views', 'panel_pane_default',$bid),
-      '#suffix' => '</div>',
-    );
+     
+    // Maybe do stuff based on $vars['view_mode'], e.g. if 'embed'
+    if ($vars['view_mode'] == 'embed') 
+    {
+        // Maybe
+    }
+
+    $book_title = $variables['book']['link_title'];
+    $bid = $variables['book']['bid'];
     
     // Add CSS and JS
     $js_settings = array(
-      'book'        => $vars['book'],
-      'book_title'  => $vars['book']['link_title'],
+      'book'        => $variables['book'],
+      'book_title'  => $book_title,
       'kwic_n'      => isset($_GET['n']) ? $_GET['n'] : 0,  
       'edit_rights'	=> user_access('add content to books') && user_access('create new books'),
     );
     
-    $vars['content']['shanti_texts_container']['#attached'] = array(
-      'js' => array(
-        SHANTI_SARVAKA_TEXTS_PATH . '/js/shanti_texts.js' => array('type' => 'file'),
-        SHANTI_SARVAKA_TEXTS_PATH . '/js/jquery.localscroll.min.js' => array('type' => 'file'),
-        SHANTI_SARVAKA_TEXTS_PATH . '/js/jquery.scrollTo.min.js' => array('type' => 'file'),
-        array('data' => array('shantiTexts' => $js_settings), 'type' => 'setting'),
-      ),                                                     
-      'css' => array(
-        SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts.css',
-        SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts_footnotes.css',
-      ),
-    );
- 
+    drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/shanti_texts.js', 'file');
+    drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/jquery.localscroll.min.js', 'file');
+    drupal_add_js(SHANTI_SARVAKA_TEXTS_PATH . '/js/jquery.scrollTo.min.js','file');
+    drupal_add_js(array('shantiTexts' => $js_settings), 'setting');
+    drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts.css');
+    drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts_footnotes.css');
+    
     // Remove things we don't want to see
-    foreach(array_keys($vars['content']) as $k) {
+    foreach(array_keys($variables['content']) as $k) {
       if ($k != 'shanti_texts_container') {
-        unset($vars['content'][$k]);
+        unset($variables['content'][$k]);
       }      
     }
-
-    // NOT SURE WHY THIS IS HERE
-    unset($vars['submitted']);
     
+    // NOT SURE WHY THIS IS HERE
+    unset($variables['submitted']);
+
   }
 }
 

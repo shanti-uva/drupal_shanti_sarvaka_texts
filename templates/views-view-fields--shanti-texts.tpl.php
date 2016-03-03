@@ -23,11 +23,7 @@
  *
  * @ingroup views_templates
  */
-$title = $fields['title']->content;
-unset($fields['title']);
-?>
-<div class="shanti-texts-record-title"><?php print $title; ?></div>
-<table class="shanti-texts-record-table table">
+?><table class="shanti-texts-record-table table">
     <tbody>
     <?php foreach ($fields as $id => $field): ?>
         <tr class='shanti-texts-field <?php print $id; ?>'>
@@ -40,7 +36,6 @@ unset($fields['title']);
             </td>
         <?php else: ?>
             <td colspan="2" class='shanti-texts-field-content'>
-				<span style="font-size:12pt;">&raquo;</span> 
 				<?php print $field->content; ?>
 	        </td>    
         <?php endif; ?>
