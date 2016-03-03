@@ -59,10 +59,10 @@
 ?>
 <a name="shanti-texts-<?php print $nid; ?>"></a>
 <div id="shanti-texts-<?php print $nid; ?>" class="shanti-texts-section text-level-<?php print $depth; ?>">
-    <div id="shanti-texts-<?php print $nid; ?>" class="">
-        <h<?php print $depth; ?> class="shanti-texts-section-title text-level-<?php print $depth; ?>">
+    <div id="shanti-texts-<?php print $nid; ?>">
+        <div class="shanti-texts-section-title text-level-<?php print $depth; ?>">
             <?php print $title; ?>
-        </h<?php print $depth; ?>>
+        </div>
     </div>
     <div class="shanti-texts-section-content">
         <?php print $content; ?>

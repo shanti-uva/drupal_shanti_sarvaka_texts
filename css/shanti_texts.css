@@ -242,9 +242,11 @@ h2.book-heading {
 	display:none;
 }
 
-.shanti-texts-section-title {
+#shanti-texts-body .shanti-texts-section-title {
 	margin-top:1.5rem;
-	margin-bottom: 2rem;	
+	margin-bottom: 2rem;
+	font-family: Garamond!important;
+	font-weight:bold!important;	
 }
 
 .shanti-texts-section-title.text-level-5 {
