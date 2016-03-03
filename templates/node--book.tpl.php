@@ -1,3 +1,7 @@
+<?php
+$book_title = $variables['book']['link_title'];
+$bid = $variables['book']['bid'];
+?>
 <div id="shanti-texts-container">
     <div id="shanti-texts-body" class="col-md-7">
         <?php print views_embed_view('single_text_body','panel_pane_default',$variables['book']['bid']); ?>

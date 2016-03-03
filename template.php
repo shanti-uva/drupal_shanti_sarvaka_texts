@@ -80,14 +80,11 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
     {
         // Maybe
     }
-
-    $book_title = $variables['book']['link_title'];
-    $bid = $variables['book']['bid'];
     
     // Add CSS and JS
     $js_settings = array(
       'book'        => $variables['book'],
-      'book_title'  => $book_title,
+      'book_title'  => $variables['book']['link_title'];,
       'kwic_n'      => isset($_GET['n']) ? $_GET['n'] : 0,  
       'edit_rights'	=> user_access('add content to books') && user_access('create new books'),
     );
