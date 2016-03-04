@@ -28,13 +28,10 @@ function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id)
 	}
 }
 
-function shanti_sarvaka_texts_preprocess_page(&$vars)
-{
-    #kpr($vars);
-    #hide($page['content']['shanti_texts_mega_search']);
-    #hide($page['content']['explore_menu_explore_menu_block']);
-    #hide($page['content']['menu_menu-test']);
-    #print drupal_render($page['content']);   
+function shanti_sarvaka_texts_preprocess_page(&$vars) {
+    if ($vars['content']['system_main']['#entity_view_mode']['view_mode'] == 'embed') {
+        drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_text_embed.css');
+    }
 }
 
 function shanti_sarvaka_texts_preprocess_node(&$vars) 
@@ -42,6 +39,8 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
   if ($vars['type'] == 'book' && $vars['teaser'] == FALSE) 
   {
     // If not top of book, redirect to the book
+    // THIS COULD BE HANDLED IN PAGE MANAGER -- SO NOT THEME DEPENDENT
+    // But, not sure how to keep the query arg   ('s')
     $nid = $vars['nid'];
     $bid = $vars['book']['bid'];
     if (!$bid) 
@@ -55,10 +54,10 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
 		{ 
 		    $s = $_GET['s']; 
 		}
-		drupal_goto("node/$bid", array('query' => array('s' => $s), 'fragment' => "book-node-$nid")); 
+		drupal_goto("node/$bid", array('query' => array('s' => $s), 'fragment' => "book-node-$nid")); 		
 	}
     $top_mlid = $vars['book']['p1'];
-
+    
     // Highlight search hits (a bit of a kludge)
     if (isset($_GET['s']) && !preg_match("/^\s*$/",$_GET['s'])) 
     {
@@ -78,7 +77,9 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
     // Maybe do stuff based on $vars['view_mode'], e.g. if 'embed'
     if ($vars['view_mode'] == 'embed') 
     {
-        // Maybe
+        // Actually, better to just add a class to the page and add
+        // styles in the main stylesheet
+        #$vars['styles'] = drupal_get_css();
     }
     
     // Add CSS and JS
@@ -108,5 +109,3 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
 
   }
 }
-
-function shanti_sarvaka_texts_preprocess_views_view(&$vars) {}

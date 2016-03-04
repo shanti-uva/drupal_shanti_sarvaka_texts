@@ -104,7 +104,7 @@
 }
 
 #shanti-texts-sidebar-tabs {
-    margin-top:0;
+  margin-top:0;
 }
 
 #shanti-texts-toc {
@@ -151,48 +151,48 @@
 	clear: both;
 }
 
+/*
 #shanti-texts-body .book-section p, 
 #shanti-texts-body .book-section p *, 
 #shanti-texts-body .book-section li, 
 #shanti-texts-body .book-section li * {
-  /* font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif; */
   font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
   font-size: 16px;
 }
+*/
 
 
 /* PUT THIS IN CKEDITOR ENHANCEMENTS */
 
 #shanti-texts-body .book-section .bourdieu {
-  /* font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif; */
-  font-size: 95%;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  padding: 1em 1em;
-  /* margin: 1em 0; */
+    font-size: 95%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 1em 1em;
+    /* margin: 1em 0; */
 }
 
 #shanti-texts-body .pull-quote-right {
-	float: right;
-  	margin-left: 1em;
-  	margin-right: 0;
+    float: right;
+    margin-left: 1em;
+    margin-right: 0;
 }
 
 #shanti-texts-body  .pull-quote-left {
-	float:left;
-  	margin-left: 0;
-  	margin-right: 1em;
+    float:left;
+    margin-left: 0;
+    margin-right: 1em;
 }
 
 #shanti-texts-body .pull-quote-right,
 #shanti-texts-body .pull-quote-left {
-	width: 45%;
-  font-size: 150%;
-  border-top: 3px solid gray;
-  border-bottom: 3px solid gray;
-  padding: 1em 0;
-  margin-top: .5em;
-  margin-bottom: .5em;
+    width: 45%;
+    font-size: 150%;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    padding: 1em 0;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 #shanti-texts-body .image-left,
@@ -212,7 +212,7 @@
 
 #shanti-texts-toc li, 
 #shanti-texts-links .links li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 /*
@@ -252,7 +252,7 @@ h2.book-heading {
 .shanti-texts-section-title {
 	margin-top:1.5rem;
 	margin-bottom: 2rem;
-	font-family: "EB Garamond"!important;
+	/* font-family: "EB Garamond"!important; */
 	font-weight:bold!important;	
 }
 
