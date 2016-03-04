@@ -811,13 +811,13 @@
     margin: 0 1rem 1rem 0;
   }
 
-   .views-row:nth-child(even){
+  .views-row:nth-child(even){
     margin-right: 0;
   }
-
+/*
   .front .views-field-title h3 {
     font-size: 1.32em;
-  }
+  }*/
 }
 
 
@@ -836,9 +836,9 @@
     margin-right: 0;
   }
 
-  .front .views-row:nth-child(3n) {
+  /*.front .views-row:nth-child(3n) {
     margin-right: 1rem;
-  }
+  }*/
 
   .view-all-texts-control-box-cell-filters .views-exposed-widgets {
     margin-top: 0;
