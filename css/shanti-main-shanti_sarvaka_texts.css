@@ -128,7 +128,7 @@
 
 .views-row {
   float: left;
-  width: 100% !important;
+  width: 98.8% !important;
   height: 90px;
   background: white;
   padding: 0 1rem 1.2rem;
@@ -149,7 +149,7 @@
 }
 
 .front .views-field-title h3 {
-  font-size: 1.38em;
+  font-size: 1.32em;
 }
 
 .view-collections .views-field-title h3 {
@@ -807,7 +807,7 @@
 @media (min-width: 768px) {
 	
   .views-row {
-    width: 49.2% !important;
+    width: 49.3% !important;
     margin: 0 1rem 1rem 0;
   }
 
