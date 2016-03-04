@@ -17,7 +17,7 @@
   color: #764B8D !important;
 }
 
-/* .header-banner .menu-icon{ right:0.4rem; coordinate with main-wrapper margin-right shim } */
+.navbar-header .site-slogan{ font-size: 105%; } /* little larger than default for the 5-letter app header */
 
 .nav-justified > li.active > a:after {
   /* border-color: #764B8D !important; */
@@ -28,7 +28,6 @@
 ::selection {
   background: #8d824b !important;
 }
-
 
 /* banner header anchor hover */
 .navbar-brand:hover .site-slogan {
