@@ -170,6 +170,7 @@
 .views-row .views-field-title a:hover,
 .views-row.views-row-hover .views-field-title a{
   color: rgb(207, 47, 30);
+  border-bottom-color: transparent;
 }
 
 .views-row.views-row-hover .views-field-title a .icon {
@@ -824,7 +825,7 @@
 @media (min-width: 992px) {
 	
   .views-row {
-    width: 32.6% !important;
+    width: 32.65% !important;
   }
 
   .views-row:nth-child(even){
