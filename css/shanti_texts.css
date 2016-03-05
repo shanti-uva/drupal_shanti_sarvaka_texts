@@ -45,12 +45,13 @@
 /*--- texts window scroller styles ---*/
 #shanti-texts-body::-webkit-scrollbar,
 #shanti-texts-sidebar::-webkit-scrollbar {
+    height: .8rem !important;
     width: .8rem !important;
 }
  
 #shanti-texts-body::-webkit-scrollbar-thumb,
 #shanti-texts-sidebar::-webkit-scrollbar-thumb {
-  background-color: #aaa !important;
+  background-color: #999 !important;
   /*outline: 1px solid #555;*/
   border-radius:  1rem !important;
   width: .8rem !important;
@@ -371,3 +372,18 @@ h2.book-heading {
 	list-style-type: none;
 	margin-left: -1.75rem;
 }
+
+
+
+
+
+.shanti-texts-section-title.text-level-1{
+  font-size: 1.32em;
+}
+
+.shanti-texts-section-title.text-level-2{
+  font-size: 1.18em;
+}
+
+
+
