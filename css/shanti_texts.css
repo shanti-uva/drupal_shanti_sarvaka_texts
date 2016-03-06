@@ -32,7 +32,7 @@
   margin: 0;
   overflow: scroll;
   background-color: white;
-  box-shadow: inset 0 0 4px #999;
+  box-shadow: inset 0 0 7px #999;
 }
 
 #shanti-texts-sidebar {
@@ -52,11 +52,16 @@
  
 #shanti-texts-body::-webkit-scrollbar-thumb,
 #shanti-texts-sidebar::-webkit-scrollbar-thumb {
-  background-color: #999 !important;
+  background-color: #888 !important;
   /*outline: 1px solid #555;*/
   border-radius:  1rem !important;
   width: .8rem !important;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+}
+
+#shanti-texts-body:hover::-webkit-scrollbar-thumb,
+#shanti-texts-sidebar:hover::-webkit-scrollbar-thumb{
+  background-color: #707070 !important;
 }
  
 #shanti-texts-body::-webkit-scrollbar-track,
