@@ -349,6 +349,10 @@ h2.book-heading {
 }
 
 
+.shanti-texts-section.text-level-1{
+  display:none; /* document title removed in viewer since the colored banner already posts the title */
+}
+
 /* Tabbed Content Areas */
 
 .shanti-texts-record-title {
