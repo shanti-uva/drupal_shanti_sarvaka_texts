@@ -12,11 +12,6 @@
 	padding: 0;
 }
 
-#shanti-texts-body, 
-#shanti-texts-sidebar { 
-	overflow-y: auto !important;
-}
-
 #shanti-texts-body .shanti-texts-section-content * {
     font-family: "EB Garamond", "Times New Roman", serif;
     font-size: 14pt;
@@ -27,10 +22,8 @@
   /* float: left; */
   /* width: 50%; */
   /* min-width: 480px; */
-  height: 100%;
   padding: 0 1em 0 2rem;
   margin: 0;
-  overflow: scroll;
   background-color: white;
   box-shadow: inset 0 0 4px #999;
 }
@@ -39,8 +32,12 @@
   /* display:none; */ /* INITIAL CONDITION to prevent showing un-tabbed content */
   /* position:relative; */ /* Disabling this fixed problem of cut-off popovers */
   padding: 0 1em;                                
+}
+
+#shanti-texts-body, 
+#shanti-texts-sidebar { 
+  overflow-y: auto;
   height: 100%;
-  overflow: scroll;
 }
 
 /*--- texts window scroller styles ---*/
@@ -69,6 +66,10 @@
   /*background-color: #fff;*/
   border-radius: 1rem !important;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1) !important;
+}
+
+#shanti-texts-sidebar::-webkit-scrollbar-track{
+  box-shadow: none;
 }
 
 /* What is this? */
