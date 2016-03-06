@@ -40,6 +40,10 @@
 
 /* .view-mega-search h3 {display:none;font-size: 100%;font-weight: bold;margin-left: 1em;} .view-mega-search ul{ list-style-type: none;} */
 
+.main-content{
+  padding-bottom: 7rem;
+}
+
 .shanti-text .content-section {
   padding-top: 0;
 }
