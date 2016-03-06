@@ -28,11 +28,11 @@
   /* width: 50%; */
   /* min-width: 480px; */
   height: 100%;
-  padding: 0 1em;
+  padding: 0 1em 0 2rem;
   margin: 0;
   overflow: scroll;
   background-color: white;
-  box-shadow: inset 0 0 7px #999;
+  box-shadow: inset 0 0 4px #999;
 }
 
 #shanti-texts-sidebar {
@@ -52,7 +52,7 @@
  
 #shanti-texts-body::-webkit-scrollbar-thumb,
 #shanti-texts-sidebar::-webkit-scrollbar-thumb {
-  background-color: #888 !important;
+  background-color: #e5e5e5 !important;
   /*outline: 1px solid #555;*/
   border-radius:  1rem !important;
   width: .8rem !important;
