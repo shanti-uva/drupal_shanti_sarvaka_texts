@@ -5,7 +5,6 @@
 // to the front page, taking advantage of this legacy field for our own
 // purposes.
 $items = array();
-#$sql = "SELECT n.nid FROM {book} b JOIN {node} n USING (nid) WHERE b.nid = b.bid AND n.promote = 1 AND n.status = 1 ORDER BY n.changed DESC LIMIT 0,5";
 $sql = "SELECT nid FROM {node} WHERE type = 'collection' and promote = 1 AND status = 1";
 $rs = db_query($sql);
 while ($r = $rs->fetchObject()) {

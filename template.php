@@ -28,11 +28,7 @@ function shanti_sarvaka_texts_form_alter(&$form, $form_state, $form_id)
 	}
 }
 
-function shanti_sarvaka_texts_preprocess_page(&$vars) {
-    if ($vars['content']['system_main']['#entity_view_mode']['view_mode'] == 'embed') {
-        drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_text_embed.css');
-    }
-}
+function shanti_sarvaka_texts_preprocess_page(&$vars) {}
 
 function shanti_sarvaka_texts_preprocess_node(&$vars) 
 {
@@ -77,15 +73,13 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
     // Maybe do stuff based on $vars['view_mode'], e.g. if 'embed'
     if ($vars['view_mode'] == 'embed') 
     {
-        // Actually, better to just add a class to the page and add
-        // styles in the main stylesheet
-        #$vars['styles'] = drupal_get_css();
+        // Do something?
     }
     
     // Add CSS and JS
     $js_settings = array(
-      'book'        => $variables['book'],
-      'book_title'  => $variables['book']['link_title'],
+      'book'        => $vars['book'],
+      'book_title'  => $vars['book']['link_title'],
       'kwic_n'      => isset($_GET['n']) ? $_GET['n'] : 0,  
       'edit_rights'	=> user_access('add content to books') && user_access('create new books'),
     );
@@ -98,14 +92,14 @@ function shanti_sarvaka_texts_preprocess_node(&$vars)
     drupal_add_css(SHANTI_SARVAKA_TEXTS_PATH . '/css/shanti_texts_footnotes.css');
     
     // Remove things we don't want to see
-    foreach(array_keys($variables['content']) as $k) {
+    foreach(array_keys($vars['content']) as $k) {
       if ($k != 'shanti_texts_container') {
-        unset($variables['content'][$k]);
+        unset($vars['content'][$k]);
       }      
     }
     
     // NOT SURE WHY THIS IS HERE
-    unset($variables['submitted']);
+    unset($vars['submitted']);
 
   }
 }
