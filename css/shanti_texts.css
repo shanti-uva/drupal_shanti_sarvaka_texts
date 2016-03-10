@@ -355,7 +355,7 @@ h2.book-heading {
 }
 
 .shanti-texts-section-title.text-level-1{
-  /* display:none; */
+  display:none;
   /* document title removed in viewer since the colored banner already posts the title */
   /* Mark -- you hid the wrong div; I have to add *-title. */
 }
