@@ -462,7 +462,7 @@
   margin-bottom: 2rem;
   position: absolute;
   top: -1.5rem;
-  z-index: 12000;
+  z-index: 305;
 }
 
 .region-search-flyout .nav-tabs>li {
