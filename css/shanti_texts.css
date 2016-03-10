@@ -354,10 +354,10 @@ h2.book-heading {
     padding-top: 2rem;
 }
 
-.shanti-texts-section-title.text-level-1{
+.shanti-texts-section-title.text-level-1,
+.shanti-texts-section.text-level-1 .shanti-texts-section-kmaps
+{
   display:none;
-  /* document title removed in viewer since the colored banner already posts the title */
-  /* Mark -- you hid the wrong div; I have to add *-title. */
 }
 
 /* Tabbed Content Areas */
