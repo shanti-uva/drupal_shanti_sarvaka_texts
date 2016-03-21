@@ -2,6 +2,11 @@
 
 define('SHANTI_SARVAKA_TEXTS_PATH',drupal_get_path('theme','shanti_sarvaka_texts'));
 
+function shanti_sarvaka_texts_preprocess_panels_pane(&$variables) 
+{
+  #dpm($variables);
+}
+
 function shanti_sarvaka_texts_menu_breadcrumb_alter(&$active_trail, $item) 
 {
 	if ($active_trail[0]['title'] == 'Home') 
