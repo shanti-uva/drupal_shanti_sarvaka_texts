@@ -1,4 +1,16 @@
-/* custom theme colors */
+/**
+* version 1.x - Mandala Texts Development
+* 
+* shanti-main-texts.css
+* -------------------------------------------------------------------
+* University of Virginia / SHANTI MANDALA / Audio-Video
+* -------------------------------------------------------------------
+* 
+*/
+
+/** 
+* Subtheme Colors 
+*/
 .titlearea,
 .carousel-control,
 .breadwrap .icon,
@@ -36,22 +48,13 @@
 .navbar-brand:active .site-slogan {
   color: #444 !important;
 }
+/**
+*** END colors */
 
 
-#shanti-texts-body img{
-  display:block;
-  max-width:100%;
-  height:auto
-}
 
 
 .navbar-header .site-slogan{ font-size: 105%; } /* little larger than default for the 5-letter app header */
-
-.nav-justified > li.active > a:after {
-  /* border-color: #764B8D !important; */
-  /* border-top-color: #764B8D !important; */
-} 
-
 /* .view-mega-search h3 {display:none;font-size: 100%;font-weight: bold;margin-left: 1em;} .view-mega-search ul{ list-style-type: none;} */
 
 .main-content{ /* IMPORTANT common page layout space above footer since template differs from default Sarvaka */
@@ -75,6 +78,14 @@
 .front #block-system-main .front-overview p { 
   padding:0 2rem;
 }
+
+#shanti-texts-body img{
+  display:block;
+  max-width:100%;
+  height:auto
+}
+
+
 
 /* -------------------------------------------*/
 /* begin migration from shanti_texts_page_all_texts */
@@ -361,9 +372,6 @@
 .view-text-search a:active {
   color: #555;
 }
-
-
-
 
 .view-text-search h3 {
   font-size:1em;
@@ -859,7 +867,7 @@
   }
 
   .view-all-texts-control-box-cell-pager table.pagerer {
-    margin-top: -2rem;
+    margin-top: 1rem;
   }
 }
 
