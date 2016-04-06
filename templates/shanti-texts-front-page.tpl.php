@@ -28,7 +28,7 @@ while ($r = $rs->fetchObject()) {
   <div class="carousel-header show-more" data-ride="carousel"><span>Featured Collections</span><a href="/collections">View All Collections</a></div>
   <div class="row">
     <div class="col-xs-12">
-      <div class="carousel carousel-fade slide row" id="collection-carousel" data-speed="12">
+      <div class="carousel carousel-fade slide row" id="collection-carousel">
         <div class="carousel-inner">
         <?php foreach($items as $i => $item): ?>
           <div class="item <?php if ($i == 0) { print 'active'; } ?>">
@@ -59,17 +59,17 @@ while ($r = $rs->fetchObject()) {
               <div class="control-box">
                   <a data-slide="prev" href="#collection-carousel" class="carousel-control left"><span class="icon"></span></a>
                   <a data-slide="next" href="#collection-carousel" class="carousel-control right"><span class="icon"></span></a>
-              </div><!-- /.control-box -->
+              </div>
 
               <!-- <div class="control-box-2">
                   <button class="btn btn-default btn-sm carousel-pause"><span class="glyphicon glyphicon-pause"></span></button>
-              </div>--><!-- /.control-box-2 -->
+              </div>--><
 
               <ol class="control-box-3 carousel-indicators">
                   <li data-target="#collection-carousel" data-slide-to="0" class="active"></li>
                   <li data-target="#collection-carousel" data-slide-to="1"></li>
                   <li data-target="#collection-carousel" data-slide-to="2"></li>
-              </ol><!-- /.control-box-3 -->
+              </ol>
       </div>
     </div>
   </div>
