@@ -63,7 +63,7 @@ while ($r = $rs->fetchObject()) {
 
               <!-- <div class="control-box-2">
                   <button class="btn btn-default btn-sm carousel-pause"><span class="glyphicon glyphicon-pause"></span></button>
-              </div>--><
+              </div>-->
 
               <ol class="control-box-3 carousel-indicators">
                   <li data-target="#collection-carousel" data-slide-to="0" class="active"></li>
