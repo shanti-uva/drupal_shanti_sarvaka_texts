@@ -1,7 +1,7 @@
 /**
-* version 1.x - Mandala Texts - Development
+* Mandala Texts - Development
 * 
-* shanti-main-texts.css
+* version 1.x - shanti-main-texts.css
 * -----------------------------------------
 * University of Virginia / SHANTI MANDALA
 * -----------------------------------------
@@ -14,6 +14,8 @@
 .titlearea,
 .carousel-control,
 .breadwrap .icon,
+.carousel-indicators li,
+.carousel-indicators .active,
 .nav-justified>li.active a,
 .nav-justified>li.active a:hover,
 .nav-justified>li.active a:active {
