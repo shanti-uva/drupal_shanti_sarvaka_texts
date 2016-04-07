@@ -46,7 +46,7 @@ while ($r = $rs->fetchObject()) {
                   <?php echo $item['desc'] ?>
                 </div>
               </div>
-              <p class="go-to-link"><a href="<?php echo $item['node_url']; ?>" class="h5">View Collection </a></p>
+              <p class="go-to-link"><a href="<?php echo $item['node_url']; ?>">View Collection </a></p>
             </div>
             <div class="carousel-main-image col-xs-12 col-sm-5 col-md-4">
               <a href="<?php echo $item['node_url'] ?>">
