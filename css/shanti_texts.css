@@ -8,8 +8,8 @@
 #shanti-texts-container {
 	/* position: relative; */
 	height: 739px;
-	margin: 0;
-	padding: 0;
+	margin: 0 auto;
+	/*padding: 0;*/
 }
 
 #shanti-texts-body .shanti-texts-section-content * {
