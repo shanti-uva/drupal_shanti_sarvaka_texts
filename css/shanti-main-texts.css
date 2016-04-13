@@ -16,39 +16,43 @@
 .breadwrap .icon,
 .carousel-indicators li,
 .carousel-indicators .active,
-.nav-justified>li.active a,
-.nav-justified>li.active a:hover,
-.nav-justified>li.active a:active {
+.nav-tabs.nav-justified>li.active a,
+.nav-tabs.nav-justified>li.active a:hover,
+.nav-tabs.nav-justified>li.active a:active {
   background: #764B8D !important;
 }
 
-.shanticon-twitter,
-.shanticon-facebook,
-.shanticon-email,
-.shanticon-google,
-.nav-justified > li.active::before,
+.shanticon-twitter,.shanticon-facebook,.shanticon-email,.shanticon-google,
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark {
   color: #764B8D !important;
-}
-
-.nav-justified>li.active{
-  border-top-color: #764B8D;
 }
 
 ::-moz-selection{
   background: #8d824b !important;
 } 
+
 ::selection {
   background: #8d824b !important;
 }
 
-/* banner header anchor hover */
+/* banner header anchor hover - darker shade */
 .navbar-brand:hover .site-slogan {
   color: #9961b7 !important;
 }
 /* reset slogan color for active state */
 .navbar-brand:active .site-slogan {
   color: #444 !important;
+}
+
+.nav-tabs.nav-justified>li.active{
+  border-top-color: #764B8D;
+}
+
+@media screen and (min-width: 768px) {
+
+  .nav-tabs.nav-justified>li.active::before{  
+    color: #764B8D !important;
+  }
 }
 /**
 *** END colors */
