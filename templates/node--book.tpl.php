@@ -2,11 +2,11 @@
 $book_title = $variables['book']['link_title'];
 $bid = $variables['book']['bid'];
 ?>
-<div id="shanti-texts-container" class="col-sm-12">
-  <div id="shanti-texts-body" class="col-sm-7">
+<div id="shanti-texts-container" class="row">
+  <div id="shanti-texts-body" class="col-sm-12 col-sm-7">
     <?php print views_embed_view('single_text_body','panel_pane_default',$bid); ?>
   </div>
-  <div id="shanti-texts-sidebar" role="tabpanel" class="col-sm-5">
+  <div id="shanti-texts-sidebar" role="tabpanel" class="col-sm-12 col-sm-5">
     <ul id="shanti-texts-sidebar-tabs" class="nav nav-tabs nav-justified" role="tablist">
       <li class="first" role="presentation">
         <a aria-expanded="true" data-toggle="tab" href="#shanti-texts-toc" role="tab">Contents</a>

@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,latin-ext);
 
+/**
+* The Google font loading will work best with the 'link' method below from the document head section
+* <link href='https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+* 
+* Google :https://developers.google.com/fonts/docs/getting_started?hl=en#a_quick_example
+* Complete Explantion: http://stackoverflow.com/questions/12316501/including-google-web-fonts-link-or-import/12380004#12380004
+*/
+
 .tab-pane.main-col > div, 
 .page-node-devel .tab-pane.main-col > div {
     margin-bottom: 0;    
@@ -22,7 +30,7 @@
   /* float: left; */
   /* width: 50%; */
   /* min-width: 480px; */
-  padding: 0 1em 0 2rem;
+  padding: 2rem 1.5rem 0 2rem;
   margin: 0;
   background-color: white;
   box-shadow: inset 0 0 4px #999;
@@ -32,7 +40,7 @@
 #shanti-texts-sidebar {
   /* display:none; */ /* INITIAL CONDITION to prevent showing un-tabbed content */
   /* position:relative; */ /* Disabling this fixed problem of cut-off popovers */
-  padding: 0 1em;                                
+  padding-right: 0;                           
 }
 
 #shanti-texts-body, 
@@ -348,10 +356,6 @@ h2.book-heading {
 .shanti-texts-section {
     border-bottom: 1px dotted gray;
     padding-bottom: 1em;
-}
-
-#shanti-texts-body {
-    padding-top: 2rem;
 }
 
 .shanti-texts-section-title.text-level-1,
