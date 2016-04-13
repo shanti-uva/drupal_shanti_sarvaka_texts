@@ -40,7 +40,9 @@
 #shanti-texts-sidebar {
   /* display:none; */ /* INITIAL CONDITION to prevent showing un-tabbed content */
   /* position:relative; */ /* Disabling this fixed problem of cut-off popovers */
-  padding-right: 0;                           
+  padding: 2rem 0 0;
+  height: auto;
+  min-height: 30rem;                           
 }
 
 #shanti-texts-body, 
@@ -404,6 +406,15 @@ h2.book-heading {
 
 .shanti-texts-section-title.text-level-2{
   font-size: 1.18em;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  #shanti-texts-sidebar {
+    height:100%;
+    padding: 0 0 0 1.5rem;                           
+  }
 }
 
 
