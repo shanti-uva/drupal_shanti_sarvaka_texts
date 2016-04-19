@@ -16,9 +16,7 @@
 .breadwrap .icon,
 .carousel-indicators li,
 .carousel-indicators .active,
-.nav-tabs.nav-justified>li.active a,
-.nav-tabs.nav-justified>li.active a:hover,
-.nav-tabs.nav-justified>li.active a:active {
+.nav-tabs.nav-justified>li.active {
   background: #764B8D !important;
 }
 
