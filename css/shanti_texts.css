@@ -418,4 +418,27 @@ h2.book-heading {
 }
 
 
+/* FROM COLLECTIONS PANEL */
+#shanti-texts-collection .shanti-collection-body {
+  margin-top: -1rem;
+}
 
+#shanti-texts-collection .shanti-collection-body .pane-title {
+  margin-bottom: 2rem;
+}
+
+#shanti-collection-featured-image .field-name-field-general-featured-image {
+  margin-right: 1rem;
+}
+
+#shanti-texts-collection .field-name-body {
+  margin-top: -1rem;
+}
+
+#shanti-texts-collection .pane-node-field-general-featured-image {
+  margin-right: 1rem;
+}
+
+#shanti-texts-collection a.shanti-collections-create-link {
+  margin-left: -1rem;
+}
