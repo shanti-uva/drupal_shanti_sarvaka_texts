@@ -419,26 +419,27 @@ h2.book-heading {
 
 
 /* FROM COLLECTIONS PANEL */
-#shanti-texts-collection .shanti-collection-body {
+
+.shanti-collection-page .shanti-collection-body {
   margin-top: -1rem;
 }
 
-#shanti-texts-collection .shanti-collection-body .pane-title {
+.shanti-collection-page .shanti-collection-body .pane-title {
   margin-bottom: 2rem;
 }
 
-#shanti-collection-featured-image .field-name-field-general-featured-image {
+.shanti-collection-page .field-name-field-general-featured-image {
   margin-right: 1rem;
 }
 
-#shanti-texts-collection .field-name-body {
+.shanti-collection-page .field-name-body {
   margin-top: -1rem;
 }
 
-#shanti-texts-collection .pane-node-field-general-featured-image {
+.shanti-collection-page .pane-node-field-general-featured-image {
   margin-right: 1rem;
 }
 
-#shanti-texts-collection a.shanti-collections-create-link {
+.shanti-collection-page a.shanti-collections-create-link {
   margin-left: -1rem;
 }
