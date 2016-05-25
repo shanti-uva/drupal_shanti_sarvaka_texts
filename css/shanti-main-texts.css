@@ -24,15 +24,6 @@
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a .check-mark {
   color: #764B8D !important;
 }
-
-::-moz-selection{
-  background: #8d824b !important;
-} 
-
-::selection {
-  background: #8d824b !important;
-}
-
 /* banner header anchor hover - darker shade */
 .navbar-brand:hover .site-slogan {
   color: #9961b7 !important;
@@ -51,6 +42,14 @@
   .nav-tabs.nav-justified>li.active::before{  
     color: #764B8D !important;
   }
+}
+
+::-moz-selection{
+  background: #8d824b !important;
+} 
+
+::selection {
+  background: #8d824b !important;
 }
 /**
 * END colors */
