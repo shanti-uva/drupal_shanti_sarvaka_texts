@@ -80,23 +80,22 @@
  * @ingroup themeable
  */
 ?>
-<h1>TEST</h1>
+
+
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print $user_picture; ?>
-
+<!-- TITLE -->
+<div class="col-md-12">
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+  <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
+</div>
 
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
-
+<!-- LEFT -->
+<div class="col-md-8">
+<!-- CONTENT -->
   <div class="content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
@@ -105,9 +104,31 @@
       print render($content);
     ?>
   </div>
+</div>
 
+<!-- RIGHT -->
+<div class="col-md-4">
   <?php print render($content['links']); ?>
-
   <?php print render($content['comments']); ?>
+  <!-- NEED TO GET THE CONTENT TYPE FROM THE COLLECTIONS ADMIN SITE -->
+  <a class="btn btn-primary" href="/node/add/book?field_og_collection_ref=12457&amp;destination=node/12457">Add Text</a>
+</div>
+
+<!-- BOTTOM -->
+<div class="col-md-12">
+  <p>VIEW GOES HERE</p>
+</div>
+
+
+  <!-- Not sure if we want this -->
+  <!--
+  <?php if ($display_submitted): ?>
+    <div class="submitted">
+      <?php print $submitted; ?>
+    </div>
+  <?php endif; ?>
+  -->
+
+  
 
 </div>

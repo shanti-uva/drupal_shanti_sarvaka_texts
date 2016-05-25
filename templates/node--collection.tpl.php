@@ -80,8 +80,6 @@
  * @ingroup themeable
  */
 ?>
-
-
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
 <!-- TITLE -->
@@ -108,27 +106,31 @@
 
 <!-- RIGHT -->
 <div class="col-md-4">
+  <?php $ctypes = variable_get('shanti_collections_admin_content_types'); ?>
+  <?php $og_field = SHANTI_COLLECTIONS_ADMIN_OG_FIELD; ?>
+  <?php $og_parent_field = SHANTI_COLLECTIONS_ADMIN_OG_PARENT_FIELD; ?>
+  <?php foreach($ctypes as $ctype => $use): ?>
+    <?php if ($use):?>
+    <a class="btn btn-primary" href="/node/add/<?php echo $ctype;?>?<?php echo $og_field;?>=<?php echo $node->nid;?>&amp;destination=node/<?php echo $node->nid;?>">Add <?php echo $ctype;?></a>
+    <?php endif;?>
+  <?php  endforeach;?>
+  <a class="btn btn-primary" href="/node/add/subcollection?<?php echo $og_parent_field;?>=<?php echo $node->nid;?>&amp;destination=node/<?php echo $node->nid;?>">Add Subcollection</a>
   <?php print render($content['links']); ?>
-  <?php print render($content['comments']); ?>
-  <a class="btn btn-primary" href="/node/add/book?field_og_collection_ref=12457&amp;destination=node/12457">Add Text</a>
-  <a class="btn btn-primary" href="/node/add/subcollection?field_og_parent_collection_ref=12457&amp;destination=node/12457">Add Subcollection</a>
 </div>
 
 <!-- BOTTOM -->
 <div class="col-md-12">
-  <p>VIEW GOES HERE</p>
+    <h2>VIEW GOES HERE</h2>
+  <?php print render($content['comments']); ?>
 </div>
 
-
-  <!-- Not sure if we want this -->
-  <!--
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
-  -->
-
-  
+<!-- Not sure if we want this -->
+<!--
+<?php if ($display_submitted): ?>
+<div class="submitted">
+  <?php print $submitted; ?>
+</div>
+<?php endif; ?>
+-->
 
 </div>
