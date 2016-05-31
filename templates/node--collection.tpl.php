@@ -79,58 +79,64 @@
  *
  * @ingroup themeable
  */
+ 
+ $ctypes = variable_get('shanti_collections_admin_content_types');
+ $og_field = SHANTI_COLLECTIONS_ADMIN_OG_FIELD;
+ $og_parent_field = SHANTI_COLLECTIONS_ADMIN_OG_PARENT_FIELD;
+ $collection_items_view = shanti_collections_admin_get_collection_items_view($node->nid);
+ 
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-<!-- TITLE -->
-<div class="col-md-12">
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-  <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
-</div>
+	<!-- TITLE -->
+	<div class="col-md-12">
+		<?php print render($title_prefix); ?>
+		<?php if (!$page): ?>
+		<h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+		<?php endif; ?>
+		<?php print render($title_suffix); ?>
+	</div>
 
-<!-- LEFT -->
-<div class="col-md-8">
-<!-- CONTENT -->
-  <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content);
-    ?>
-  </div>
-</div>
+	<!-- LEFT -->
+	<div class="col-md-7">
+		<!-- CONTENT -->
+ 		<div class="content"<?php print $content_attributes; ?>>
+  			<?php print render($content['field_general_featured_image']); ?>
+			<?php print render($content['body']); ?>
+  		</div>
+	</div>
 
-<!-- RIGHT -->
-<div class="col-md-4">
-  <?php $ctypes = variable_get('shanti_collections_admin_content_types'); ?>
-  <?php $og_field = SHANTI_COLLECTIONS_ADMIN_OG_FIELD; ?>
-  <?php $og_parent_field = SHANTI_COLLECTIONS_ADMIN_OG_PARENT_FIELD; ?>
-  <?php foreach($ctypes as $ctype => $use): ?>
-    <?php if ($use):?>
-    <a class="btn btn-primary" href="/node/add/<?php echo $ctype;?>?<?php echo $og_field;?>=<?php echo $node->nid;?>&amp;destination=node/<?php echo $node->nid;?>">Add <?php echo $ctype;?></a>
-    <?php endif;?>
-  <?php  endforeach;?>
-  <a class="btn btn-primary" href="/node/add/subcollection?<?php echo $og_parent_field;?>=<?php echo $node->nid;?>&amp;destination=node/<?php echo $node->nid;?>">Add Subcollection</a>
-  <?php print render($content['links']); ?>
-</div>
+	<!-- RIGHT -->
+	<div class="col-md-5">
+  
+		<!-- Content creation buttons -->
+		<?php foreach($ctypes as $ctype => $use): ?>
+    	<?php if ($use):?>
+    	<a class="btn btn-primary" href="/node/add/<?php echo $ctype;?>?<?php echo $og_field;?>=<?php echo $node->nid;?>&amp;destination=node/<?php echo $node->nid;?>">Add <?php echo $ctype;?></a>
+    	<?php endif;?>
+  		<?php  endforeach;?>
+  
+  		<!-- Subcollection stuff -->
+  		<?php if ($type == 'collection'): ?>
+  		<a type="button" class="btn btn-primary" href="/node/add/subcollection?<?php echo $og_parent_field;?>=<?php echo $node->nid;?>&amp;destination=node/<?php echo $node->nid;?>">Add Subcollection</a>
+  		<h3>Subcollections</h3>
+  		<?php print views_embed_view('collections','panel_pane_1',$node->nid); ?>
+  		<?php else: ?>
+  		<h3>Parent Collection</h3>
+  		<div>
+		<?php
+		$content['field_og_parent_collection_ref'][0]['#markup'] = '<span class="icon shanticon-stack"></span> '.$content['field_og_parent_collection_ref'][0]['#markup'];
+		print render($content['field_og_parent_collection_ref']); 
+		?>
+  		</div>
+  		<?php endif; ?>
+  		<h3>Members</h3>
+	</div>
 
-<!-- BOTTOM -->
-<div class="col-md-12">
-    <h2>VIEW GOES HERE</h2>
-  <?php print render($content['comments']); ?>
+	<!-- BOTTOM -->
+	<div class="col-md-12">
+  		<?php print $collection_items_view; ?>
+	</div>
 </div>
-
-<!-- Not sure if we want this -->
-<!--
-<?php if ($display_submitted): ?>
-<div class="submitted">
-  <?php print $submitted; ?>
-</div>
-<?php endif; ?>
--->
-
-</div>
+<?php kpr($content); ?>
+<?php kpr($node); ?>

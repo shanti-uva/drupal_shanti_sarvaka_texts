@@ -6,6 +6,8 @@ version = 7.x-1.x
 
 dependencies[] = jquery_update ; requires jquery v 1.10+
 dependencies[] = shanti_texts
+dependencies[] = shanti_collections_admin
+
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
