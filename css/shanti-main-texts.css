@@ -68,7 +68,7 @@
   padding-top: 0;
 }
 
-.node-type-book.shanti-text .tab-pane.main-col > .region-content {
+.node-type-book.shanti-text .tab-pane.main-col {
   max-width: 100% !important;
 }
 
@@ -169,7 +169,7 @@
 }
 
 .views-field-title h3 {
-  font-size: 1.25em;
+  font-size: 1em;
   margin: 0.5rem 0 0;
   width: 100%;
   white-space: nowrap;
@@ -180,7 +180,7 @@
 }
 
 .front .views-field-title h3 {
-  font-size: 1.32em;
+  /*font-size: 1.32em;*/
 }
 
 .view-collections .views-field-title h3 {
@@ -190,11 +190,11 @@
 /* shanticon font on h3 header */
 .views-field-title h3 .icon {
   color: #a066c0;
-  margin-right: 1.3rem;
+  margin-right: 1rem;
   font-size: 2.5rem;
   position: relative;
   top: 0.5rem;
-  left: 0.6rem;
+  left: 0.3rem;
   filter: alpha(opacity=90);
   opacity: 0.9;
 }
@@ -255,6 +255,12 @@
   text-overflow: ellipsis;
 }
 
+.views-field.views-field-title-1{
+  margin-top: 0.75rem;
+  margin-left: 3.7rem;
+  font-size: 0.88em;
+}
+
 .views-field-field-dc-date-original-year,
 .views-field-field-dc-date-publication-year {
   font-size: 1em;
@@ -263,7 +269,7 @@
   margin: 0 0 0 0.2rem;
   position: relative;
   top: 0.8rem;
-  left: 0.2rem;
+  left: -0.2rem;
 }
 
 .views-field-field-dc-description {
