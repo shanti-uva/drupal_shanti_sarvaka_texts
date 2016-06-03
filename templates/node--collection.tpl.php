@@ -86,7 +86,7 @@
  $og_parent_field 		= variable_get('shanti_collections_admin_collection_parent_field'); 
  $og_parent_id 			= $node->{$og_parent_field}['und'][0]['target_id'];
  $collection_items_view = shanti_collections_admin_get_collection_items_view($node->nid);
-
+	
 ?>
 
 	
@@ -103,7 +103,13 @@
 			<?php if ($type == 'collection'):?>
 			<p>The list below includes items from this Collection's Subcollections.</p>
 			<?php endif; ?>
-	  		<?php print $collection_items_view; ?>
+	  		<?php 
+	  			if (!$collection_items_view) {
+	  				print "Please enter the view and display for the items view in the Collections Admin page.";
+	  			} else {
+		  			print $collection_items_view;   				
+	  			}
+	  		?>
 		</div>		
 	</div>
 
