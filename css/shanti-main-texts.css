@@ -148,11 +148,11 @@
   margin-left:1.5rem;
 }
 
-.node-type-collection .view-all-texts-control-box-cell-header{
+.node-type-collection .view-all-texts-control-box-cell-header.col-md-4{
   width:29%;
 }
 
-.node-type-collection .view-all-texts-control-box-cell-filters{
+.node-type-collection .view-all-texts-control-box-cell-filters.col-md-4{
   width:37%;
 }
 
