@@ -859,6 +859,10 @@
     width: 32.64% !important;
   }
 
+  .node-type-collection .view-all-texts .views-row {
+    width: 31.5% !important;
+  }
+
   .views-row:nth-child(even){
     margin-right: 1rem;
   }
