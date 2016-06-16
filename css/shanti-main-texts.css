@@ -144,6 +144,10 @@
 
 
 
+.texts.node-type-collection .tab-pan .main-col{
+  max-width:1200px;
+}
+
 .texts.node-type-collection .view-all-texts-control-box-cell-header .view-result-count-info{
   margin-left:1.5rem;
 }
