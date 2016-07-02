@@ -90,7 +90,7 @@
 ?>
 
 	
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> collections-sidebar-second clearfix"<?php print $attributes; ?>>
 
 	<div class="collections-content col-xs-12 col-md-9">
  		<div class="content"<?php print $content_attributes; ?>>
@@ -113,7 +113,7 @@
 		</div>		
 	</div>
 
-	<div class="collections-sidebar col-xs-3 col-md-3">
+	<div class="collections-sidebar sidebar-second sidebar-offcanvas col-xs-3 col-md-3">
 		
 		<!-- Content creation buttons -->
 		<?php foreach($ctypes as $ctype => $use): ?>
