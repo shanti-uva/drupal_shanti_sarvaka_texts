@@ -17,7 +17,7 @@ $bid = $variables['book']['bid'];
       <li class="" role="presentation">
         <a data-toggle="tab" href="#shanti-texts-links" role="tab">Views</a>
       </li>
-    </ul>  
+    </ul>
     <div class="tab-content">
       <div id="shanti-texts-toc" class="tab-pane" role="tabpanel">
         <div class="shanti-texts-record-title">

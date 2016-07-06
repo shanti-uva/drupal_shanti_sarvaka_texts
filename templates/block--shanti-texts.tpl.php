@@ -42,12 +42,13 @@
  * @see template_process()
  *
  * @ingroup themeable
- * 
+ *
  *  Modified to use H4 headers in sidebars
  *    (test string/change for sources)
  */
 ?>
-<div id="<?php print $block_html_id; ?>" class="block-quicktabs <?php print $classes; ?>"<?php print $attributes; ?>>
+<div id="<?php print $block_html_id; ?>"
+  class="block-quicktabs <?php print $classes; ?>"<?php print $attributes; ?>>
 	<div class="content"<?php print $content_attributes; ?>>
 		<div id="quicktabs-search_qt" class="tabbable">
 			<ul class="nav nav-tabs">
@@ -60,9 +61,8 @@
 				</div>
 				<div id="quicktabs-search_qt2" class="tab-pane">
 					<?php print views_embed_view('full_text_local','block_1'); ?>
-				</div>				
+				</div>
 			</div>
 		</div>
 	</div>
-	
 </div>
