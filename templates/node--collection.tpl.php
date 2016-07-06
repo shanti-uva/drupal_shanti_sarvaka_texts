@@ -90,7 +90,7 @@
 ?>
 
 	
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> collections-sidebar-second clearfix"<?php print $attributes; ?>>
 
 	<div class="collections-content col-xs-12 col-md-9">
  		<div class="content"<?php print $content_attributes; ?>>
@@ -113,7 +113,7 @@
 		</div>		
 	</div>
 
-	<div class="collections-sidebar col-xs-3 col-md-3">
+	<div class="collections-sidebar sidebar-second sidebar-offcanvas col-xs-3 col-md-3">
 		
 		<!-- Content creation buttons -->
 		<?php foreach($ctypes as $ctype => $use): ?>
@@ -125,10 +125,10 @@
 	  	<!-- Parent Collection or Subcollections -->
 		<?php if ($type == 'collection'): ?>
 		<a type="button" class="btn btn-primary" href="/node/add/subcollection?<?php echo $og_parent_field;?>=<?php echo $node->nid;?>&amp;destination=node/<?php echo $node->nid;?>">Add Subcollection</a>
-		<h3>Subcollections</h3>
+		<h4>Subcollections</h4>
 		<?php print views_embed_view('collections','panel_pane_1',$node->nid); ?>
 		<?php else: ?>
-		<h3>Parent Collection</h3>
+		<h4>Parent Collection</h4>
 		<div>
 		<?php
 		$content['field_og_parent_collection_ref'][0]['#markup'] = '<span class="icon shanticon-stack"></span> '.$content['field_og_parent_collection_ref'][0]['#markup'];
@@ -138,18 +138,18 @@
 		<?php endif; ?>
 		
 		<!-- Members -->
-		<h3>Members</h3>
+		<h4>Members</h4>
 		<?php print views_embed_view($members_view[0],$members_view[1],$node->nid.'+'.$og_parent_id); ?>
 
 		<!-- General info -->
-		<h3>Owner</h3>
+		<h4>Owner</h4>
 		<?php
 			$og_owner = user_load($node->uid);
 			$og_owner_url = url('user/'.$node->uid); 
 			print "<a href='$og_owner_url'>{$og_owner->name}</a>";
 		?>
 		
-		<h3>Visibility</h3>
+		<h4>Visibility</h4>
 		<?php
 		if (!$content['group_access'])
 		{

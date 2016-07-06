@@ -121,6 +121,7 @@
   font-family: 'museo-sans-500',Helvetica,Arial,sans-serif;
   font-size: 1em;
   margin: 1rem 0 0 2.5rem;
+  text-transform: capitalize;
 }
 
 .view-all-texts-control-box-cell-filters > form{
@@ -141,6 +142,25 @@
 }
 
 
+
+
+.texts.node-type-collection .view-all-texts-control-box-cell-header .view-result-count-info{
+  margin-left:1.5rem;
+}
+
+.texts.node-type-collection .view-all-texts-control-box-cell-header.col-md-4{
+  width:25%;
+}
+
+.texts.node-type-collection .view-all-texts-control-box-cell-filters.col-md-4{
+  width:37%;
+}
+
+.texts.node-type-collection .view-all-texts-control-box-cell-pager{ float:right; }
+
+.texts.node-type-collection .view-all-texts-control-box-cell-pager table.pagerer{
+  margin-right:0;
+}
 
 /* BEGIN VIEW COLLECTIONS */
 
@@ -392,7 +412,7 @@
 
 .view-text-search h3 a {
   color: #111;
-  font-family: 'droidserif',palatino,'Palatino Linotype',georgia,serif;
+  font-family: 'droidserif',georgia,palatino,'Palatino Linotype',serif;
   white-space: normal;
 }
 
@@ -859,7 +879,8 @@
     width: 32.64% !important;
   }
 
-  .node-type-collection .view-all-texts .views-row {
+  .node-type-collection .view-all-texts .views-row,
+  .node-type-subcollection .view-all-texts .views-row {
     width: 31.5% !important;
   }
 

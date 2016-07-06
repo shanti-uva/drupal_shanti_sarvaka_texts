@@ -5,10 +5,12 @@ FIRST - What is this new content wrapper class doing? - ​_bootstrap-threecol-s
 The new Panel wrapper classes for content/sidebar are shown below with the equivelant Sarvaka class structure. Replace the bootstrap class in the PANELS wrapper with the Sarvaka BS classes, and add the other classes/ID for content-section and sidebar as shown.
 
 CLASS = ​*panel-panel middle col-lg-9*​
-CLASS = ​*content-section col-xs-12 col-md-9 equal-height*​
+CLASS = ​*content-section col-xs-12 col-md-9*​
 
 ID = ​*none*​ / CLASS = ​*panel-panel right col-sm-3*​
-ID = ​*sidebar-second*​ / CLASS = ​*region sidebar sidebar-second pull-right sidebar-offcanvas col-xs-6 col-md-3 equal-height*​
+ID = ​​*none* / CLASS = ​*region sidebar sidebar-second sidebar-offcanvas col-xs-3 col-md-3*​
+
+note: the ‘equal-height’ class is not needed on the above wrappers since the right column will not ave the white background, also the ID is not needed.
 
 ----------
 ​*IMAGES*​
@@ -120,7 +122,7 @@ BUT BEST TO LOOK AT THE SOURCE CODE ON A PAGE LIKE AUDIO-VIDEO (HOME)
 WHICH USES JUST THE SECOND-SIDEBAR, BUT YOU'LL SEE HOW THE CLASSES ARE SET UP. THE JAVASCRIPT PLAYS OFF THE ID NAME ON THE SIDEBAR, SO THAT IS IMPORTANT TOO
 
     if($variables['page']['sidebar_first'] && $variables['page']['sidebar_second']) {
-        $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left-right';
+        // $variables['offcanvas_trigger_sb'] = 'row-offcanvas-left-right';
         $variables['bsclass_main'] = 'col-xs-12 col-md-9'; // content-section
         $variables['bsclass_sb1'] = $variables['bsclass_sb2'] = 'col-xs-6 col-md-3'; // sidebar-first & sidebar-second 
     // If first side column exists
