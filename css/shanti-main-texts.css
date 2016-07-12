@@ -12,8 +12,8 @@
 .titlearea,
 .carousel-control,
 .breadwrap .icon,
-.carousel-indicators li,
-.carousel-indicators .active,
+.carousel-indicators li:hover,
+.carousel-indicators li.active,
 .nav-tabs.nav-justified>li.active>a,
 .nav-tabs.nav-justified>li.active>a:focus,
 .nav-tabs.nav-justified>li.active>a:hover {
@@ -35,6 +35,10 @@
 
 .nav-tabs.nav-justified>li.active{
   border-top-color: #764B8D;
+}
+
+.carousel-indicators li{
+  border-color: #764B8D;
 }
 
 @media screen and (min-width: 768px) {
