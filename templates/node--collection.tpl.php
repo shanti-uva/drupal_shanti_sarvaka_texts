@@ -79,17 +79,15 @@
  *
  * @ingroup themeable
  */
- 
+
  $ctypes 				= variable_get('shanti_collections_admin_content_types');
- $og_field 				= variable_get('shanti_collections_admin_collection_field'); 
+ $og_field 				= variable_get('shanti_collections_admin_collection_field');
  $members_view 			= preg_split("/\s+/", variable_get('shanti_collections_admin_members_view'));
- $og_parent_field 		= variable_get('shanti_collections_admin_collection_parent_field'); 
+ $og_parent_field 		= variable_get('shanti_collections_admin_collection_parent_field');
  $og_parent_id 			= $node->{$og_parent_field}['und'][0]['target_id'];
  $collection_items_view = shanti_collections_admin_get_collection_items_view($node->nid);
-	
 ?>
 
-	
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> collections-sidebar-second clearfix"<?php print $attributes; ?>>
 
 	<div class="collections-content col-xs-12 col-md-9">
@@ -103,25 +101,25 @@
 			<?php if ($type == 'collection'):?>
 			<p>The list below includes items from this Collection's Subcollections.</p>
 			<?php endif; ?>
-	  		<?php 
+	  		<?php
 	  			if (!$collection_items_view) {
 	  				print "Please enter the view and display for the items view in the Collections Admin page.";
 	  			} else {
-		  			print $collection_items_view;   				
+		  			print $collection_items_view;
 	  			}
 	  		?>
-		</div>		
+		</div>
 	</div>
 
 	<div class="collections-sidebar sidebar-second sidebar-offcanvas col-xs-3 col-md-3">
-		
+
 		<!-- Content creation buttons -->
 		<?php foreach($ctypes as $ctype => $use): ?>
 		<?php if ($use):?>
 		<a class="btn btn-primary" href="/node/add/<?php echo $ctype;?>?<?php echo $og_field;?>=<?php echo $node->nid;?>&amp;destination=node/<?php echo $node->nid;?>">Add <?php echo $ctype;?></a>
 		<?php endif;?>
 		<?php  endforeach;?>
-			  
+
 	  	<!-- Parent Collection or Subcollections -->
 		<?php if ($type == 'collection'): ?>
 		<a type="button" class="btn btn-primary" href="/node/add/subcollection?<?php echo $og_parent_field;?>=<?php echo $node->nid;?>&amp;destination=node/<?php echo $node->nid;?>">Add Subcollection</a>
@@ -132,11 +130,11 @@
 		<div>
 		<?php
 		$content['field_og_parent_collection_ref'][0]['#markup'] = '<span class="icon shanticon-stack"></span> '.$content['field_og_parent_collection_ref'][0]['#markup'];
-		print render($content['field_og_parent_collection_ref']); 
+		print render($content['field_og_parent_collection_ref']);
 		?>
 		</div>
 		<?php endif; ?>
-		
+
 		<!-- Members -->
 		<h4>Members</h4>
 		<?php print views_embed_view($members_view[0],$members_view[1],$node->nid.'+'.$og_parent_id); ?>
@@ -145,10 +143,10 @@
 		<h4>Owner</h4>
 		<?php
 			$og_owner = user_load($node->uid);
-			$og_owner_url = url('user/'.$node->uid); 
+			$og_owner_url = url('user/'.$node->uid);
 			print "<a href='$og_owner_url'>{$og_owner->name}</a>";
 		?>
-		
+
 		<h4>Visibility</h4>
 		<?php
 		if (!$content['group_access'])
@@ -156,19 +154,15 @@
 			$og_node = node_load($og_parent_id);
 			$og_inf = node_view($og_node);
 			$og_inf['group_access'][0]['#markup'] = "This $type is " . $og_inf['group_access'][0]['#markup'];
-			print render($og_inf['group_access']);			
+			print render($og_inf['group_access']);
 		}
 		else
 		{
 			$content['group_access'][0]['#markup'] = "This $type is " . $content['group_access'][0]['#markup'];
-			print render($content['group_access']); 			
+			print render($content['group_access']);
 		}
 		?>
-
-		
 	</div>
-
-
 </div>
 
 <?php
@@ -179,10 +173,10 @@ if (preg_match("/drupal-dev\.shanti/",$base_url))
 {
 	print "<h3>\$content</h3>\n";
 	kpr($content);
-	
+
 	print "<h3>\$node</h3>\n";
-	kpr($node);	
-	
+	kpr($node);
+
 	print "<h3>\$og</h3>\n";
 	$tog = og_get_all_group_content_entity();
 	$members = shanti_collections_admin_get_distinct_members(array($node->nid, $og_parent_id));

@@ -1,11 +1,11 @@
 /**
 * Mandala Texts - Development
-* 
+*
 * version 1.x - shanti-main-texts.css
 * -------------------------------------------------
 * University of Virginia / SHANTI MANDALA / TEXTS
 * -------------------------------------------------
-* 
+*
 */
 
 /* BEGIN sub-theme colors */
@@ -38,15 +38,14 @@
 }
 
 @media screen and (min-width: 768px) {
-
-  .nav-tabs.nav-justified>li.active::before{  
+  .nav-tabs.nav-justified>li.active::before{
     color: #764B8D !important;
   }
 }
 
 ::-moz-selection{
   background: #8d824b !important;
-} 
+}
 
 ::selection {
   background: #8d824b !important;
@@ -56,9 +55,11 @@
 
 
 /* little larger than default for the 5-letter app header */
-.navbar-header .site-slogan{ font-size: 105%; } 
+.navbar-header .site-slogan{ font-size: 105%; }
 
-/* .view-mega-search h3 {display:none;font-size: 100%;font-weight: bold;margin-left: 1em;} .view-mega-search ul{ list-style-type: none;} */
+/* .view-mega-search h3 {display:none;font-size: 100%;font-weight:
+bold;margin-left: 1em;} .view-mega-search ul{ list-style-type: none;}
+*/
 
 .main-content{ /* IMPORTANT common page layout space above footer since template differs from default Sarvaka */
   padding-bottom: 7rem;
@@ -78,7 +79,7 @@
   padding: 4px;
 }
 
-.front #block-system-main .front-overview p { 
+.front #block-system-main .front-overview p {
   padding:0 2rem;
 }
 
@@ -248,7 +249,7 @@
   height: 1.38em;*/
 }
 
-.views-field-field-book-author{ 
+.views-field-field-book-author{
   position: relative;
   top: 0.7rem;
   left: 1.1rem;
@@ -299,10 +300,11 @@
 }
 
 /* hide filter input labels */
-.views-widget-filter-title label, 
+.views-widget-filter-title label,
 .views-widget-filter-field_book_author_value label {
   display: none;
 }
+
 /* position filtering textboxes side-by-side without labels */
 .views-widget-filter-title,
 .views-widget-filter-field_book_author_value {
@@ -316,7 +318,7 @@
   width: 100%;
 }
 
-.views-widget-filter-title .form-control.form-text, 
+.views-widget-filter-title .form-control.form-text,
 .views-widget-filter-field_book_author_value .form-control.form-text {
   max-width: 14rem;
 }
@@ -341,8 +343,8 @@
   width: 14rem;
 }
 
-.view-text-search p, 
-.view-solr-texts p, 
+.view-text-search p,
+.view-solr-texts p,
 .view-full-text-local p,
 .view-full-text-solr p {
   margin: .5em 0 0 1em;
@@ -352,7 +354,7 @@
   display: none;
 }
 
-.view-solr-texts h3, 
+.view-solr-texts h3,
 .view-full-text-local h3,
 .view-full-text-solr h3 {
   margin: 1rem 0 -0.2rem 0.8rem;
@@ -662,7 +664,7 @@
   color: #777;
 }
 
-.extruder .views-submit-button .btn.btn-primary:active, 
+.extruder .views-submit-button .btn.btn-primary:active,
 .extruder .views-submit-button .btn-primary.active {
   background: transparent;
   border-color: #fff;
@@ -820,7 +822,7 @@
 
   .view-all-texts-control-box-cell-pager table.pagerer{
     float: left;
-    margin-top:1rem;  
+    margin-top:1rem;
   }
 
   .view-all-texts-control-box-cell-header .view-result-count-info{
@@ -836,7 +838,7 @@
 }
 
 @media (max-width: 599px) {
-	
+
   .view-all-texts-control-box-cell-header,
   .view-all-texts-control-box-cell-filters,
   .view-all-texts-control-box-cell-pager{
@@ -860,7 +862,7 @@
 /* BEGIN min-width */
 /*-----------------*/
 @media (min-width: 768px) {
-	
+
   .views-row {
     width: 49.3% !important;
     margin: 0 1rem 1rem 0;
@@ -874,7 +876,7 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	
+
   .views-row {
     width: 32.64% !important;
   }
@@ -916,13 +918,12 @@
 
 
 /*
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
   .region-search-flyout .nav-tabs { position: absolute; top:0;}
 }
 */
 
 /* firefox hack */
 @supports (-moz-appearance:none) and (display:contents) {
-    .region-search-flyout .nav-tabs { position: absolute; top:0;} 
+    .region-search-flyout .nav-tabs { position: absolute; top:0;}
 }
-
