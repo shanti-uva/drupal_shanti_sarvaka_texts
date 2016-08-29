@@ -80,12 +80,16 @@
  * @ingroup themeable
  */
 
- $ctypes 				= variable_get('shanti_collections_admin_content_types');
- $og_field 				= variable_get('shanti_collections_admin_collection_field');
- $members_view 			= preg_split("/\s+/", variable_get('shanti_collections_admin_members_view'));
- $og_parent_field 		= variable_get('shanti_collections_admin_collection_parent_field');
- $og_parent_id 			= $node->{$og_parent_field}['und'][0]['target_id'];
- $collection_items_view = shanti_collections_admin_get_collection_items_view($node->nid);
+$ctypes 				= variable_get('shanti_collections_admin_content_types');
+$og_field 				= variable_get('shanti_collections_admin_collection_field');
+$members_view 			= preg_split("/\s+/", variable_get('shanti_collections_admin_members_view'));
+$collection_items_view = shanti_collections_admin_get_collection_items_view($node->nid);
+$og_parent_field 		= variable_get('shanti_collections_admin_collection_parent_field');
+$og_parent_id = $node->nid;
+if ($node->type == 'subcollection') {
+  $og_parent_id = $node->{$og_parent_field}['und'][0]['target_id'];
+}
+
 ?>
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> collections-sidebar-second clearfix"<?php print $attributes; ?>>
@@ -167,9 +171,9 @@
 
 <?php
 # DEBUGGING
-/*
+
 global $base_url;
-if (preg_match("/drupal-dev\.shanti/",$base_url))
+if (preg_match("/predev/",$base_url))
 {
 	print "<h3>\$content</h3>\n";
 	kpr($content);
@@ -182,5 +186,5 @@ if (preg_match("/drupal-dev\.shanti/",$base_url))
 	$members = shanti_collections_admin_get_distinct_members(array($node->nid, $og_parent_id));
 	kpr($members);
 }
-*/
+
 ?>
