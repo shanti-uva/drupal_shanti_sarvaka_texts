@@ -83,7 +83,7 @@
 $ctypes 				= variable_get('shanti_collections_admin_content_types');
 $og_field 				= variable_get('shanti_collections_admin_collection_field');
 $members_view 			= preg_split("/\s+/", variable_get('shanti_collections_admin_members_view'));
-$collection_items_view = shanti_collections_admin_get_collection_items_view($node->nid);
+$collection_items_view  = shanti_collections_admin_get_collection_items_view($node->nid);
 $og_parent_field 		= variable_get('shanti_collections_admin_collection_parent_field');
 $og_parent_id = $node->nid;
 if ($node->type == 'subcollection') {

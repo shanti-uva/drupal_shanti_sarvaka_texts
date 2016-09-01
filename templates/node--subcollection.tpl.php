@@ -1,1 +1,1 @@
-<?php include('node--collection.tpl.php');
+<?php include('node--collection.tpl.php'); ?>
