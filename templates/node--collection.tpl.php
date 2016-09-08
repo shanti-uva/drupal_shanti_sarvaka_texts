@@ -79,13 +79,13 @@
  *
  * @ingroup themeable
  */
-
-$ctypes 				= variable_get('shanti_collections_admin_content_types');
-$og_field 				= variable_get('shanti_collections_admin_collection_field');
-$members_view 			= preg_split("/\s+/", variable_get('shanti_collections_admin_members_view'));
+ 
+$ctypes                 = variable_get('shanti_collections_admin_content_types');
+$og_field               = variable_get('shanti_collections_admin_collection_field');
+$members_view           = preg_split("/\s+/", variable_get('shanti_collections_admin_members_view'));
 $collection_items_view  = shanti_collections_admin_get_collection_items_view($node->nid);
-$og_parent_field 		= variable_get('shanti_collections_admin_collection_parent_field');
-$og_parent_id = $node->nid;
+$og_parent_field        = variable_get('shanti_collections_admin_collection_parent_field');
+$og_parent_id           = $node->nid;
 if ($node->type == 'subcollection') {
   $og_parent_id = $node->{$og_parent_field}['und'][0]['target_id'];
 }
@@ -95,22 +95,22 @@ if ($node->type == 'subcollection') {
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> collections-sidebar-second clearfix"<?php print $attributes; ?>>
 
 	<div class="collections-content col-xs-12 col-md-9">
- 		<div class="content"<?php print $content_attributes; ?>>
- 			<?php # May want to check if an image exists; if not, use parent or some default. ?>
-  			<?php print render($content['field_general_featured_image']); ?>
-			<?php print render($content['body']); ?>
-  		</div>
+ 	    <div class="content"<?php print $content_attributes; ?>>
+ 	        <?php # May want to check if an image exists; if not, use parent or some default. ?>
+ 	        <?php print render($content['field_general_featured_image']); ?>
+ 	        <?php print render($content['body']); ?>
+ 	    </div>
 		<div>
-			<h3>Items in this <?php echo $type; ?></h3>
-			<?php if ($type == 'collection'):?>
-			<p>The list below includes items from this Collection's Subcollections.</p>
-			<?php endif; ?>
-	  		<?php
-	  			if (!$collection_items_view) {
-	  				print "Please enter the view and display for the items view in the Collections Admin page.";
-	  			} else {
-		  			print $collection_items_view;
-	  			}
+		    <h3>Items in this <?php echo $type; ?></h3>
+		    <?php if ($type == 'collection'):?>
+		    <p>The list below includes items from this Collection's Subcollections.</p>
+		    <?php endif; ?>
+		    <?php
+		    if (!$collection_items_view) {
+		        print "Please enter the view and display for the items view in the Collections Admin page.";
+		    } else {
+		        print $collection_items_view;
+		    }
 	  		?>
 		</div>
 	</div>
@@ -133,8 +133,8 @@ if ($node->type == 'subcollection') {
 		<h4>Parent Collection</h4>
 		<div>
 		<?php
-		$content['field_og_parent_collection_ref'][0]['#markup'] = '<span class="icon shanticon-stack"></span> '.$content['field_og_parent_collection_ref'][0]['#markup'];
-		print render($content['field_og_parent_collection_ref']);
+		$content[$og_parent_field][0]['#markup'] = '<span class="icon shanticon-stack"></span> '.$content[$og_parent_field][0]['#markup'];
+		print render($content[$og_parent_field]);
 		?>
 		</div>
 		<?php endif; ?>
@@ -168,23 +168,3 @@ if ($node->type == 'subcollection') {
 		?>
 	</div>
 </div>
-
-<?php
-# DEBUGGING
-
-global $base_url;
-if (preg_match("/predev/",$base_url))
-{
-	print "<h3>\$content</h3>\n";
-	kpr($content);
-
-	print "<h3>\$node</h3>\n";
-	kpr($node);
-
-	print "<h3>\$og</h3>\n";
-	$tog = og_get_all_group_content_entity();
-	$members = shanti_collections_admin_get_distinct_members(array($node->nid, $og_parent_id));
-	kpr($members);
-}
-
-?>
